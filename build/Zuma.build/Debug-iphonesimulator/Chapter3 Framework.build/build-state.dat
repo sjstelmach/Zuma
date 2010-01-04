@@ -1,7 +1,7 @@
 TChapter3 Framework
 v7
 r0
-t284340129.189401
+t284340350.095843
 cCheck dependencies
 cProcessInfoPlistFile "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Info.plist" Info.plist
 cCompileXIB /Users/sstelmach/Sites/Zuma/MainWindow.xib
@@ -685,7 +685,7 @@ s928
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies284340129#284340129#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies284340350#284340350#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Animation.o" /Users/sstelmach/Sites/Zuma/Classes/Animation.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s284340055.090785
