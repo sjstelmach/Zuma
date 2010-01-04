@@ -73,6 +73,11 @@
 		};
 		perUserProjectItems = {
 			A144D19110F2A53900CA78A1 /* PBXTextBookmark */ = A144D19110F2A53900CA78A1 /* PBXTextBookmark */;
+			A144D1B910F2AF5D00CA78A1 /* XCBuildMessageTextBookmark */ = A144D1B910F2AF5D00CA78A1 /* XCBuildMessageTextBookmark */;
+			A144D1BA10F2AF5D00CA78A1 /* PBXTextBookmark */ = A144D1BA10F2AF5D00CA78A1 /* PBXTextBookmark */;
+			A144D1D110F2AF8000CA78A1 /* PBXTextBookmark */ = A144D1D110F2AF8000CA78A1 /* PBXTextBookmark */;
+			A144D1D210F2AF8000CA78A1 /* XCBuildMessageTextBookmark */ = A144D1D210F2AF8000CA78A1 /* XCBuildMessageTextBookmark */;
+			A144D1D310F2AF8000CA78A1 /* PBXTextBookmark */ = A144D1D310F2AF8000CA78A1 /* PBXTextBookmark */;
 			A144D34910F2A48C00B7961F = A144D34910F2A48C00B7961F /* PBXBookmark */;
 			A144D35310F2A48D00B7961F = A144D35310F2A48D00B7961F /* PBXTextBookmark */;
 		};
@@ -138,6 +143,102 @@
 		rType = 0;
 		vrLen = 400;
 		vrLoc = 0;
+	};
+	A144D19910F2A86100CA78A1 /* Entity.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {845, 543}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 773}";
+		};
+	};
+	A144D19A10F2A86100CA78A1 /* Entity.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {439, 962}}";
+			sepNavSelRange = "{208, 0}";
+			sepNavVisRange = "{0, 269}";
+		};
+	};
+	A144D19E10F2A8CA00CA78A1 /* Sprite.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 543}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 615}";
+		};
+	};
+	A144D19F10F2A8CA00CA78A1 /* Sprite.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {789, 897}}";
+			sepNavSelRange = "{723, 6}";
+			sepNavVisRange = "{211, 1059}";
+		};
+	};
+	A144D1B310F2AF5500CA78A1 /* Animation.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1048, 650}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{140, 1121}";
+		};
+	};
+	A144D1B910F2AF5D00CA78A1 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "TileWorld.h: No such file or directory";
+		fRef = A144D19A10F2A86100CA78A1 /* Entity.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 11;
+		rType = 1;
+	};
+	A144D1BA10F2AF5D00CA78A1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D19A10F2A86100CA78A1 /* Entity.m */;
+		name = "Entity.m: 12";
+		rLen = 0;
+		rLoc = 208;
+		rType = 0;
+		vrLen = 269;
+		vrLoc = 0;
+	};
+	A144D1C510F2AF7700CA78A1 /* RiverLevel.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = RiverLevel.h;
+		path = /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {439, 390}}";
+			sepNavSelRange = "{224, 0}";
+			sepNavVisRange = "{271, 223}";
+		};
+	};
+	A144D1D110F2AF8000CA78A1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D19A10F2A86100CA78A1 /* Entity.m */;
+		name = "Entity.m: 12";
+		rLen = 0;
+		rLoc = 208;
+		rType = 0;
+		vrLen = 269;
+		vrLoc = 0;
+	};
+	A144D1D210F2AF8000CA78A1 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Croc.h: No such file or directory";
+		fRef = A144D1C510F2AF7700CA78A1 /* RiverLevel.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 11;
+		rType = 1;
+	};
+	A144D1D310F2AF8000CA78A1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D1C510F2AF7700CA78A1 /* RiverLevel.h */;
+		name = "RiverLevel.h: 12";
+		rLen = 0;
+		rLoc = 224;
+		rType = 0;
+		vrLen = 216;
+		vrLoc = 283;
 	};
 	A144D32110F2A43000B7961F /* Chapter3 Framework */ = {
 		isa = PBXExecutable;

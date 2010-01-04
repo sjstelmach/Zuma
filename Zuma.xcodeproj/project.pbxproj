@@ -40,6 +40,7 @@
 		9BEABBC60FFAA9BA00219B8E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */; };
 		A144D19B10F2A86100CA78A1 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = A144D19A10F2A86100CA78A1 /* Entity.m */; };
 		A144D1A010F2A8CA00CA78A1 /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = A144D19F10F2A8CA00CA78A1 /* Sprite.m */; };
+		A144D1B510F2AF5500CA78A1 /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = A144D1B410F2AF5500CA78A1 /* Animation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,8 @@
 		A144D19A10F2A86100CA78A1 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		A144D19E10F2A8CA00CA78A1 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
 		A144D19F10F2A8CA00CA78A1 /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
+		A144D1B310F2AF5500CA78A1 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		A144D1B410F2AF5500CA78A1 /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +197,8 @@
 				A144D19910F2A86100CA78A1 /* Entity.h */,
 				A144D19E10F2A8CA00CA78A1 /* Sprite.h */,
 				A144D19F10F2A8CA00CA78A1 /* Sprite.m */,
+				A144D1B310F2AF5500CA78A1 /* Animation.h */,
+				A144D1B410F2AF5500CA78A1 /* Animation.m */,
 				A144D19A10F2A86100CA78A1 /* Entity.m */,
 				7F94D0BC0FA96CD500A02C11 /* SoundEngine.h */,
 				7F94D0BD0FA96CD500A02C11 /* SoundEngine.cpp */,
@@ -322,6 +327,7 @@
 				9B8D8C1110E08128005FB7EC /* gsMainMenu.m in Sources */,
 				A144D19B10F2A86100CA78A1 /* Entity.m in Sources */,
 				A144D1A010F2A8CA00CA78A1 /* Sprite.m in Sources */,
+				A144D1B510F2AF5500CA78A1 /* Animation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
