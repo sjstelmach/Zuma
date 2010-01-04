@@ -38,6 +38,8 @@
 		9B8D8C0C10E0810E005FB7EC /* gsmainmenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B8D8C0B10E0810E005FB7EC /* gsmainmenu.xib */; };
 		9B8D8C1110E08128005FB7EC /* gsMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D8C1010E08128005FB7EC /* gsMainMenu.m */; };
 		9BEABBC60FFAA9BA00219B8E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */; };
+		A144D19B10F2A86100CA78A1 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = A144D19A10F2A86100CA78A1 /* Entity.m */; };
+		A144D1A010F2A8CA00CA78A1 /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = A144D19F10F2A8CA00CA78A1 /* Sprite.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,10 @@
 		9B8D8C0F10E08128005FB7EC /* gsMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsMainMenu.h; sourceTree = "<group>"; };
 		9B8D8C1010E08128005FB7EC /* gsMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsMainMenu.m; sourceTree = "<group>"; };
 		9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		A144D19910F2A86100CA78A1 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		A144D19A10F2A86100CA78A1 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		A144D19E10F2A8CA00CA78A1 /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
+		A144D19F10F2A8CA00CA78A1 /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +191,10 @@
 		7F94D0BF0FA96CDE00A02C11 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				A144D19910F2A86100CA78A1 /* Entity.h */,
+				A144D19E10F2A8CA00CA78A1 /* Sprite.h */,
+				A144D19F10F2A8CA00CA78A1 /* Sprite.m */,
+				A144D19A10F2A86100CA78A1 /* Entity.m */,
 				7F94D0BC0FA96CD500A02C11 /* SoundEngine.h */,
 				7F94D0BD0FA96CD500A02C11 /* SoundEngine.cpp */,
 				7F94D0B30FA96CC100A02C11 /* ResourceManager.m */,
@@ -310,6 +320,8 @@
 				9B8D8BC810E0755F005FB7EC /* gsSoundTest.m in Sources */,
 				9B8D8BEB10E079CA005FB7EC /* gsStorageTest.m in Sources */,
 				9B8D8C1110E08128005FB7EC /* gsMainMenu.m in Sources */,
+				A144D19B10F2A86100CA78A1 /* Entity.m in Sources */,
+				A144D1A010F2A8CA00CA78A1 /* Sprite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

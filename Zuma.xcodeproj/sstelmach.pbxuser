@@ -2,9 +2,16 @@
 {
 	1D3623240D0F684500981E51 /* Chapter3_FrameworkAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {607, 455}}";
+			sepNavIntBoundsRect = "{{0, 0}, {704, 543}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 439}";
+			sepNavVisRange = "{0, 754}";
+		};
+	};
+	1D3623250D0F684500981E51 /* Chapter3_FrameworkAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {971, 1651}}";
+			sepNavSelRange = "{290, 0}";
+			sepNavVisRange = "{0, 1340}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* Chapter3 Framework */ = {
@@ -13,10 +20,27 @@
 			A144D32110F2A43000B7961F /* Chapter3 Framework */,
 		);
 	};
+	28D7ACF60DDB3853001CB0EB /* Chapter3_FrameworkViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 543}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 213}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* Chapter3_FrameworkViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {712, 767}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1022}";
+		};
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = A144D32110F2A43000B7961F /* Chapter3 Framework */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Chapter3 Framework */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Chapter3 Framework */,
+		);
 		codeSenseManager = A144D34210F2A44700B7961F /* Code sense */;
 		executables = (
 			A144D32110F2A43000B7961F /* Chapter3 Framework */,
@@ -44,16 +68,76 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 284337286;
-			PBXWorkspaceStateSaveDate = 284337286;
+			PBXPerProjectTemplateStateSaveDate = 284337464;
+			PBXWorkspaceStateSaveDate = 284337464;
 		};
 		perUserProjectItems = {
-			A144D34910F2A48C00B7961F /* PBXBookmark */ = A144D34910F2A48C00B7961F /* PBXBookmark */;
-			A144D35310F2A48D00B7961F /* PBXTextBookmark */ = A144D35310F2A48D00B7961F /* PBXTextBookmark */;
+			A144D19110F2A53900CA78A1 /* PBXTextBookmark */ = A144D19110F2A53900CA78A1 /* PBXTextBookmark */;
+			A144D34910F2A48C00B7961F = A144D34910F2A48C00B7961F /* PBXBookmark */;
+			A144D35310F2A48D00B7961F = A144D35310F2A48D00B7961F /* PBXTextBookmark */;
 		};
 		sourceControlManager = A144D34110F2A44700B7961F /* Source Control */;
 		userBuildSettings = {
 		};
+	};
+	7F94D0990FA96C9200A02C11 /* GameStateManager.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 543}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 208}";
+		};
+	};
+	7F94D09A0FA96C9200A02C11 /* GameStateManager.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 543}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 210}";
+		};
+	};
+	7F94D09B0FA96C9200A02C11 /* GameState.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 559}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{3, 507}";
+		};
+	};
+	9B8D8B7110E06EA5005FB7EC /* gsTextureTest.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 543}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 208}";
+		};
+	};
+	9B8D8B7210E06EA5005FB7EC /* gsTextureTest.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1167, 650}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{120, 1622}";
+		};
+	};
+	9B8D8C0F10E08128005FB7EC /* gsMainMenu.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 543}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 304}";
+		};
+	};
+	9B8D8C1010E08128005FB7EC /* gsMainMenu.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {704, 543}}";
+			sepNavSelRange = "{532, 0}";
+			sepNavVisRange = "{0, 929}";
+		};
+	};
+	A144D19110F2A53900CA78A1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* Chapter3_FrameworkAppDelegate.h */;
+		name = "Chapter3_FrameworkAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 400;
+		vrLoc = 0;
 	};
 	A144D32110F2A43000B7961F /* Chapter3 Framework */ = {
 		isa = PBXExecutable;
