@@ -6,7 +6,6 @@
 //
 
 #import "ResourceManager.h"
-#import "GLESGameState.h"
 #import <OpenGLES/EAGLDrawable.h>
 #import <QuartzCore/QuartzCore.h>
 #import "SoundEngine.h"
@@ -78,29 +77,9 @@ ResourceManager *g_ResManager;
 	}
 	[storage_path release];
 	[storage release];
-	[default_font release];
 }
 
 #pragma mark image cache
-
-//creates and returns a texture for the given image file.  The texture is buffered,
-//so the first call to getTexture will create the texture, and subsequent calls will
-//simply return the same texture object.
-//todo: catch allocation failures here, purge enough textures to make it work, and retry loading the texture.
-- (GLTexture*) getTexture: (NSString*) filename
-{
-	//lookup is .00001 (seconds) to .00003 on simulator, and consistently .00003 on device.  tested average over 1000 cycles, compared against using a local cache (e.g. not calling gettexture).  If you are drawing over a thousand instances per frame, you should use a local cache.
-	GLTexture* retval = [textures valueForKey:filename];
-	if(retval != nil)
-		return retval;
-
-	//load time seems to correlate with image complexity with png files.  Images loaded later in the app were quicker as well.  Ranged 0.075 (seconds) to 0.288 in test app.  Tested once per image, on device, with varying load order.
-	NSString *fullpath = [[[NSBundle mainBundle] bundlePath] stringByAppendingPathComponent:filename];
-	UIImage *loadImage = [UIImage imageWithContentsOfFile:fullpath];
-	retval = [[GLTexture alloc] initWithImage: loadImage];
-	[textures setValue:[retval autorelease] forKey:filename];
-	return retval;
-}
 
 - (void) purgeTextures
 {
@@ -191,25 +170,6 @@ ResourceManager *g_ResManager;
 
 - (BOOL) userDataExists:(NSString*) filename{
 	return [self getUserData:filename] != nil;
-}
-
-#pragma mark default font helpers
-
-- (GLFont *) defaultFont {
-	if(default_font == nil){
-		default_font = [[GLFont alloc] initWithString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,.?!@/: " 
-			fontName:@"Helvetica" 
-			fontSize:24.0f
-			strokeWidth:1.0f
-			fillColor:[UIColor whiteColor]
-			strokeColor:[UIColor grayColor]];
-	}
-	return default_font;
-}
-
-- (void) setDefaultFont: (GLFont *) newValue {
-	[default_font autorelease];
-	default_font = [newValue retain];
 }
 
 #pragma mark unsupported features and generally abusive functions.

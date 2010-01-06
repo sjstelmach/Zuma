@@ -6,9 +6,7 @@
 //
 
 #import "gsMainMenu.h"
-#import "gsSoundTest.h"
-#import "gsTextureTest.h"
-#import "gsStorageTest.h"
+#import "gsZuma.h"
 
 @implementation gsMainMenu
 
@@ -25,16 +23,8 @@
 	return self;
 }
 
-- (IBAction) doGraphicsTest {
-	[m_pManager doStateChange:[gsTextureTest class]];
-}
-
-- (IBAction) doSoundTest {
-	[m_pManager doStateChange:[gsSoundTest class]];
-}
-
-- (IBAction) doStorageTest {
-	[m_pManager doStateChange:[gsStorageTest class]];
+- (IBAction) doZuma {
+	[m_pManager doStateChange:[gsZuma class]];
 }
 
 @end

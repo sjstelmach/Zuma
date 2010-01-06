@@ -13,8 +13,6 @@
 	IBOutlet UIView* subview;
 }
 
-- (IBAction) doGraphicsTest;
-- (IBAction) doSoundTest;
-- (IBAction) doStorageTest;
+- (IBAction) doZuma;
 
 @end

@@ -10,9 +10,7 @@
 #import <OpenGLES/ES1/gl.h>
 #import <OpenGLES/ES1/glext.h>
 #import <Foundation/Foundation.h>
-#import "GLTexture.h"
-#import "GLFont.h"
-@class GLESGameState;
+
 @class ResourceManager;
 
 #define STORAGE_FILENAME @"appstorage"
@@ -35,16 +33,12 @@ extern ResourceManager *g_ResManager; //paul <3's camel caps, hungarian notation
 	NSMutableDictionary*	storage;
 	BOOL storage_dirty;
 	NSString* storage_path;
-	
-	GLFont* default_font;
 }
 
 + (ResourceManager *)instance;
 
 - (void) shutdown;
 
-//loads and buffers images as 2d opengles textures.
-- (GLTexture*) getTexture: (NSString*) filename;
 - (void) purgeTextures;
 
 - (void) setupSound; //intialize the sound device.  Takes a non-trivial amount of time, and should be called during initialization.
@@ -64,6 +58,4 @@ extern ResourceManager *g_ResManager; //paul <3's camel caps, hungarian notation
 - (BOOL) userDataExists:(NSString*) filename;
 + (NSString*) appendStorePath:(NSString*) filename;
 
-- (GLFont *) defaultFont;
-- (void) setDefaultFont: (GLFont *) newValue;
 @end
