@@ -29,7 +29,6 @@
 		9B8D8C1110E08128005FB7EC /* gsMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8D8C1010E08128005FB7EC /* gsMainMenu.m */; };
 		9BEABBC60FFAA9BA00219B8E /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */; };
 		A144D22010F2B89C00CA78A1 /* gsZuma.m in Sources */ = {isa = PBXBuildFile; fileRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */; };
-		A144D24C10F2B9D900CA78A1 /* Path.m in Sources */ = {isa = PBXBuildFile; fileRef = A144D24B10F2B9D900CA78A1 /* Path.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,8 +65,6 @@
 		9BEABBC50FFAA9BA00219B8E /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		A144D21E10F2B89C00CA78A1 /* gsZuma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsZuma.h; sourceTree = "<group>"; };
 		A144D21F10F2B89C00CA78A1 /* gsZuma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gsZuma.m; sourceTree = "<group>"; };
-		A144D24A10F2B9D900CA78A1 /* Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Path.h; sourceTree = "<group>"; };
-		A144D24B10F2B9D900CA78A1 /* Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Path.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,8 +200,6 @@
 		A144D24910F2B9CD00CA78A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A144D24A10F2B9D900CA78A1 /* Path.h */,
-				A144D24B10F2B9D900CA78A1 /* Path.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -277,7 +272,6 @@
 				7F94D0BE0FA96CD500A02C11 /* SoundEngine.cpp in Sources */,
 				9B8D8C1110E08128005FB7EC /* gsMainMenu.m in Sources */,
 				A144D22010F2B89C00CA78A1 /* gsZuma.m in Sources */,
-				A144D24C10F2B9D900CA78A1 /* Path.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
