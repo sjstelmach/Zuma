@@ -40,4 +40,23 @@
 	CGContextFillRect(g, CGRectMake(0, 0, self.frame.size.width, self.frame.size.height));
 	[path drawPath:g];	
 }
+
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+	CAKeyframeAnimation *animation;
+	animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+	animation.speed = .01;
+	
+	animation.rotationMode = kCAAnimationRotateAuto;
+	animation.path = path.path;
+	animation.repeatCount = 1e100f;
+	
+	animation.timingFunctions = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
+	animation.calculationMode = kCAAnimationPaced;
+	
+	[ball addAnimation:animation forKey: @"balls"];
+	
+}
+
+
 @end
