@@ -1,0 +1,257 @@
+// !$*UTF8*$!
+{
+	1B3D693910F5DF6B0090D218 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8D8C1010E08128005FB7EC /* gsMainMenu.m */;
+		name = "gsMainMenu.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 3;
+		vrLoc = 0;
+	};
+	1BA7782310F2AEB20061774B /* Zuma */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Zuma;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	1BA7783E10F2AEB90061774B /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	1BA7783F10F2AEB90061774B /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	1BA7789410F584D90061774B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		name = "Entity.m: 12";
+		rLen = 0;
+		rLoc = 208;
+		rType = 0;
+		vrLen = 127;
+		vrLoc = 142;
+	};
+	1BA7799410F5DF5D0061774B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A17126CB10F5379000A04029 /* Zuma.pch */;
+		name = "Zuma.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 88;
+		vrLoc = 0;
+	};
+	1BA7799510F5DF5D0061774B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/andylei/src/iphone/Zuma/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	1BA7799610F5DF5D0061774B /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1BA7797410F5DE330061774B /* coloredwheel.png */;
+	};
+	1BA7799710F5DF5D0061774B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7F94D0B30FA96CC100A02C11 /* ResourceManager.m */;
+		name = "ResourceManager.m: 238";
+		rLen = 0;
+		rLoc = 7818;
+		rType = 0;
+		vrLen = 259;
+		vrLoc = 7648;
+	};
+	1BA7799810F5DF5D0061774B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8D8C1010E08128005FB7EC /* gsMainMenu.m */;
+		name = "gsMainMenu.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 46;
+		vrLoc = 0;
+	};
+	1BA7799910F5DF5D0061774B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9B8D8C1010E08128005FB7EC /* gsMainMenu.m */;
+		name = "gsMainMenu.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 46;
+		vrLoc = 0;
+	};
+	1D3623240D0F684500981E51 /* ZumaAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {623, 683}}";
+			sepNavSelRange = "{279, 0}";
+			sepNavVisRange = "{0, 698}";
+			sepNavWindowFrame = "{{19, 18}, {682, 755}}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Zuma */ = {
+		activeExec = 0;
+		executables = (
+			1BA7782310F2AEB20061774B /* Zuma */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 1BA7782310F2AEB20061774B /* Zuma */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Zuma */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Zuma */,
+		);
+		codeSenseManager = 1BA7783F10F2AEB90061774B /* Code sense */;
+		executables = (
+			1BA7782310F2AEB20061774B /* Zuma */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					364,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					297,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 284548966;
+			PBXWorkspaceStateSaveDate = 284548966;
+		};
+		perUserProjectItems = {
+			1B3D693910F5DF6B0090D218 /* PBXTextBookmark */ = 1B3D693910F5DF6B0090D218 /* PBXTextBookmark */;
+			1BA7789410F584D90061774B = 1BA7789410F584D90061774B /* PBXTextBookmark */;
+			1BA7799410F5DF5D0061774B = 1BA7799410F5DF5D0061774B /* PBXTextBookmark */;
+			1BA7799510F5DF5D0061774B = 1BA7799510F5DF5D0061774B /* PlistBookmark */;
+			1BA7799610F5DF5D0061774B = 1BA7799610F5DF5D0061774B /* PBXBookmark */;
+			1BA7799710F5DF5D0061774B = 1BA7799710F5DF5D0061774B /* PBXTextBookmark */;
+			1BA7799810F5DF5D0061774B = 1BA7799810F5DF5D0061774B /* PBXTextBookmark */;
+			1BA7799910F5DF5D0061774B = 1BA7799910F5DF5D0061774B /* PBXTextBookmark */;
+		};
+		sourceControlManager = 1BA7783E10F2AEB90061774B /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {623, 683}}";
+			sepNavSelRange = "{165, 0}";
+			sepNavVisRange = "{0, 371}";
+			sepNavWindowFrame = "{{19, 18}, {682, 755}}";
+		};
+	};
+	7F94D09A0FA96C9200A02C11 /* GameStateManager.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {570, 682}}";
+			sepNavSelRange = "{120, 41}";
+			sepNavVisRange = "{0, 210}";
+			sepNavWindowFrame = "{{19, 19}, {629, 754}}";
+		};
+	};
+	7F94D09C0FA96C9200A02C11 /* GameState.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {570, 682}}";
+			sepNavSelRange = "{228, 0}";
+			sepNavVisRange = "{0, 343}";
+			sepNavWindowFrame = "{{137, 24}, {629, 754}}";
+		};
+	};
+	7F94D0B30FA96CC100A02C11 /* ResourceManager.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {677, 3444}}";
+			sepNavSelRange = "{7818, 0}";
+			sepNavVisRange = "{7648, 259}";
+		};
+	};
+	8D1107310486CEB800E47090 /* Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{19, 18}, {682, 755}}";
+		};
+	};
+	9B8D8C1010E08128005FB7EC /* gsMainMenu.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {515, 476}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 3}";
+		};
+	};
+	A17126CB10F5379000A04029 /* Zuma.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {623, 683}}";
+			sepNavSelRange = "{177, 0}";
+			sepNavVisRange = "{0, 177}";
+			sepNavWindowFrame = "{{19, 18}, {682, 755}}";
+		};
+	};
+}
