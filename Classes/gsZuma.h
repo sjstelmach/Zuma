@@ -7,10 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKIt/UIKit.h>
 #import "GameState.h"
+#import "Path.h"
+#import "Ball.h"
 
 @interface gsZuma : GameState{
-
+	Path *path;
+	Ball *ball;
 }
+
+@property (retain)Path *path;
+@property (retain)Ball *ball;
 
 @end
