@@ -1,1391 +1,0 @@
-TChapter3 Framework
-v7
-r0
-t284520903.707278
-cCheck dependencies
-cProcessInfoPlistFile "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Info.plist" Info.plist
-cCompileXIB /Users/sstelmach/Sites/Zuma/MainWindow.xib
-cCompileXIB /Users/sstelmach/Sites/Zuma/Chapter3_FrameworkViewController.xib
-cCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/tap.caf" Resources/tap.caf
-cCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/scissors.png" Resources/scissors.png
-cCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/drawregion.png" Resources/drawregion.png
-cCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/social.mp3" Resources/social.mp3
-cCompileXIB /Users/sstelmach/Sites/Zuma/Resources/gsmainmenu.xib
-cCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/coloredwheel.png" coloredwheel.png
-cProcessPCH /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH++ /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cvctuarmwlatbzdfkyuuvhdrofmt/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o" /Users/sstelmach/Sites/Zuma/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaAppDelegate.o" /Users/sstelmach/Sites/Zuma/Classes/ZumaAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaViewController.o" /Users/sstelmach/Sites/Zuma/Classes/ZumaViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o" /Users/sstelmach/Sites/Zuma/Classes/GameStateManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o" /Users/sstelmach/Sites/Zuma/Classes/GameState.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o" /Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o" /Users/sstelmach/Sites/Zuma/Classes/SoundEngine.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o" /Users/sstelmach/Sites/Zuma/Classes/gsMainMenu.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsZuma.o" /Users/sstelmach/Sites/Zuma/Classes/gsZuma.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Path.o" /Users/sstelmach/Sites/Zuma/Classes/Path.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Entity.o" /Users/sstelmach/Sites/Zuma/Classes/Entity.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Ball.o" /Users/sstelmach/Sites/Zuma/Classes/Ball.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cLd "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework" normal i386
-cGenerateDSYMFile "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM" "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework"
-cTouch "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app"
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk
-c000000004ABE051D00000000000000EE
-t1253967133
-s238
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000004A0DADCB0000000000180330
-t1242410443
-s1573680
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
-c000000004A0DADB60000000000000A22
-t1242410422
-s2594
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/CoreAudioTypes.h
-c000000004A0BAA35000000000000F342
-t1242278453
-s62274
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h
-c000000004A0BA8C00000000000004980
-t1242278080
-s18816
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004A0BAA26000000000026DB00
-t1242278438
-s2546432
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004A0BAB370000000000260C20
-t1242278711
-s2493472
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004A0BAB250000000000001355
-t1242278693
-s4949
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenAL.framework/Headers/al.h
-c000000004A0BB03100000000000064FD
-t1242279985
-s25853
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenAL.framework/Headers/alc.h
-c000000004A0BB0310000000000001F45
-t1242279985
-s8005
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenAL.framework/OpenAL
-c000000004A0BB034000000000001C730
-t1242279988
-s116528
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h
-c000000004A0BAD67000000000000094F
-t1242279271
-s2383
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h
-c000000004A0BAD670000000000000A61
-t1242279271
-s2657
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h
-c000000004A0BAD670000000000009369
-t1242279271
-s37737
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h
-c000000004A0BAD670000000000002576
-t1242279271
-s9590
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/OpenGLES.framework/OpenGLES
-c000000004A0BAD70000000000001DD70
-t1242279280
-s122224
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
-c000000004A0BADD7000000000000007D
-t1242279383
-s125
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c000000004A0BAE3400000000000E4270
-t1242279476
-s934512
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004A0CBEBB000000000000075E
-t1242349243
-s1886
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h
-c000000004A0CBEBB0000000000002AC7
-t1242349243
-s10951
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004A0CBF5F0000000001432D80
-t1242349407
-s21179776
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/usr/include/mach/mach.h
-c00000000476340E90000000000001057
-t1197687017
-s4183
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/usr/include/pthread.h
-c000000004748A133000000000000380F
-t1195942195
-s14351
-
-N/Users/sstelmach/Sites/Zuma/Chapter3_FrameworkViewController.xib
-c000000004B4281F70000000000001959
-t1262649847
-s6489
-
-N/Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch
-c000000004B300BBE00000000000000CD
-t1261439934
-s205
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/Animation.h
-c000000004B44446D00000000000004ED
-t1262765165
-s1261
-i<Foundation/Foundation.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/Animation.m
-c000000004A72671600000000000015B6
-t1249011478
-s5558
-i"Animation.h"
-i"ResourceManager.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Ball.h
-c000000004B451ECF0000000000000149
-t1262821071
-s329
-i<Foundation/Foundation.h>
-i"Entity.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Ball.m
-c000000004B452A470000000000000235
-t1262824007
-s565
-i"Ball.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkAppDelegate.h
-c000000004B42820400000000000002C8
-t1262649860
-s712
-i<UIKit/UIKit.h>
-i"ResourceManager.h"
-i"GameStateManager.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkAppDelegate.m
-c000000004B4282020000000000000DB0
-t1262649858
-s3504
-i"Chapter3_FrameworkAppDelegate.h"
-i"ZumaViewController.h"
-i"GameState.h"
-i"gsMainMenu.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkViewController.h
-c000000004B300BBE00000000000000D5
-t1261439934
-s213
-i<UIKit/UIKit.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkViewController.m
-c000000004B300BBE000000000000053A
-t1261439934
-s1338
-i"Chapter3_FrameworkViewController.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Entity.h
-c000000004B451E6300000000000000FA
-t1262820963
-s250
-i<Foundation/Foundation.h>
-i<QuartzCore/QuartzCore.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/Entity.m
-c000000004B451D2D00000000000000DB
-t1262820653
-s219
-i"Entity.h"
-i"ResourceManager.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/GLESGameState.h
-c000000004B300EF0000000000000015F
-t1261440752
-s351
-i<Foundation/Foundation.h>
-i"GameState.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/GLESGameState.m
-c000000004B300EF60000000000001547
-t1261440758
-s5447
-i"GLESGameState.h"
-i<OpenGLES/EAGLDrawable.h>
-i<QuartzCore/QuartzCore.h>
-i"ResourceManager.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/GLFont.h
-c000000004B300BBE0000000000000333
-t1261439934
-s819
-i<Foundation/Foundation.h>
-i"GLTexture.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/GLFont.m
-c000000004B300BBE00000000000015DB
-t1261439934
-s5595
-i"GLFont.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/GLTexture.h
-c000000004B300BBE000000000000124B
-t1261439934
-s4683
-i<UIKit/UIKit.h>
-i<OpenGLES/ES1/gl.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/GLTexture.m
-c000000004B300BBE0000000000002E27
-t1261439934
-s11815
-i<OpenGLES/ES1/glext.h>
-i"GLTexture.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/GameState.h
-c000000004B300BBE0000000000000157
-t1261439934
-s343
-i<UIKit/UIKit.h>
-i"GameStateManager.h"
-i<UIKit/UIView.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/GameState.m
-c000000004B45359400000000000001FF
-t1262826900
-s511
-i"GameState.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/GameStateManager.h
-c000000004B300BBE00000000000000D2
-t1261439934
-s210
-i<UIKit/UIKit.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/GameStateManager.m
-c000000004B300BBE00000000000000D0
-t1261439934
-s208
-i"GameStateManager.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Path.h
-c000000004B4510930000000000000120
-t1262817427
-s288
-i<Foundation/Foundation.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/Path.m
-c000000004B4507AA000000000000086D
-t1262815146
-s2157
-i"Path.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/ResourceManager.h
-c000000004B44459500000000000008F5
-t1262765461
-s2293
-i<OpenGLES/EAGL.h>
-i<OpenGLES/EAGLDrawable.h>
-i<OpenGLES/ES1/gl.h>
-i<OpenGLES/ES1/glext.h>
-i<Foundation/Foundation.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m
-c000000004B4445B90000000000001F35
-t1262765497
-s7989
-i"ResourceManager.h"
-i<OpenGLES/EAGLDrawable.h>
-i<QuartzCore/QuartzCore.h>
-i"SoundEngine.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Rideable.h
-c000000004A7267160000000000000166
-t1249011478
-s358
-i<Foundation/Foundation.h>
-i"Entity.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Rideable.m
-c000000004A7DFBF400000000000005BA
-t1249770484
-s1466
-i"Rideable.h"
-i"Sprite.h"
-i"TileWorld.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h
-c000000004A72671600000000000001F3
-t1249011478
-s499
-i<Foundation/Foundation.h>
-i"GLESGameState.h"
-i"Rideable.h"
-i"Croc.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m
-c000000004A77B0BE0000000000001119
-t1249358014
-s4377
-i"RiverLevel.h"
-i"ResourceManager.h"
-i"gsMainMenu.h"
-i"Entity.h"
-i"TileWorld.h"
-i"Sprite.h"
-i"Animation.h"
-i"Emu.h"
-i"Tile.h"
-i"Tom.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/SoundEngine.cpp
-c000000004B300BBE000000000000CF17
-t1261439934
-s53015
-i<AudioToolbox/AudioToolbox.h>
-i<CoreFoundation/CFURL.h>
-i<OpenAL/al.h>
-i<OpenAL/alc.h>
-i<map>
-i<vector>
-i<pthread.h>
-i<mach/mach.h>
-i"SoundEngine.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/SoundEngine.h
-c000000004B300BBE0000000000003BD9
-t1261439934
-s15321
-i<CoreAudio/CoreAudioTypes.h>
-i<AudioToolbox/AudioToolbox.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/Sprite.h
-c000000004A7267160000000000000267
-t1249011478
-s615
-i<Foundation/Foundation.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/Sprite.m
-c000000004A72671600000000000005E4
-t1249011478
-s1508
-i"Sprite.h"
-i"ResourceManager.h"
-i"Animation.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/Tile.h
-c000000004A726716000000000000022B
-t1249011478
-s555
-i<Foundation/Foundation.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/Tile.m
-c000000004A7267160000000000000293
-t1249011478
-s659
-i"Tile.h"
-i"Sprite.h"
-i"ResourceManager.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/TileWorld.h
-c000000004A7267160000000000000512
-t1249011478
-s1298
-i<Foundation/Foundation.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/TileWorld.m
-c000000004A6369CC00000000000019AE
-t1248029132
-s6574
-i"TileWorld.h"
-i"Tile.h"
-i"Sprite.h"
-i"ResourceManager.h"
-i"Entity.h"
-i"pointmath.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/ZumaAppDelegate.h
-c000000004B444AD400000000000002BA
-t1262766804
-s698
-i<UIKit/UIKit.h>
-i"ResourceManager.h"
-i"GameStateManager.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/ZumaAppDelegate.m
-c000000004B444ACF0000000000000D94
-t1262766799
-s3476
-i"ZumaAppDelegate.h"
-i"ZumaViewController.h"
-i"GameState.h"
-i"gsMainMenu.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/ZumaViewController.h
-c000000004B444AD60000000000000101
-t1262766806
-s257
-i<UIKit/UIKit.h>
-
-N/Users/sstelmach/Sites/Zuma/Classes/ZumaViewController.m
-c000000004B444AD8000000000000054A
-t1262766808
-s1354
-i"ZumaViewController.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsMainMenu.h
-c000000004B42831800000000000000F2
-t1262650136
-s242
-i<Foundation/Foundation.h>
-i"GameState.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsMainMenu.m
-c000000004B4444EF00000000000002B7
-t1262765295
-s695
-i"gsMainMenu.h"
-i"gsZuma.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsSoundTest.h
-c000000004B30141C0000000000000136
-t1261442076
-s310
-i<Foundation/Foundation.h>
-i"GameState.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsSoundTest.m
-c000000004B3022180000000000000394
-t1261445656
-s916
-i"gsSoundTest.h"
-i"ResourceManager.h"
-i"gsMainMenu.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.h
-c000000004B301878000000000000013C
-t1261443192
-s316
-i<Foundation/Foundation.h>
-i"GameState.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m
-c000000004B3021F80000000000000B82
-t1261445624
-s2946
-i"gsStorageTest.h"
-i"ResourceManager.h"
-i"gsMainMenu.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsTextureTest.h
-c000000004B300F8600000000000000D0
-t1261440902
-s208
-i<Foundation/Foundation.h>
-i"GLESGameState.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsTextureTest.m
-c000000004B3022C800000000000006CE
-t1261445832
-s1742
-i"gsTextureTest.h"
-i"ResourceManager.h"
-i"gsMainMenu.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsZuma.h
-c000000004B452EEA0000000000000177
-t1262825194
-s375
-i<Foundation/Foundation.h>
-i<UIKIt/UIKit.h>
-i"GameState.h"
-i"Path.h"
-i"Ball.h"
-
-N/Users/sstelmach/Sites/Zuma/Classes/gsZuma.m
-c000000004B453A440000000000000581
-t1262828100
-s1409
-i"gsZuma.h"
-i"gsMainMenu.h"
-i"Ball.h"
-
-N/Users/sstelmach/Sites/Zuma/MainWindow.xib
-c000000004B42821A0000000000002389
-t1262649882
-s9097
-
-N/Users/sstelmach/Sites/Zuma/Resources/drawregion.png
-c000000004B300BBE0000000000000534
-t1261439934
-s1332
-
-N/Users/sstelmach/Sites/Zuma/Resources/gsmainmenu.xib
-c000000004B42835F0000000000004511
-t1262650207
-s17681
-
-N/Users/sstelmach/Sites/Zuma/Resources/scissors.png
-c000000004B300BBE0000000000000D38
-t1261439934
-s3384
-
-N/Users/sstelmach/Sites/Zuma/Resources/social.mp3
-c000000004B300BBE0000000000057A7D
-t1261439934
-s359037
-
-N/Users/sstelmach/Sites/Zuma/Resources/soundtest.xib
-c000000004B3016D80000000000003760
-t1261442776
-s14176
-
-N/Users/sstelmach/Sites/Zuma/Resources/storagetest.xib
-c000000004B301EA00000000000002AD0
-t1261444768
-s10960
-
-N/Users/sstelmach/Sites/Zuma/Resources/tap.caf
-c000000004B300BBE000000000001A5BC
-t1261439934
-s107964
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app
-t1262828103
-s510
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM
-t1262828103
-s102
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework
-t1262828103
-s142292
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3_FrameworkViewController.nib
-t1262650210
-s1151
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Info.plist
-t1262644418
-s636
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/MainWindow.nib
-t1262650210
-s1527
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/PkgInfo
-t1262644418
-s8
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/coloredwheel.png
-t1262817449
-s403
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/drawregion.png
-t1262644418
-s1332
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/gsmainmenu.nib
-t1262650211
-s2022
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/scissors.png
-t1262644418
-s3384
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/social.mp3
-t1262644418
-s359037
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/soundtest.nib
-t1262644419
-s3279
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/storagetest.nib
-t1262644419
-s2312
-
-N/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/tap.caf
-t1262644418
-s107964
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Animation.o
-t2
-s0
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Ball.o
-t1262824408
-s10592
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3 Framework.LinkFileList
-c000000004B451CF000000000000005DA
-t1262820592
-s1498
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkAppDelegate.o
-t1262647211
-s46120
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkViewController.o
-t1262647211
-s29852
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Entity.o
-t1262820965
-s4864
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLESGameState.o
-t1262647211
-s18996
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLFont.o
-t1262647211
-s18908
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLTexture.o
-t1262647212
-s29604
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o
-t1262826922
-s10728
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o
-t1262647211
-s5748
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Path.o
-t1262817449
-s10868
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o
-t1262765498
-s23844
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Rideable.o
-t1262647288
-s12556
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/RiverLevel.o
-t2
-s0
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o
-t1262647212
-s292588
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Sprite.o
-t1262765462
-s12480
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Tile.o
-t1262647288
-s12460
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/TileWorld.o
-t2
-s0
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaAppDelegate.o
-t1262767133
-s44744
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaViewController-E38647B266C58B56.o
-t2
-s0
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaViewController.o
-t1262767133
-s29672
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o
-t1262825195
-s11896
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsSoundTest.o
-t1262650211
-s13592
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsStorageTest.o
-t1262650211
-s20020
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsTextureTest.o
-t1262650211
-s17200
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsZuma-5DFB3CB810795D4B.o
-t2
-s0
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsZuma.o
-t1262828103
-s17820
-
-N/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o
-t1262647211
-s5928
-
-N/Users/sstelmach/Sites/Zuma/coloredwheel.png
-c0000000047EEDE920000000000000193
-t1206836882
-s403
-
-N/Users/sstelmach/Sites/Zuma/main.m
-c000000004B300BBE0000000000000173
-t1261439934
-s371
-i<UIKit/UIKit.h>
-
-N/var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cetrgmrmcjrijnclcxhcphwqksze/Chapter3_Framework_Prefix.pch.gch
-t2
-s0
-
-N/var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cvctuarmwlatbzdfkyuuvhdrofmt/Chapter3_Framework_Prefix.pch.gch
-t1262647210
-s2519408
-
-N/var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch.gch
-t1262647211
-s12957072
-
-N/var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gqjdocwrdscyepffglxendtwvsng/Chapter3_Framework_Prefix.pch.gch
-t2
-s0
-
-NInfo.plist
-c000000004B300BBE00000000000003A0
-t1261439934
-s928
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies284520903#284520903#0(0"0(0#1#0"4300885448#0"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Animation.o" /Users/sstelmach/Sites/Zuma/Classes/Animation.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284458324.123428
-e284458324.187404
-r0
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Animation.o
-x/Users/sstelmach/Sites/Zuma/Classes/Animation.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m: In function '-[Animation initWithAnim:]':
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: error: 'GLTexture' undeclared (first use in this function)
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: error: (Each undeclared identifier is reported only once
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: error: for each function it appears in.)
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: error: 'tex' undeclared (first use in this function)
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: warning: 'ResourceManager' may not respond to '-getTexture:'
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: warning: (Messages without a matching method signature
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: warning: will be assumed to return 'id' and accept
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: warning: '...' as arguments.)
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m: In function '-[Animation drawAtPoint:withSequence:withFrame:]':
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:146: warning: 'ResourceManager' may not respond to '-getTexture:'
-o/Users/sstelmach/Sites/Zuma/Classes/Animation.m:153: warning: no '-drawInRect:withClip:withRotation:' method found
-o{standard input}:467:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000002$pb"
-o{standard input}:467:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression
-o{standard input}:463:non-relocatable subtraction expression, "L_OBJC_CLASS_AnimationSequence" minus "L00000000002$pb"
-o{standard input}:463:symbol: "L_OBJC_CLASS_AnimationSequence" can't be undefined in a subtraction expression
-o{standard input}:455:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"
-o{standard input}:455:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
-o{standard input}:338:non-relocatable subtraction expression, "LC11" minus "L00000000001$pb"
-o{standard input}:338:symbol: "LC11" can't be undefined in a subtraction expression
-o{standard input}:332:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000001$pb"
-o{standard input}:332:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
-o{standard input}:325:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000001$pb"
-o{standard input}:325:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
-o{standard input}:250:non-relocatable subtraction expression, "LC10" minus "L00000000001$pb"
-o{standard input}:250:symbol: "LC10" can't be undefined in a subtraction expression
-o{standard input}:225:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000001$pb"
-o{standard input}:225:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
-o{standard input}:218:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000001$pb"
-o{standard input}:218:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
-o{standard input}:188:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000001$pb"
-o{standard input}:188:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:178:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000001$pb"
-o{standard input}:178:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:171:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
-o{standard input}:171:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
-o{standard input}:160:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000001$pb"
-o{standard input}:160:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
-o{standard input}:153:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
-o{standard input}:153:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
-o{standard input}:143:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
-o{standard input}:143:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
-o{standard input}:135:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
-o{standard input}:135:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
-o{standard input}:125:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"
-o{standard input}:125:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
-o{standard input}:117:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
-o{standard input}:117:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
-o{standard input}:109:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
-o{standard input}:109:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
-o{standard input}:105:non-relocatable subtraction expression, "L_OBJC_CLASS_AnimationSequence" minus "L00000000001$pb"
-o{standard input}:105:symbol: "L_OBJC_CLASS_AnimationSequence" can't be undefined in a subtraction expression
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_AnimationSequence
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7
-o{standard input}:unknown:Undefined local symbol LC10
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8
-o{standard input}:unknown:Undefined local symbol LC11
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_10
-lSLF07#2@55"Compile /Users/sstelmach/Sites/Zuma/Classes/Animation.m284458324#284458324#0(6663"/Users/sstelmach/Sites/Zuma/Classes/Animation.m: In function '-[Animation initWithAnim:]':/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: error: 'GLTexture' undeclared (first use in this function)/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: error: (Each undeclared identifier is reported only once/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: error: for each function it appears in.)/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: error: 'tex' undeclared (first use in this function)/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: warning: 'ResourceManager' may not respond to '-getTexture:'/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: warning: (Messages without a matching method signature/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: warning: will be assumed to return 'id' and accept/Users/sstelmach/Sites/Zuma/Classes/Animation.m:74: warning: '...' as arguments.)/Users/sstelmach/Sites/Zuma/Classes/Animation.m: In function '-[Animation drawAtPoint:withSequence:withFrame:]':/Users/sstelmach/Sites/Zuma/Classes/Animation.m:146: warning: 'ResourceManager' may not respond to '-getTexture:'/Users/sstelmach/Sites/Zuma/Classes/Animation.m:153: warning: no '-drawInRect:withClip:withRotation:' method found{standard input}:467:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000002$pb"{standard input}:467:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression{standard input}:463:non-relocatable subtraction expression, "L_OBJC_CLASS_AnimationSequence" minus "L00000000002$pb"{standard input}:463:symbol: "L_OBJC_CLASS_AnimationSequence" can't be undefined in a subtraction expression{standard input}:455:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"{standard input}:455:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression{standard input}:338:non-relocatable subtraction expression, "LC11" minus "L00000000001$pb"{standard input}:338:symbol: "LC11" can't be undefined in a subtraction expression{standard input}:332:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000001$pb"{standard input}:332:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:325:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000001$pb"{standard input}:325:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:250:non-relocatable subtraction expression, "LC10" minus "L00000000001$pb"{standard input}:250:symbol: "LC10" can't be undefined in a subtraction expression{standard input}:225:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000001$pb"{standard input}:225:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:218:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000001$pb"{standard input}:218:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:188:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000001$pb"{standard input}:188:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:178:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000001$pb"{standard input}:178:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:171:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:171:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:160:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000001$pb"{standard input}:160:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:153:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:153:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:143:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"{standard input}:143:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:135:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:135:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:125:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000001$pb"{standard input}:125:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:117:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:117:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:109:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"{standard input}:109:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:105:non-relocatable subtraction expression, "L_OBJC_CLASS_AnimationSequence" minus "L00000000001$pb"{standard input}:105:symbol: "L_OBJC_CLASS_AnimationSequence" can't be undefined in a subtraction expression{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_AnimationSequence{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7{standard input}:unknown:Undefined local symbol LC10{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8{standard input}:unknown:Undefined local symbol LC11{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_106(4@51"'GLTexture' undeclared (first use in this function)284458324#91#111#0(6@47"/Users/sstelmach/Sites/Zuma/Classes/Animation.m270704278#74#0#74#0#43"'*' undeclared (first use in this function)0(4@45"'tex' undeclared (first use in this function)284458324#404#105#0(6@47"/Users/sstelmach/Sites/Zuma/Classes/Animation.m270704278#74#0#74#0#43"'*' undeclared (first use in this function)0(22@51"'ResourceManager' may not respond to '-getTexture:'284458324#509#113#0(6@47"/Users/sstelmach/Sites/Zuma/Classes/Animation.m270704278#74#0#74#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)284458324#622#107#0(6@47"/Users/sstelmach/Sites/Zuma/Classes/Animation.m270704278#74#0#74#0#0"0(22@51"'ResourceManager' may not respond to '-getTexture:'284458324#1027#114#0(6@47"/Users/sstelmach/Sites/Zuma/Classes/Animation.m270704278#146#0#146#0#26"'*' may not respond to '*'0(22@52"No '-drawInRect:withClip:withRotation:' method found284458324#1141#115#0(6@47"/Users/sstelmach/Sites/Zuma/Classes/Animation.m270704278#153#0#153#0#19"no '*' method found0(0#0#47"/Users/sstelmach/Sites/Zuma/Classes/Animation.m4300885448#1890"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/Animation.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Animation.o"1#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Ball.o" /Users/sstelmach/Sites/Zuma/Classes/Ball.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284517208.008949
-e284517208.163665
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Ball.o
-x/Users/sstelmach/Sites/Zuma/Classes/Ball.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@50"Compile /Users/sstelmach/Sites/Zuma/Classes/Ball.m284517208#284517208#0(0"0(0#0#42"/Users/sstelmach/Sites/Zuma/Classes/Ball.m4300885448#1880"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/Ball.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Ball.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkAppDelegate.o" /Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340011.621707
-e284340011.739319
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkAppDelegate.o
-x/Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkAppDelegate.m284340011#284340011#0(0"0(0#0#67"/Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkAppDelegate.m4300885448#1930"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkAppDelegate.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkAppDelegate.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkViewController.o" /Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340011.708900
-e284340011.807861
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkViewController.o
-x/Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkViewController.m284340011#284340011#0(0"0(0#0#70"/Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkViewController.m4300885448#1936"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/Chapter3_FrameworkViewController.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3_FrameworkViewController.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Entity.o" /Users/sstelmach/Sites/Zuma/Classes/Entity.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284513765.566524
-e284513765.759858
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Entity.o
-x/Users/sstelmach/Sites/Zuma/Classes/Entity.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@52"Compile /Users/sstelmach/Sites/Zuma/Classes/Entity.m284513765#284513765#0(0"0(0#0#44"/Users/sstelmach/Sites/Zuma/Classes/Entity.m4300885448#1884"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/Entity.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Entity.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLESGameState.o" /Users/sstelmach/Sites/Zuma/Classes/GLESGameState.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340011.739525
-e284340011.831049
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLESGameState.o
-x/Users/sstelmach/Sites/Zuma/Classes/GLESGameState.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/sstelmach/Sites/Zuma/Classes/GLESGameState.m284340011#284340011#0(0"0(0#0#51"/Users/sstelmach/Sites/Zuma/Classes/GLESGameState.m4300885448#1898"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/GLESGameState.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLESGameState.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLFont.o" /Users/sstelmach/Sites/Zuma/Classes/GLFont.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340011.855888
-e284340011.942881
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLFont.o
-x/Users/sstelmach/Sites/Zuma/Classes/GLFont.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@52"Compile /Users/sstelmach/Sites/Zuma/Classes/GLFont.m284340011#284340011#0(0"0(0#0#44"/Users/sstelmach/Sites/Zuma/Classes/GLFont.m4300885448#1884"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/GLFont.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLFont.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLTexture.o" /Users/sstelmach/Sites/Zuma/Classes/GLTexture.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340011.923070
-e284340012.045237
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLTexture.o
-x/Users/sstelmach/Sites/Zuma/Classes/GLTexture.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/sstelmach/Sites/Zuma/Classes/GLTexture.m284340011#284340012#0(0"0(0#0#47"/Users/sstelmach/Sites/Zuma/Classes/GLTexture.m4300885448#1890"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/GLTexture.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GLTexture.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o" /Users/sstelmach/Sites/Zuma/Classes/GameState.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284519722.298232
-e284519722.455675
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o
-x/Users/sstelmach/Sites/Zuma/Classes/GameState.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/sstelmach/Sites/Zuma/Classes/GameState.m284519722#284519722#0(0"0(0#0#47"/Users/sstelmach/Sites/Zuma/Classes/GameState.m4300885448#1890"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/GameState.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameState.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o" /Users/sstelmach/Sites/Zuma/Classes/GameStateManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340011.807972
-e284340011.855783
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o
-x/Users/sstelmach/Sites/Zuma/Classes/GameStateManager.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/sstelmach/Sites/Zuma/Classes/GameStateManager.m284340011#284340011#0(0"0(0#0#54"/Users/sstelmach/Sites/Zuma/Classes/GameStateManager.m4300885448#1904"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/GameStateManager.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/GameStateManager.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Path.o" /Users/sstelmach/Sites/Zuma/Classes/Path.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284510249.609253
-e284510249.672724
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Path.o
-x/Users/sstelmach/Sites/Zuma/Classes/Path.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@50"Compile /Users/sstelmach/Sites/Zuma/Classes/Path.m284510249#284510249#0(0"0(0#0#42"/Users/sstelmach/Sites/Zuma/Classes/Path.m4300885448#1880"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/Path.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Path.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o" /Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284458298.232667
-e284458298.398669
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o
-x/Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m: In function '+[ResourceManager directoryMasher]':
-o/Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m:238: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:357)
-lSLF07#2@61"Compile /Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m284458298#284458298#0(383"/Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m: In function '+[ResourceManager directoryMasher]':/Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m:238: warning: 'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:357)1(22@209"'stringWithContentsOfFile:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:357)284458298#105#278#0(6@53"/Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m284458297#238#0#238#0#33"'*' is deprecated (declared at *)0(0#0#53"/Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m4300885448#1902"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/ResourceManager.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ResourceManager.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Rideable.o" /Users/sstelmach/Sites/Zuma/Classes/Rideable.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340088.273708
-e284340088.350349
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Rideable.o
-x/Users/sstelmach/Sites/Zuma/Classes/Rideable.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@54"Compile /Users/sstelmach/Sites/Zuma/Classes/Rideable.m284340088#284340088#0(0"0(0#0#46"/Users/sstelmach/Sites/Zuma/Classes/Rideable.m4300885448#1888"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/Rideable.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Rideable.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/RiverLevel.o" /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340088.349367
-e284340088.468753
-r0
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/RiverLevel.o
-x/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:9:
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h:12:17: error: Croc.h: No such file or directory
-oIn file included from /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:9:
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h:25: error: expected specifier-qualifier-list before 'Croc'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:16:16: error: Emu.h: No such file or directory
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:18:16: error: Tom.h: No such file or directory
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel setupWorld]':
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:27: warning: receiver 'Tom' is a forward class and corresponding @interface may not exist
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:28: warning: incompatible Objective-C types 'struct Tom *', expected 'struct Entity *' when passing argument 1 of 'addEntity:' from distinct Objective-C type
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:63: error: 'croc' undeclared (first use in this function)
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:63: error: (Each undeclared identifier is reported only once
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:63: error: for each function it appears in.)
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:63: error: 'Croc' undeclared (first use in this function)
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:98: error: request for member 'position' in something not a structure or union
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel Update]':
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:110: error: 'croc' undeclared (first use in this function)
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:111: error: request for member 'inJump' in something not a structure or union
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:111: error: request for member 'position' in something not a structure or union
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:114: warning: no '-dieWithAnimation:' method found
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:114: warning: (Messages without a matching method signature
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:114: warning: will be assumed to return 'id' and accept
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:114: warning: '...' as arguments.)
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:115: warning: 'GLESGameState' may not respond to '-onFail'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:119: error: request for member 'riding' in something not a structure or union
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:119: error: request for member 'riding' in something not a structure or union
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:120: warning: no '-dieWithAnimation:' method found
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:121: warning: 'GLESGameState' may not respond to '-onFail'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:125: error: request for member 'position' in something not a structure or union
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:126: error: request for member 'celebrating' in something not a structure or union
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:127: warning: 'GLESGameState' may not respond to '-onWin:'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:134: warning: 'GLESGameState' may not respond to '-updateEndgame:'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel Render]':
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:146: warning: 'GLESGameState' may not respond to '-renderEndgame'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel touchesEnded:withEvent:]':
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:163: warning: 'RiverLevel' may not respond to '-touchPosition:'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:163: error: incompatible type for argument 1 of 'worldPosition:'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:164: error: request for member 'position' in something not a structure or union
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:166: warning: no '-jump' method found
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:168: warning: no '-inJump' method found
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:170: warning: 'RiverLevel' may not respond to '-touchPosition:'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:170: error: incompatible type for argument 1 of 'worldPosition:'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:170: warning: no '-moveToPosition:' method found
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:172: warning: 'GLESGameState' may not respond to '-touchEndgame'
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel dealloc]':
-o/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:182: error: 'croc' undeclared (first use in this function)
-lSLF07#2@56"Compile /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m284340088#284340088#0(4900"In file included from /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:9:/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h:12:17: error: Croc.h: No such file or directoryIn file included from /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:9:/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h:25: error: expected specifier-qualifier-list before 'Croc'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:16:16: error: Emu.h: No such file or directory/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:18:16: error: Tom.h: No such file or directory/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel setupWorld]':/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:27: warning: receiver 'Tom' is a forward class and corresponding @interface may not exist/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:28: warning: incompatible Objective-C types 'struct Tom *', expected 'struct Entity *' when passing argument 1 of 'addEntity:' from distinct Objective-C type/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:63: error: 'croc' undeclared (first use in this function)/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:63: error: (Each undeclared identifier is reported only once/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:63: error: for each function it appears in.)/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:63: error: 'Croc' undeclared (first use in this function)/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:98: error: request for member 'position' in something not a structure or union/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel Update]':/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:110: error: 'croc' undeclared (first use in this function)/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:111: error: request for member 'inJump' in something not a structure or union/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:111: error: request for member 'position' in something not a structure or union/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:114: warning: no '-dieWithAnimation:' method found/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:114: warning: (Messages without a matching method signature/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:114: warning: will be assumed to return 'id' and accept/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:114: warning: '...' as arguments.)/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:115: warning: 'GLESGameState' may not respond to '-onFail'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:119: error: request for member 'riding' in something not a structure or union/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:119: error: request for member 'riding' in something not a structure or union/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:120: warning: no '-dieWithAnimation:' method found/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:121: warning: 'GLESGameState' may not respond to '-onFail'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:125: error: request for member 'position' in something not a structure or union/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:126: error: request for member 'celebrating' in something not a structure or union/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:127: warning: 'GLESGameState' may not respond to '-onWin:'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:134: warning: 'GLESGameState' may not respond to '-updateEndgame:'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel Render]':/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:146: warning: 'GLESGameState' may not respond to '-renderEndgame'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel touchesEnded:withEvent:]':/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:163: warning: 'RiverLevel' may not respond to '-touchPosition:'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:163: error: incompatible type for argument 1 of 'worldPosition:'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:164: error: request for member 'position' in something not a structure or union/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:166: warning: no '-jump' method found/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:168: warning: no '-inJump' method found/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:170: warning: 'RiverLevel' may not respond to '-touchPosition:'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:170: error: incompatible type for argument 1 of 'worldPosition:'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:170: warning: no '-moveToPosition:' method found/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:172: warning: 'GLESGameState' may not respond to '-touchEndgame'/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m: In function '-[RiverLevel dealloc]':/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m:182: error: 'croc' undeclared (first use in this function)34(4@33"Croc.h: No such file or directory284340088#74#97#2(7@70"In file included from /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m284340088#18446744073709551615#0#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#9#0#9#0#0"0(13@85"Croc.h: No such file or directory in /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h284340088#18446744073709551615#0#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h270704278#12#0#12#0#0"0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h270704278#12#0#12#0#28"*: No such file or directory0(4@47"Expected specifier-qualifier-list before 'Croc'284340088#245#108#2(7@70"In file included from /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m284340088#18446744073709551615#0#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#9#0#9#0#0"0(13@99"Expected specifier-qualifier-list before 'Croc' in /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h284340088#18446744073709551615#0#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h270704278#25#0#25#0#0"0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.h270704278#25#0#25#0#19"expected * before *0(4@32"Emu.h: No such file or directory284340088#353#96#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#16#0#16#0#28"*: No such file or directory0(4@32"Tom.h: No such file or directory284340088#449#96#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#18#0#18#0#28"*: No such file or directory0(22@76"Receiver 'Tom' is a forward class and corresponding @interface may not exist284340088#635#139#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#27#0#27#0#0"0(22@144"Incompatible Objective-C types 'struct Tom *', expected 'struct Entity *' when passing argument 1 of 'addEntity:' from distinct Objective-C type284340088#774#207#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#28#0#28#0#0"0(4@46"'croc' undeclared (first use in this function)284340088#981#107#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#63#0#63#0#43"'*' undeclared (first use in this function)0(4@46"'Croc' undeclared (first use in this function)284340088#1292#107#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#63#0#63#0#43"'*' undeclared (first use in this function)0(4@67"Request for member 'position' in something not a structure or union284340088#1399#128#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#98#0#98#0#0"0(4@46"'croc' undeclared (first use in this function)284340088#1613#108#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#110#0#110#0#43"'*' undeclared (first use in this function)0(4@65"Request for member 'inJump' in something not a structure or union284340088#1721#127#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#111#0#111#0#0"0(4@67"Request for member 'position' in something not a structure or union284340088#1848#129#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#111#0#111#0#0"0(22@36"No '-dieWithAnimation:' method found284340088#1977#100#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#114#0#114#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)284340088#2077#109#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#114#0#114#0#0"0(22@44"'GLESGameState' may not respond to '-onFail'284340088#2375#108#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#115#0#115#0#26"'*' may not respond to '*'0(4@65"Request for member 'riding' in something not a structure or union284340088#2483#127#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#119#0#119#0#0"0(4@65"Request for member 'riding' in something not a structure or union284340088#2610#127#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#119#0#119#0#0"0(22@36"No '-dieWithAnimation:' method found284340088#2737#100#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#120#0#120#0#19"no '*' method found0(22@44"'GLESGameState' may not respond to '-onFail'284340088#2837#108#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#121#0#121#0#26"'*' may not respond to '*'0(4@67"Request for member 'position' in something not a structure or union284340088#2945#129#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#125#0#125#0#0"0(4@70"Request for member 'celebrating' in something not a structure or union284340088#3074#132#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#126#0#126#0#0"0(22@44"'GLESGameState' may not respond to '-onWin:'284340088#3206#108#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#127#0#127#0#26"'*' may not respond to '*'0(22@52"'GLESGameState' may not respond to '-updateEndgame:'284340088#3314#116#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#134#0#134#0#26"'*' may not respond to '*'0(22@51"'GLESGameState' may not respond to '-renderEndgame'284340088#3516#115#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#146#0#146#0#26"'*' may not respond to '*'0(22@49"'RiverLevel' may not respond to '-touchPosition:'284340088#3734#113#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#163#0#163#0#26"'*' may not respond to '*'0(4@52"Incompatible type for argument 1 of 'worldPosition:'284340088#3847#114#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#163#0#163#0#0"0(4@67"Request for member 'position' in something not a structure or union284340088#3961#129#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#164#0#164#0#0"0(22@23"No '-jump' method found284340088#4090#87#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#166#0#166#0#19"no '*' method found0(22@25"No '-inJump' method found284340088#4177#89#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#168#0#168#0#19"no '*' method found0(22@49"'RiverLevel' may not respond to '-touchPosition:'284340088#4266#113#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#170#0#170#0#26"'*' may not respond to '*'0(4@52"Incompatible type for argument 1 of 'worldPosition:'284340088#4379#114#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#170#0#170#0#0"0(22@34"No '-moveToPosition:' method found284340088#4493#98#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#170#0#170#0#19"no '*' method found0(22@50"'GLESGameState' may not respond to '-touchEndgame'284340088#4591#114#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#172#0#172#0#26"'*' may not respond to '*'0(4@46"'croc' undeclared (first use in this function)284340088#4792#108#0(6@48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m271050814#182#0#182#0#43"'*' undeclared (first use in this function)0(0#0#48"/Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m4300885448#1892"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/RiverLevel.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/RiverLevel.o"1#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o" /Users/sstelmach/Sites/Zuma/Classes/SoundEngine.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-s284340012.045345
-e284340012.797746
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o
-x/Users/sstelmach/Sites/Zuma/Classes/SoundEngine.cpp
-xnormal
-xi386
-xc++
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/sstelmach/Sites/Zuma/Classes/SoundEngine.cpp284340012#284340012#0(0"0(0#0#51"/Users/sstelmach/Sites/Zuma/Classes/SoundEngine.cpp4300885448#1907"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cvctuarmwlatbzdfkyuuvhdrofmt/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/SoundEngine.cpp -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/SoundEngine.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Sprite.o" /Users/sstelmach/Sites/Zuma/Classes/Sprite.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284458262.764999
-e284458262.833999
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Sprite.o
-x/Users/sstelmach/Sites/Zuma/Classes/Sprite.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@52"Compile /Users/sstelmach/Sites/Zuma/Classes/Sprite.m284458262#284458262#0(0"0(0#0#44"/Users/sstelmach/Sites/Zuma/Classes/Sprite.m4300885448#1884"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/Sprite.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Sprite.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Tile.o" /Users/sstelmach/Sites/Zuma/Classes/Tile.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340088.350418
-e284340088.423718
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Tile.o
-x/Users/sstelmach/Sites/Zuma/Classes/Tile.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@50"Compile /Users/sstelmach/Sites/Zuma/Classes/Tile.m284340088#284340088#0(0"0(0#0#42"/Users/sstelmach/Sites/Zuma/Classes/Tile.m4300885448#1880"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/Tile.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Tile.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/TileWorld.o" /Users/sstelmach/Sites/Zuma/Classes/TileWorld.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340088.423822
-e284340088.519555
-r0
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/TileWorld.o
-x/Users/sstelmach/Sites/Zuma/Classes/TileWorld.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/sstelmach/Sites/Zuma/Classes/TileWorld.m:14:22: error: pointmath.h: No such file or directory
-lSLF07#2@55"Compile /Users/sstelmach/Sites/Zuma/Classes/TileWorld.m284340088#284340088#0(101"/Users/sstelmach/Sites/Zuma/Classes/TileWorld.m:14:22: error: pointmath.h: No such file or directory1(4@38"Pointmath.h: No such file or directory284340088#0#101#0(6@47"/Users/sstelmach/Sites/Zuma/Classes/TileWorld.m269721932#14#0#14#0#28"*: No such file or directory0(0#0#47"/Users/sstelmach/Sites/Zuma/Classes/TileWorld.m4300885448#1890"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/TileWorld.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/TileWorld.o"1#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaAppDelegate.o" /Users/sstelmach/Sites/Zuma/Classes/ZumaAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284459933.583525
-e284459933.677694
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaAppDelegate.o
-x/Users/sstelmach/Sites/Zuma/Classes/ZumaAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/sstelmach/Sites/Zuma/Classes/ZumaAppDelegate.m284459933#284459933#0(0"0(0#0#53"/Users/sstelmach/Sites/Zuma/Classes/ZumaAppDelegate.m4300885448#1902"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/ZumaAppDelegate.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaAppDelegate.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaViewController-E38647B266C58B56.o" /Users/sstelmach/Sites/Zuma/Classes/ZumaViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaViewController.o" /Users/sstelmach/Sites/Zuma/Classes/ZumaViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284459933.584398
-e284459933.646125
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaViewController.o
-x/Users/sstelmach/Sites/Zuma/Classes/ZumaViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/sstelmach/Sites/Zuma/Classes/ZumaViewController.m284459933#284459933#0(0"0(0#0#56"/Users/sstelmach/Sites/Zuma/Classes/ZumaViewController.m4300885448#1908"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/ZumaViewController.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/ZumaViewController.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o" /Users/sstelmach/Sites/Zuma/Classes/gsMainMenu.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284517995.541394
-e284517995.663240
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o
-x/Users/sstelmach/Sites/Zuma/Classes/gsMainMenu.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@56"Compile /Users/sstelmach/Sites/Zuma/Classes/gsMainMenu.m284517995#284517995#0(0"0(0#0#48"/Users/sstelmach/Sites/Zuma/Classes/gsMainMenu.m4300885448#1892"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/gsMainMenu.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsMainMenu.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsSoundTest.o" /Users/sstelmach/Sites/Zuma/Classes/gsSoundTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284343011.238105
-e284343011.349914
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsSoundTest.o
-x/Users/sstelmach/Sites/Zuma/Classes/gsSoundTest.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/sstelmach/Sites/Zuma/Classes/gsSoundTest.m284343011#284343011#0(0"0(0#0#49"/Users/sstelmach/Sites/Zuma/Classes/gsSoundTest.m4300885448#1894"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/gsSoundTest.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsSoundTest.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsStorageTest.o" /Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284343011.313927
-e284343011.422441
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsStorageTest.o
-x/Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m: In function '-[gsStorageTest log:]':
-o/Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m:44: warning: format not a string literal and no format arguments
-lSLF07#2@59"Compile /Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m284343011#284343011#0(207"/Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m: In function '-[gsStorageTest log:]':/Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m:44: warning: format not a string literal and no format arguments1(22@51"Format not a string literal and no format arguments284343011#90#117#0(6@51"/Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m283138424#44#0#44#0#51"format not a string literal and no format arguments0(0#0#51"/Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m4300885448#1898"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/gsStorageTest.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsStorageTest.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsTextureTest.o" /Users/sstelmach/Sites/Zuma/Classes/gsTextureTest.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284343011.152277
-e284343011.313813
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsTextureTest.o
-x/Users/sstelmach/Sites/Zuma/Classes/gsTextureTest.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/sstelmach/Sites/Zuma/Classes/gsTextureTest.m284343011#284343011#0(0"0(0#0#51"/Users/sstelmach/Sites/Zuma/Classes/gsTextureTest.m4300885448#1898"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/gsTextureTest.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsTextureTest.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsZuma-5DFB3CB810795D4B.o" /Users/sstelmach/Sites/Zuma/Classes/gsZuma.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsZuma.o" /Users/sstelmach/Sites/Zuma/Classes/gsZuma.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284520903.409309
-e284520903.606637
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsZuma.o
-x/Users/sstelmach/Sites/Zuma/Classes/gsZuma.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@52"Compile /Users/sstelmach/Sites/Zuma/Classes/gsZuma.m284520903#284520903#0(0"0(0#0#44"/Users/sstelmach/Sites/Zuma/Classes/gsZuma.m4300885448#1884"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/Classes/gsZuma.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/gsZuma.o"0#
-
-CCompileC "build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o" /Users/sstelmach/Sites/Zuma/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340011.620732
-e284340011.708799
-r1
-xCompileC
-xbuild/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o
-x/Users/sstelmach/Sites/Zuma/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@42"Compile /Users/sstelmach/Sites/Zuma/main.m284340011#284340011#0(0"0(0#0#34"/Users/sstelmach/Sites/Zuma/main.m4300885448#1872"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -include /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch -c /Users/sstelmach/Sites/Zuma/main.m -o "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/main.o"0#
-
-CCompileXIB /Users/sstelmach/Sites/Zuma/Chapter3_FrameworkViewController.xib
-s284343010.008174
-e284343010.736904
-r1
-xCompileXIB
-x/Users/sstelmach/Sites/Zuma/Chapter3_FrameworkViewController.xib
-lSLF07#2@47"CompileXIB Chapter3_FrameworkViewController.xib284343010#284343010#0(0"0(0#0#64"/Users/sstelmach/Sites/Zuma/Chapter3_FrameworkViewController.xib4300885448#504"    cd /Users/sstelmach/Sites/Zuma    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3_FrameworkViewController.nib" /Users/sstelmach/Sites/Zuma/Chapter3_FrameworkViewController.xib0#
-
-CCompileXIB /Users/sstelmach/Sites/Zuma/MainWindow.xib
-s284343010.007510
-e284343010.748856
-r1
-xCompileXIB
-x/Users/sstelmach/Sites/Zuma/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib284343010#284343010#0(0"0(0#0#42"/Users/sstelmach/Sites/Zuma/MainWindow.xib4300885448#460"    cd /Users/sstelmach/Sites/Zuma    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/MainWindow.nib" /Users/sstelmach/Sites/Zuma/MainWindow.xib0#
-
-CCompileXIB /Users/sstelmach/Sites/Zuma/Resources/gsmainmenu.xib
-s284343010.737173
-e284343011.047654
-r1
-xCompileXIB
-x/Users/sstelmach/Sites/Zuma/Resources/gsmainmenu.xib
-lSLF07#2@35"CompileXIB Resources/gsmainmenu.xib284343010#284343011#0(0"0(0#0#52"/Users/sstelmach/Sites/Zuma/Resources/gsmainmenu.xib4300885448#470"    cd /Users/sstelmach/Sites/Zuma    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/gsmainmenu.nib" /Users/sstelmach/Sites/Zuma/Resources/gsmainmenu.xib0#
-
-CCompileXIB /Users/sstelmach/Sites/Zuma/Resources/soundtest.xib
-r0
-
-CCompileXIB /Users/sstelmach/Sites/Zuma/Resources/storagetest.xib
-r0
-
-CCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/coloredwheel.png" coloredwheel.png
-s284510249.471515
-e284510249.530815
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/Chapter3 Framework.app/coloredwheel.png
-xcoloredwheel.png
-lSLF07#2@21"Copy coloredwheel.png284510249#284510249#0(0"0(0#0#44"/Users/sstelmach/Sites/Zuma/coloredwheel.png4300885448#440"    cd /Users/sstelmach/Sites/Zuma    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/sstelmach/Sites/Zuma/coloredwheel.png "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app"0#
-
-CCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/drawregion.png" Resources/drawregion.png
-r0
-
-CCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/scissors.png" Resources/scissors.png
-r0
-
-CCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/social.mp3" Resources/social.mp3
-r0
-
-CCpResource "build/Debug-iphonesimulator/Chapter3 Framework.app/tap.caf" Resources/tap.caf
-r0
-
-CGenerateDSYMFile "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM" "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework"
-s284520903.657236
-e284520903.684595
-r1
-xGenerateDSYMFile
-x/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM
-x/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework
-lSLF07#2@146"GenerateDSYMFile "build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM" "build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework"284520903#284520903#0(0"0(0#0#97"/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework4300885448#387"    cd /Users/sstelmach/Sites/Zuma    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework" -o "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app.dSYM"0#
-
-CLd "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework" normal i386
-s284520903.606775
-e284520903.656855
-r1
-xLd
-x/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework
-xnormal
-xi386
-lSLF07#2@102"Link /Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework284520903#284520903#0(0"0(0#0#0"4300885448#916"    cd /Users/sstelmach/Sites/Zuma    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -L/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -filelist "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Objects-normal/i386/Chapter3 Framework.LinkFileList" -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -framework QuartzCore -framework OpenAL -o "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Chapter3 Framework"0#
-
-CProcessInfoPlistFile "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app/Info.plist" Info.plist
-r0
-
-CProcessPCH /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cetrgmrmcjrijnclcxhcphwqksze/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s284505964.731526
-e284505964.764754
-r0
-xProcessPCH
-x/var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cetrgmrmcjrijnclcxhcphwqksze/Chapter3_Framework_Prefix.pch.gch
-xChapter3_Framework_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oi686-apple-darwin10-gcc-4.2.1: /Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch: No such file or directory
-oi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c-header' after last input file has no effect
-oi686-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@40"Precompile Chapter3_Framework_Prefix.pch284505964#284505964#0(366"i686-apple-darwin10-gcc-4.2.1: /Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c-header' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@103"Command /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1284505964#18446744073709551615#0#0(1@0"0(0#0#57"/Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch7512900776271111168#1776"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -c /Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch -o /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cetrgmrmcjrijnclcxhcphwqksze/Chapter3_Framework_Prefix.pch.gch1#
-
-CProcessPCH /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s284340010.213070
-e284340011.620617
-r1
-xProcessPCH
-x/var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch.gch
-xChapter3_Framework_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@40"Precompile Chapter3_Framework_Prefix.pch284340010#284340011#0(0"0(0#0#57"/Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch7512900776271111168#1776"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -c /Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch -o /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cxhulxsjqpwllbcksccvjeebgecm/Chapter3_Framework_Prefix.pch.gch0#
-
-CProcessPCH++ /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cvctuarmwlatbzdfkyuuvhdrofmt/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 c++ com.apple.compilers.gcc.4_2
-s284340010.216686
-e284340010.656230
-r1
-xProcessPCH++
-x/var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cvctuarmwlatbzdfkyuuvhdrofmt/Chapter3_Framework_Prefix.pch.gch
-xChapter3_Framework_Prefix.pch
-xnormal
-xi386
-xc++
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@40"Precompile Chapter3_Framework_Prefix.pch284340010#284340010#0(0"0(0#0#57"/Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch4300885448#1787"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -c /Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch -o /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-cvctuarmwlatbzdfkyuuvhdrofmt/Chapter3_Framework_Prefix.pch.gch0#
-
-CProcessPCH++ /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gqjdocwrdscyepffglxendtwvsng/Chapter3_Framework_Prefix.pch.gch Chapter3_Framework_Prefix.pch normal i386 c++ com.apple.compilers.gcc.4_2
-s284505964.759492
-e284505964.765104
-r0
-xProcessPCH++
-x/var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gqjdocwrdscyepffglxendtwvsng/Chapter3_Framework_Prefix.pch.gch
-xChapter3_Framework_Prefix.pch
-xnormal
-xi386
-xc++
-xcom.apple.compilers.gcc.4_2
-oi686-apple-darwin10-gcc-4.2.1: /Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch: No such file or directory
-oi686-apple-darwin10-gcc-4.2.1: warning: '-x c++-header' after last input file has no effect
-oi686-apple-darwin10-gcc-4.2.1: no input files
-lSLF07#2@40"Precompile Chapter3_Framework_Prefix.pch284505964#284505964#0(358"i686-apple-darwin10-gcc-4.2.1: /Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x c++-header' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@103"Command /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1284505964#18446744073709551615#0#0(1@0"0(0#0#57"/Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch4300885448#1787"    cd /Users/sstelmach/Sites/Zuma    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.0.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-generated-files.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-own-target-headers.hmap" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-all-target-headers.hmap" -iquote "/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/Chapter3 Framework-project-headers.hmap" -F/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator -I/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/include "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources/i386" "-I/Users/sstelmach/Sites/Zuma/build/Zuma.build/Debug-iphonesimulator/Chapter3 Framework.build/DerivedSources" -c /Users/sstelmach/Sites/Zuma/Chapter3_Framework_Prefix.pch -o /var/folders/jd/jdYaFMyWFTuRIuBUX8JMIk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Chapter3_Framework_Prefix-gqjdocwrdscyepffglxendtwvsng/Chapter3_Framework_Prefix.pch.gch1#
-
-CTouch "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app"
-s284520903.684677
-e284520903.707177
-r1
-xTouch
-x/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app
-lSLF07#2@84"Touch /Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app284520903#284520903#0(0"0(0#0#0"4300885448#269"    cd /Users/sstelmach/Sites/Zuma    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/sstelmach/Sites/Zuma/build/Debug-iphonesimulator/Chapter3 Framework.app"0#
-
