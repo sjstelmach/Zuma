@@ -141,8 +141,6 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1BA7797410F5DE330061774B /* coloredwheel.png */,
-				9B8D8BBB10E074BB005FB7EC /* social.mp3 */,
 				7F94D1020FA96EE900A02C11 /* Textures */,
 				7F94D1010FA96EE300A02C11 /* Sounds */,
 				2899E5210DE3E06400AC0155 /* Zuma.xib */,
@@ -197,6 +195,7 @@
 		7F94D1010FA96EE300A02C11 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				9B8D8BBB10E074BB005FB7EC /* social.mp3 */,
 				7F94D0740FA96BDA00A02C11 /* tap.caf */,
 			);
 			name = Sounds;
@@ -205,6 +204,7 @@
 		7F94D1020FA96EE900A02C11 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				1BA7797410F5DE330061774B /* coloredwheel.png */,
 				7F94D0760FA96BDA00A02C11 /* scissors.png */,
 				7F94D07A0FA96BDA00A02C11 /* drawregion.png */,
 			);

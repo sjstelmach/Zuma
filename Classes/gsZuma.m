@@ -15,10 +15,12 @@
 	self = [super initWithFrame:frame andManager:pManager];
 	
 	Path * tPath = [[Path alloc] init];
-	[tPath createSquiqqlePath:300 bounds:self.bounds];
+	[tPath createSquiqqlePath:300 
+					   bounds:self.bounds];
 	[self setPath: tPath];
 
-	Ball *tBall = [[Ball alloc] initWithColor:[UIColor blueColor]];
+	Ball *tBall = [[Ball alloc] initWithColor:[UIColor blueColor] 
+										atPos: CGPointMake(50.0f, 50.0f)];
 	[self setBall:tBall];
 	[self.layer addSublayer:ball];
 	

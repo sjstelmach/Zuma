@@ -10,7 +10,7 @@
 	NSArray* _points;
 }
 
-- (CGPathRef)path;
+- (CGPathRef)path; // expose the CGPathRef obj
 - (void)setPath:(CGPathRef)value;
 - (void)drawPath:(CGContextRef)context;
 - (void)createSquiqqlePath:(int)size bounds:(CGRect)bounds;
