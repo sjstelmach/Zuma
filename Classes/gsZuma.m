@@ -1,5 +1,6 @@
 //
 //  gsZuma.m
+//  game state in which you actually play teh zuma
 //
 
 #import "gsZuma.h"
@@ -8,7 +9,7 @@
 
 @implementation gsZuma
 
-@synthesize path, ball;
+//@synthesize path, ball;
 
 -(gsZuma*) initWithFrame:(CGRect)frame andManager:(GameStateManager*)pManager 
 {
@@ -17,11 +18,11 @@
 	Path * tPath = [[Path alloc] init];
 	[tPath createSquiqqlePath:300 
 					   bounds:self.bounds];
-	[self setPath: tPath];
+	path = tPath;
 
 	Ball *tBall = [[Ball alloc] initWithColor:[UIColor blueColor] 
 										atPos: CGPointMake(50.0f, 50.0f)];
-	[self setBall:tBall];
+	ball = tBall;
 	[self.layer addSublayer:ball];
 	
 	[self setNeedsDisplay];

@@ -17,7 +17,4 @@
 	Ball *ball;
 }
 
-@property (retain)Path *path;
-@property (retain)Ball *ball;
-
 @end

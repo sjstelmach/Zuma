@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B03159410F69B2800C0F295 /* DirectedPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B03159310F69B2800C0F295 /* DirectedPath.m */; };
 		1BA7797510F5DE330061774B /* coloredwheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BA7797410F5DE330061774B /* coloredwheel.png */; };
 		1D3623260D0F684500981E51 /* ZumaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ZumaAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -36,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B03159210F69B2800C0F295 /* DirectedPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectedPath.h; sourceTree = "<group>"; };
+		1B03159310F69B2800C0F295 /* DirectedPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectedPath.m; sourceTree = "<group>"; };
 		1BA7797410F5DE330061774B /* coloredwheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coloredwheel.png; path = Resources/coloredwheel.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* ZumaAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZumaAppDelegate.h; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				A13E3FED10F4873E0077380A /* Path.m */,
 				A171279810F5540100A04029 /* Ball.h */,
 				A171279910F5540100A04029 /* Ball.m */,
+				1B03159210F69B2800C0F295 /* DirectedPath.h */,
+				1B03159310F69B2800C0F295 /* DirectedPath.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -294,6 +299,7 @@
 				A13E3FEE10F4873E0077380A /* Path.m in Sources */,
 				A171279410F5530200A04029 /* Entity.m in Sources */,
 				A171279A10F5540100A04029 /* Ball.m in Sources */,
+				1B03159410F69B2800C0F295 /* DirectedPath.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
