@@ -82,36 +82,44 @@ float EPISLON = 0.00001;
 
 @implementation ArcSegment
 
+
+/* angle between 2 vectors */
+float angleBetween(CGPoint v1, CGPoint v2)
+{
+    return atan2(v2.y, v2.x) - atan2(v1.y, v1.x);
+}
+
 - (ArcSegment *) initWithStart: (CGPoint) st 
-						withEnd: (CGPoint) ed 
-					 withOrigin: (CGPoint) cent
-				   andIsClockwise: (Boolean) dir
+					   withEnd: (CGPoint) ed 
+					withRadius: (CGFloat) rad
+				andIsClockwise: (Boolean) dir
 {
 	if (self = [super init]) {
 		startPoint = st;
 		endPoint = ed;
-		clockwise = dir;
-		center = cent;
-			// ensure that the circle is properly specified
-		float d1 = CGPointDistSquared(st, cent);
-		float d2 = CGPointDistSquared(ed, cent);
-		if (d1 - d2 < EPISLON) {
-			[self dealloc];
-			return nil;
+		clockwise = dir ? -1 : 1;
+		
+		// from http://www.sonoma.edu/users/w/wilsonst/Papers/Geometry/circles/default.html
+		CGFloat d = sqrt(CGPointDistSquared(startPoint, endPoint));
+		CGFloat inSquareroot = sqrt((pow(2*rad,2)-pow(d,2))*pow(d,2));
+		CGFloat plusMinus = (endPoint.y - startPoint.y)/(2*pow(d,2))*inSquareroot;
+		CGFloat minusPlus = (endPoint.x - startPoint.x)/(2*pow(d,2))*inSquareroot;
+		CGPoint origin1 = CGPointMake((startPoint.x + endPoint.x)/2 + plusMinus,
+									  (startPoint.y + endPoint.y)/2 - minusPlus);
+		CGPoint origin2 = CGPointMake((startPoint.x + endPoint.x)/2 - plusMinus,
+									  (startPoint.y + endPoint.y)/2 + minusPlus);
+		// if sign matches
+		if(angleBetween(startPoint, endPoint)/dir > 0){
+			center = origin1;
 		}
-		radius = sqrt(d1);
-		CGPoint v1 = CGPointMake((st.x - cent.x) / radius,
-								 (st.y - cent.y) / radius);
-		CGPoint v2 = CGPointMake((ed.x - cent.x) / radius,
-								 (ed.y - cent.y) / radius);
-		angle = acos(v1.x * v2.x + v1.y * v2.y);
+		else {
+			center = origin2;
+		}
 	}
 	return self;
 }
-
+								 
 @end
-
-
 
 @implementation DirectedPath
 

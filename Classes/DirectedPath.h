@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <math.h>
 
 inline float CGPointDistSquared(CGPoint p1, CGPoint p2);
 
@@ -49,7 +50,7 @@ inline float CGPointDistSquared(CGPoint p1, CGPoint p2);
 
 - (ArcSegment *) initWithStart: (CGPoint) st 
 					   withEnd: (CGPoint) ed 
-					withRadius: (CGPoint) rad
+					withRadius: (CGFloat) rad
 				andIsClockwise: (Boolean) dir;
 
 @end
