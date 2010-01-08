@@ -24,7 +24,6 @@
 	float dashes[2] = {3,6};
 	CGContextAddPath(context, _path);
 	CGContextSetLineWidth(context, 1.0);
-	CGContextSetLineDash(context, 0, dashes, 2);
 	CGContextStrokePath(context);
 }
 

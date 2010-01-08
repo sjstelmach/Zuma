@@ -6,6 +6,7 @@
 #import "gsZuma.h"
 #import "gsMainMenu.h"
 #import "Ball.h"
+#import "DirectedPath.h"
 
 @implementation gsZuma
 
@@ -41,12 +42,16 @@
 	//fill background with blue
 	CGContextSetFillColorWithColor(g, [UIColor blackColor].CGColor);
 	CGContextFillRect(g, CGRectMake(0, 0, self.frame.size.width, self.frame.size.height));
-	[path drawPath:g];	
+
+	CGPoint start = CGPointMake(50, 250);
+	CGPoint end = CGPointMake(100, 350);
+	ArcSegment *arc = [[ArcSegment alloc] initWithStart:start withEnd:end withRadius: 56 andIsClockwise:YES];
+	[arc draw];
 }
 
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-	CAKeyframeAnimation *animation;
+	/*CAKeyframeAnimation *animation;
 	animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
 	animation.speed = .01;
 	
@@ -57,7 +62,7 @@
 	animation.timingFunctions = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
 	animation.calculationMode = kCAAnimationPaced;
 	
-	[ball addAnimation:animation forKey: @"balls"];
+	[ball addAnimation:animation forKey: @"balls"];*/
 	
 }
 
