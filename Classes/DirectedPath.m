@@ -9,6 +9,8 @@
 #import <math.h>
 #import "DirectedPath.h"
 
+float EPSILON = 0.00001;
+
 float CGPointDistBetween(CGPoint p1, CGPoint p2)
 {
 	float dy = p1.y - p2.y;
@@ -16,12 +18,20 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2)
 	return sqrt(dx * dx + dy * dy);
 }
 
+/* angle between 2 vectors */
+float angleBetween(CGPoint v1, CGPoint v2)
+{
+    return atan2(v2.y, v2.x) - atan2(v1.y, v1.x);
+}
+
 @implementation Segment
 
-- (CGPoint) nextPointAfter: (CGPoint) point withOffset: (float) dist
+@synthesize startPoint, endPoint, length;
+
+- (CGPoint) pointFromStartWithOffset: (float) dist
 {
 	[self doesNotRecognizeSelector:_cmd];
-	return point;
+	return startPoint;
 }
 
 - (Boolean) containsPoint: (CGPoint) point
@@ -33,6 +43,7 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2)
 {
 	[self doesNotRecognizeSelector:_cmd];
 }
+
 @end
 
 @implementation LineSegment
@@ -51,8 +62,6 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2)
 	return self;
 }
 
-float EPISLON = 0.00001;
-
 - (Boolean) containsPoint: (CGPoint) point
 {
 		// in the correct bounding box
@@ -64,26 +73,12 @@ float EPISLON = 0.00001;
 		return false;
 	
 	float nslope = (point.y - startPoint.y) / (point.x - startPoint.x);
-	return abs(dir.y / dir.x - nslope) < EPISLON;
+	return abs(dir.y / dir.x - nslope) < EPSILON;
 }
 
 - (CGPoint) pointFromStartWithOffset: (float) dist
 {
-	return [self nextPointAfter:startPoint withOffset:dist];
-}
-
-- (CGPoint) nextPointAfter: (CGPoint) point withOffset: (float) dist
-{
-		// make sure point is on the segment
-	if (![self containsPoint:point]) {
-		return point;
-	}
-	CGPoint p = CGPointMake(point.x + dir.x * dist, point.y + dir.y * dist);
-		// make sure result is on the segment
-	if (![self containsPoint:p]) {
-		return point;
-	}
-	return p;
+	return CGPointMake(startPoint.x + dir.x * dist, startPoint.y + dir.y * dist);
 }
 
 - (void) draw{
@@ -97,15 +92,7 @@ float EPISLON = 0.00001;
 
 @end
 
-
 @implementation ArcSegment
-
-
-/* angle between 2 vectors */
-float angleBetween(CGPoint v1, CGPoint v2)
-{
-    return atan2(v2.y, v2.x) - atan2(v1.y, v1.x);
-}
 
 - (ArcSegment *) initWithStart: (CGPoint) st 
 					   withEnd: (CGPoint) ed 
@@ -145,10 +132,20 @@ float angleBetween(CGPoint v1, CGPoint v2)
 
 - (CGPoint) pointFromStartWithOffset: (float) dist
 {
-	float t = initialAngle + dist * angle / length
+	float t = initialAngle + dist * angle / length;
 	float x = center.x + radius * cos(t);
 	float y = center.y + radius * sin(t);
 	return CGPointMake(x, y);
+}
+
+- (Boolean) containsPoint: (CGPoint) point
+{
+		// inverse of parametric equations
+	float ft = acos((point.x - center.x) / radius);
+	if (abs(ft - asin((point.y - center.y) / radius)) > EPSILON)
+		return false;
+	float t = (ft - initialAngle) / angle;
+	return (t >= -EPSILON && t <= 1.0f + EPSILON);
 }
 
 - (void) draw{
@@ -166,6 +163,62 @@ float angleBetween(CGPoint v1, CGPoint v2)
 
 @end
 
+
+
 @implementation DirectedPath
+
+- (DirectedPath *) initWithStart: (CGPoint) point
+{
+	if (self = [super init]) {
+		start = point;
+		end = point;
+		segments = [NSMutableArray array];
+		length = 0.0f;
+	}
+	return self;
+}
+
+- (void) addLineSegmentWithNextPoint: (CGPoint) point
+{
+	LineSegment * l = [[LineSegment alloc] initWithStart:end 
+												  andEnd:point];
+	[self addSegment: l];
+}
+
+- (void) addArcSegmentWithNextPoint: (CGPoint) point 
+						 withRadius: (float) rad 
+					 andIsClockwise: (Boolean) dir
+{
+	ArcSegment * a = [[ArcSegment alloc] initWithStart:end 
+											   withEnd:point 
+											withRadius:rad 
+										andIsClockwise:dir];
+	[self addSegment: a];
+}
+
+/*
+ * returns the point on the directed path dist from the start
+ *  if dist > length of the directed path, returns the end of
+ *  the directed path.
+ */
+- (CGPoint) pointAtOffset: (float) dist
+{
+	if (dist > length) {
+		return endPoint;
+	}
+	NSEnumerator * e = [segments objectEnumerator];
+	Segment * s = nil;
+	while (s = [e nextObject] && s.length > dist) {
+		dist -= s.length;
+	}
+	return [s pointFromStartWithOffset: dist];
+}
+
+- (void) addSegment: (Segment *) seg
+{
+	end = seg.endPoint;
+	length += seg.length;
+	[segments addObject: l];
+}
 
 @end

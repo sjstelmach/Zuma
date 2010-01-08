@@ -18,14 +18,13 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 	float length;
 }
 
-/*
- * the point on the segment @dist after @point
- * if @point is not on the segment or @dist is too great, returns @point
- */
-- (void) draw;
-- (CGPoint) nextPointAfter: (CGPoint) point withOffset: (float) dist;
+@property(readonly) CGPoint startPoint;
+@property(readonly) CGPoint endPoint;
+@property(readonly) float length;
+
 - (CGPoint) pointFromStartWithOffset: (float) dist;
 - (Boolean) containsPoint: (CGPoint) point;
+- (void) draw;
 
 @end
 
@@ -63,9 +62,17 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 	NSMutableArray * segments;
 	CGPoint start;
 	CGPoint end;
+	float length;
 }
 
 - (DirectedPath *) initWithStart: (CGPoint) point;
+- (void) addLineSegmentWithNextPoint: (CGPoint) point;
+- (void) addArcSegmentWithNextPoint: (CGPoint) point 
+						 withRadius: (float) rad 
+					 andIsClockwise: (Boolean) dir;
+- (CGPoint) pointAtOffset: (float) dist;
+@private
 
+- (void) addSegment: (Segment *) seg;
 
 @end
