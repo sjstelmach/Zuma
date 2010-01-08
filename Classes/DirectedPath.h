@@ -43,6 +43,7 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
  */
 @interface ArcSegment : Segment
 {
+@public
 	CGPoint center;
 	float radius;
 	float angle;
@@ -65,6 +66,9 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 	float length;
 }
 
+@property(readonly) NSMutableArray * segments;
+@property(readonly) CGPoint start;
+@property(readonly) CGPoint end;
 @property(readonly) float length;
 
 - (DirectedPath *) initWithStart: (CGPoint) point;

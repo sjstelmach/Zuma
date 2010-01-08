@@ -103,7 +103,8 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		radius = rad;
 		startPoint = st;
 		endPoint = ed;
-		clockwise = dir ? -1 : 1;
+		clockwise = dir ? 1 : -1; // since coordinates have a flipped y axis
+								  // our notion of clockwise flips as well
 		
 		// from http://www.sonoma.edu/users/w/wilsonst/Papers/Geometry/circles/default.html
 		CGFloat d = CGPointDistBetween(startPoint, endPoint);
@@ -124,8 +125,10 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		angle = angle < 0 ? angle * -1 : angle;
 		
 		length = angle * radius;
-		initialAngle = angleBetween(CGPointMake(0.0f, 0.0f), v1);
-		initialAngle = initialAngle < 0 ? 2 * M_PI - initialAngle : initialAngle;
+		initialAngle = angleBetween(CGPointMake(1.0f, 0.0f), v1);
+		initialAngle = initialAngle < 0 ? 2 * M_PI + initialAngle : initialAngle;
+			// correct for flipped y-axis
+		initialAngle = M_PI - initialAngle;
 	}
 	return self;
 }
@@ -134,7 +137,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 {
 	float t = initialAngle + dist * angle / length;
 	float x = center.x + radius * cos(t);
-	float y = center.y + radius * sin(t);
+	float y = center.y - radius * sin(t); // minus b/c y axis is flipped
 	return CGPointMake(x, y);
 }
 
@@ -142,7 +145,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 {
 		// inverse of parametric equations
 	float ft = acos((point.x - center.x) / radius);
-	if (abs(ft - asin((point.y - center.y) / radius)) > EPSILON)
+	if (abs(ft + asin((point.y - center.y) / radius)) > EPSILON)
 		return false;
 	float t = (ft - initialAngle) / angle;
 	return (t >= -EPSILON && t <= 1.0f + EPSILON);
@@ -167,7 +170,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 
 @implementation DirectedPath
 
-@synthesize length;
+@synthesize segments, start, end, length;
 
 - (DirectedPath *) initWithStart: (CGPoint) point
 {

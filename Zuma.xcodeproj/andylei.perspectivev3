@@ -202,46 +202,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1B0317BA10F73DD300C0F295</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>gsZuma.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>1B0317BB10F73DD300C0F295</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>gsZuma.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>1B0317F510F7401E00C0F295</string>
-						<key>history</key>
-						<array>
-							<string>1B0317BC10F73DD300C0F295</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {682, 714}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>526 23 682 755 0 0 1280 778 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>1B03169510F72A4700C0F295</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>DirectedPath.m</string>
@@ -256,11 +216,11 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1B0317F610F7401E00C0F295</string>
+						<string>1B03185A10F7BB0A00C0F295</string>
 						<key>history</key>
 						<array>
-							<string>1B0317E010F73F5800C0F295</string>
-							<string>1B0317E110F73F5800C0F295</string>
+							<string>1B03181210F7B6BF00C0F295</string>
+							<string>1B03181310F7B6BF00C0F295</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -276,7 +236,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>615 2 627 753 0 0 1280 778 </string>
+				<string>7 25 627 753 0 0 1280 778 </string>
 			</dict>
 		</dict>
 		<dict>
@@ -297,7 +257,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1B0317F710F7401E00C0F295</string>
+						<string>1B03185B10F7BB0A00C0F295</string>
 						<key>history</key>
 						<array>
 							<string>1B0317D710F73ECB00C0F295</string>
@@ -317,6 +277,46 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>456 23 682 755 0 0 1280 778 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>1B0317BA10F73DD300C0F295</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>gsZuma.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>1B0317BB10F73DD300C0F295</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>gsZuma.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>1B03185C10F7BB0A00C0F295</string>
+						<key>history</key>
+						<array>
+							<string>1B0317BC10F73DD300C0F295</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {645, 723}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>634 14 645 764 0 0 1280 778 </string>
 			</dict>
 		</dict>
 	</array>
@@ -433,7 +433,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1BA7783810F2AEB90061774B</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ResourceManager.m</string>
+								<string>gsZuma.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -441,11 +441,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1BA7783910F2AEB90061774B</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ResourceManager.m</string>
+										<string>gsZuma.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1B0317F410F7401E00C0F295</string>
+										<string>1B03185910F7BB0A00C0F295</string>
 										<key>history</key>
 										<array>
 											<string>1BA7789410F584D90061774B</string>
@@ -458,9 +458,9 @@
 											<string>1B03161710F6CC5200C0F295</string>
 											<string>1B03169210F72A4700C0F295</string>
 											<string>1B0316FD10F72E6D00C0F295</string>
-											<string>1B03170C10F72EF000C0F295</string>
 											<string>1B0317D810F73ED600C0F295</string>
-											<string>1B0317D910F73ED600C0F295</string>
+											<string>1B03181A10F7B70D00C0F295</string>
+											<string>1B03181B10F7B70D00C0F295</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -636,7 +636,7 @@
 						<key>Frame</key>
 						<string>{{0, 0}, {815, 211}}</string>
 						<key>RubberWindowFrame</key>
-						<string>324 55 815 723 0 0 1280 778 </string>
+						<string>465 55 815 723 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
@@ -712,10 +712,10 @@
 							<key>Frame</key>
 							<string>{{397, 0}, {418, 227}}</string>
 							<key>RubberWindowFrame</key>
-							<string>324 55 815 723 0 0 1280 778 </string>
+							<string>465 55 815 723 0 0 1280 778 </string>
 						</dict>
 						<key>RubberWindowFrame</key>
-						<string>324 55 815 723 0 0 1280 778 </string>
+						<string>465 55 815 723 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
@@ -779,17 +779,17 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1B0317BA10F73DD300C0F295</string>
+		<string>1B03174E10F733A700C0F295</string>
 		<string>1B03172C10F730DB00C0F295</string>
 		<string>1B03172310F72FC000C0F295</string>
 		<string>1B0316FB10F72E6400C0F295</string>
 		<string>1B0316FC10F72E6400C0F295</string>
-		<string>1B03174E10F733A700C0F295</string>
 		<string>1B03169510F72A4700C0F295</string>
-		<string>1B0317BA10F73DD300C0F295</string>
 		<string>/Users/andylei/src/iphone/Zuma/Zuma.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>324 55 815 723 0 0 1280 778 </string>
+	<string>465 55 815 723 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
