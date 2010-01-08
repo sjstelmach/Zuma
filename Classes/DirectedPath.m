@@ -204,13 +204,14 @@ float angleBetween(CGPoint v1, CGPoint v2)
 - (CGPoint) pointAtOffset: (float) dist
 {
 	if (dist > length) {
-		return endPoint;
+		return end;
 	}
 	NSEnumerator * e = [segments objectEnumerator];
-	Segment * s = nil;
+	Segment * s;
 	while (s = [e nextObject] && s.length > dist) {
 		dist -= s.length;
 	}
+	[e dealloc];
 	return [s pointFromStartWithOffset: dist];
 }
 
@@ -218,7 +219,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 {
 	end = seg.endPoint;
 	length += seg.length;
-	[segments addObject: l];
+	[segments addObject: seg];
 }
 
 - (void) draw
@@ -228,6 +229,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	while (s = [e nextObject]) {
 		[s draw];
 	}
+	[e dealloc];
 }
 
 @end

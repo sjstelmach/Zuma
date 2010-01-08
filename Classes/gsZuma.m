@@ -10,8 +10,6 @@
 
 @implementation gsZuma
 
-//@synthesize path, ball;
-
 -(gsZuma*) initWithFrame:(CGRect)frame andManager:(GameStateManager*)pManager 
 {
 	self = [super initWithFrame:frame andManager:pManager];
@@ -25,6 +23,13 @@
 										atPos: CGPointMake(50.0f, 50.0f)];
 	ball = tBall;
 	[self.layer addSublayer:ball];
+	
+	p = [[DirectedPath alloc] initWithStart: CGPointMake(50.0f, 50.0f)];
+	[p addLineSegmentWithNextPoint: CGPointMake(50.0f, 100.0f)];
+	[p addLineSegmentWithNextPoint: CGPointMake(100.0f, 100.0f)];
+	[p addArcSegmentWithNextPoint: CGPointMake(150.0f, 150.0f) 
+					   withRadius:50.0f 
+				   andIsClockwise: true];
 	
 	[self setNeedsDisplay];
 	
@@ -47,6 +52,8 @@
 	CGPoint end = CGPointMake(100, 350);
 	ArcSegment *arc = [[ArcSegment alloc] initWithStart:start withEnd:end withRadius: 56 andIsClockwise:YES];
 	[arc draw];
+	
+	[p draw];
 }
 
 

@@ -11,10 +11,12 @@
 #import "GameState.h"
 #import "Path.h"
 #import "Ball.h"
+#import "DirectedPath.h"
 
 @interface gsZuma : GameState{
-	Path *path;
-	Ball *ball;
+	Path * path;
+	Ball * ball;
+	DirectedPath * p;
 }
 
 @end

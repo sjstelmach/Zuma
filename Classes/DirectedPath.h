@@ -73,8 +73,7 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 - (CGPoint) pointAtOffset: (float) dist;
 - (void) draw;
 
-@private
-
+	// this should only be used internally (within DirectedPath)
 - (void) addSegment: (Segment *) seg;
 
 @end
