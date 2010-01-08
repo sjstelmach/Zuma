@@ -221,4 +221,13 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	[segments addObject: l];
 }
 
+- (void) draw
+{
+	Segment * s;
+	NSEnumerator * e = [segments objectEnumerator];
+	while (s = [e nextObject]) {
+		[s draw];
+	}
+}
+
 @end

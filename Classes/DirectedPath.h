@@ -71,6 +71,8 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 						 withRadius: (float) rad 
 					 andIsClockwise: (Boolean) dir;
 - (CGPoint) pointAtOffset: (float) dist;
+- (void) draw;
+
 @private
 
 - (void) addSegment: (Segment *) seg;
