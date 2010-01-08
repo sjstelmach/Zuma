@@ -6,6 +6,7 @@
 //  Copyright 2010 Harvard. All rights reserved.
 //
 
+#import <math.h>
 #import "DirectedPath.h"
 
 float CGPointDistSquared(CGPoint p1, CGPoint p2)
@@ -104,21 +105,26 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		CGFloat inSquareroot = sqrt((pow(2*rad,2)-pow(d,2))*pow(d,2));
 		CGFloat plusMinus = (endPoint.y - startPoint.y)/(2*pow(d,2))*inSquareroot;
 		CGFloat minusPlus = (endPoint.x - startPoint.x)/(2*pow(d,2))*inSquareroot;
-		CGPoint origin1 = CGPointMake((startPoint.x + endPoint.x)/2 + plusMinus,
-									  (startPoint.y + endPoint.y)/2 - minusPlus);
-		CGPoint origin2 = CGPointMake((startPoint.x + endPoint.x)/2 - plusMinus,
-									  (startPoint.y + endPoint.y)/2 + minusPlus);
+		CGPoint center = CGPointMake((startPoint.x + endPoint.x)/2 + plusMinus,
+									 (startPoint.y + endPoint.y)/2 - minusPlus);
+		
 		// if sign matches
-		if(angleBetween(startPoint, endPoint)/dir > 0){
-			center = origin1;
+		CGPoint v1 = CGPointMake(startPoint.x - center.x, startPoint.y - center.y);
+		CGPoint v2 = CGPointMake(endPoint.x - center.x, endPoint.y - center.y);
+		angle = angleBetween(v1, v2);
+		if(angle * dir < 0){
+			center = CGPointMake((startPoint.x + endPoint.x)/2 - plusMinus,
+								 (startPoint.y + endPoint.y)/2 + minusPlus);
 		}
-		else {
-			center = origin2;
-		}
+		angle = angle < 0 ? angle * -1 : angle;
+		
+		length = angle * radius;
+		initialAngle = angleBetween(CGPointMake(0.0f, 0.0f), v1);
+		initialAngle = initialAngle < 0 ? 2 * M_PI - initialAngle : initialAngle;
 	}
 	return self;
 }
-								 
+
 @end
 
 @implementation DirectedPath

@@ -46,6 +46,7 @@ inline float CGPointDistSquared(CGPoint p1, CGPoint p2);
 	float radius;
 	float angle;
 	Boolean clockwise;
+	float initialAngle;
 }
 
 - (ArcSegment *) initWithStart: (CGPoint) st 
