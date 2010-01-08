@@ -65,15 +65,17 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 	float length;
 }
 
+@property(readonly) float length;
+
 - (DirectedPath *) initWithStart: (CGPoint) point;
-- (void) addLineSegmentWithNextPoint: (CGPoint) point;
-- (void) addArcSegmentWithNextPoint: (CGPoint) point 
+- (int) addLineSegmentWithNextPoint: (CGPoint) point;
+- (int) addArcSegmentWithNextPoint: (CGPoint) point 
 						 withRadius: (float) rad 
 					 andIsClockwise: (Boolean) dir;
 - (CGPoint) pointAtOffset: (float) dist;
 - (void) draw;
 
 	// this should only be used internally (within DirectedPath)
-- (void) addSegment: (Segment *) seg;
+- (int) addSegment: (Segment *) seg;
 
 @end

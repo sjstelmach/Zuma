@@ -167,25 +167,27 @@ float angleBetween(CGPoint v1, CGPoint v2)
 
 @implementation DirectedPath
 
+@synthesize length;
+
 - (DirectedPath *) initWithStart: (CGPoint) point
 {
 	if (self = [super init]) {
 		start = point;
 		end = point;
-		segments = [NSMutableArray array];
+		segments = [[NSMutableArray array] retain];
 		length = 0.0f;
 	}
 	return self;
 }
 
-- (void) addLineSegmentWithNextPoint: (CGPoint) point
+- (int) addLineSegmentWithNextPoint: (CGPoint) point
 {
 	LineSegment * l = [[LineSegment alloc] initWithStart:end 
 												  andEnd:point];
-	[self addSegment: l];
+	return [self addSegment: l];
 }
 
-- (void) addArcSegmentWithNextPoint: (CGPoint) point 
+- (int) addArcSegmentWithNextPoint: (CGPoint) point 
 						 withRadius: (float) rad 
 					 andIsClockwise: (Boolean) dir
 {
@@ -193,7 +195,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 											   withEnd:point 
 											withRadius:rad 
 										andIsClockwise:dir];
-	[self addSegment: a];
+	return [self addSegment: a];
 }
 
 /*
@@ -215,11 +217,12 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	return [s pointFromStartWithOffset: dist];
 }
 
-- (void) addSegment: (Segment *) seg
+- (int) addSegment: (Segment *) seg
 {
 	end = seg.endPoint;
 	length += seg.length;
 	[segments addObject: seg];
+	return [segments count];
 }
 
 - (void) draw
@@ -229,7 +232,12 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	while (s = [e nextObject]) {
 		[s draw];
 	}
-	[e dealloc];
+}
+
+- (void) dealloc
+{
+	[segments release];
+	[super dealloc];
 }
 
 @end
