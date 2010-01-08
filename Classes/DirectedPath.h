@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <math.h>
 
-inline float CGPointDistSquared(CGPoint p1, CGPoint p2);
+float CGPointDistBetween(CGPoint p1, CGPoint p2);
 
 @interface Segment : NSObject
 {
@@ -22,6 +22,7 @@ inline float CGPointDistSquared(CGPoint p1, CGPoint p2);
  * the point on the segment @dist after @point
  * if @point is not on the segment or @dist is too great, returns @point
  */
+- (void) draw;
 - (CGPoint) nextPointAfter: (CGPoint) point withOffset: (float) dist;
 - (CGPoint) pointFromStartWithOffset: (float) dist;
 - (Boolean) containsPoint: (CGPoint) point;

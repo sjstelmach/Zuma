@@ -202,6 +202,46 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
+				<string>1B0315D410F6C9A900C0F295</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>DirectedPath.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>1B0315D510F6C9A900C0F295</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>DirectedPath.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>1B03164010F7187600C0F295</string>
+						<key>history</key>
+						<array>
+							<string>1B03160D10F6CC0D00C0F295</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {627, 712}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>634 25 627 753 0 0 1280 778 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
 				<string>1B0315D710F6C9A900C0F295</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>DirectedPath.h</string>
@@ -216,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1B03163D10F701BD00C0F295</string>
+						<string>1B03164110F7187600C0F295</string>
 						<key>history</key>
 						<array>
 							<string>1B03163010F6F3B500C0F295</string>
@@ -237,46 +277,6 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>6 3 599 775 0 0 1280 778 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>1B0315D410F6C9A900C0F295</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>DirectedPath.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>1B0315D510F6C9A900C0F295</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>DirectedPath.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>1B03163E10F701BD00C0F295</string>
-						<key>history</key>
-						<array>
-							<string>1B03160D10F6CC0D00C0F295</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {627, 712}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>634 25 627 753 0 0 1280 778 </string>
 			</dict>
 		</dict>
 	</array>
@@ -407,7 +407,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1B03163C10F701BD00C0F295</string>
+										<string>1B03163F10F7187600C0F295</string>
 										<key>history</key>
 										<array>
 											<string>1BA7789410F584D90061774B</string>
@@ -739,8 +739,8 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>/Users/andylei/src/iphone/Zuma/Zuma.xcodeproj</string>
-		<string>1B0315D410F6C9A900C0F295</string>
 		<string>1B0315D710F6C9A900C0F295</string>
+		<string>1B0315D410F6C9A900C0F295</string>
 	</array>
 	<key>WindowString</key>
 	<string>236 84 814 694 0 0 1280 778 </string>

@@ -9,11 +9,11 @@
 #import <math.h>
 #import "DirectedPath.h"
 
-float CGPointDistSquared(CGPoint p1, CGPoint p2)
+float CGPointDistBetween(CGPoint p1, CGPoint p2)
 {
 	float dy = p1.y - p2.y;
 	float dx = p1.x - p2.x;
-	return dx * dx + dy * dy;
+	return sqrt(dx * dx + dy * dy);
 }
 
 @implementation Segment
@@ -29,7 +29,10 @@ float CGPointDistSquared(CGPoint p1, CGPoint p2)
 	[self doesNotRecognizeSelector:_cmd];
 	return false;
 }
-
+- (void) draw
+{
+	[self doesNotRecognizeSelector:_cmd];
+}
 @end
 
 @implementation LineSegment
@@ -83,6 +86,15 @@ float EPISLON = 0.00001;
 	return p;
 }
 
+- (void) draw{
+	CGContextRef context = UIGraphicsGetCurrentContext();
+	CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
+	CGContextSetLineWidth(context, 5.0);
+	CGContextMoveToPoint(context, startPoint.x, startPoint.y);
+	CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
+	CGContextStrokePath(context);	
+}
+
 @end
 
 
@@ -101,16 +113,17 @@ float angleBetween(CGPoint v1, CGPoint v2)
 				andIsClockwise: (Boolean) dir
 {
 	if (self = [super init]) {
+		radius = rad;
 		startPoint = st;
 		endPoint = ed;
 		clockwise = dir ? -1 : 1;
 		
 		// from http://www.sonoma.edu/users/w/wilsonst/Papers/Geometry/circles/default.html
-		CGFloat d = sqrt(CGPointDistSquared(startPoint, endPoint));
+		CGFloat d = CGPointDistBetween(startPoint, endPoint);
 		CGFloat inSquareroot = sqrt((pow(2*rad,2)-pow(d,2))*pow(d,2));
 		CGFloat plusMinus = (endPoint.y - startPoint.y)/(2*pow(d,2))*inSquareroot;
 		CGFloat minusPlus = (endPoint.x - startPoint.x)/(2*pow(d,2))*inSquareroot;
-		CGPoint center = CGPointMake((startPoint.x + endPoint.x)/2 + plusMinus,
+		center = CGPointMake((startPoint.x + endPoint.x)/2 + plusMinus,
 									 (startPoint.y + endPoint.y)/2 - minusPlus);
 		
 		// if sign matches
@@ -136,6 +149,19 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	float x = center.x + radius * cos(t);
 	float y = center.y + radius * sin(t);
 	return CGPointMake(x, y);
+}
+
+- (void) draw{
+	CGContextRef context = UIGraphicsGetCurrentContext();
+	
+	CGContextBeginPath(context);
+	CGContextSetStrokeColorWithColor(context, [UIColor greenColor].CGColor);
+	CGContextSetLineWidth(context, 1.0);
+	float startAngle = M_PI + atan2(center.y - startPoint.y, center.x - startPoint.x);
+	float endAngle = M_PI + atan2(center.y - endPoint.y, center.x - endPoint.x);
+	CGContextAddArc(context , center.x, center.y, radius, startAngle, endAngle, 1-(clockwise+1)/2); // 1 = cc, 0 = clockwise
+	CGContextStrokePath(context);	
+	CGContextClosePath(context);
 }
 
 @end
