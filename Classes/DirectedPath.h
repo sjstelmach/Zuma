@@ -23,6 +23,7 @@ inline float CGPointDistSquared(CGPoint p1, CGPoint p2);
  * if @point is not on the segment or @dist is too great, returns @point
  */
 - (CGPoint) nextPointAfter: (CGPoint) point withOffset: (float) dist;
+- (CGPoint) pointFromStartWithOffset: (float) dist;
 - (Boolean) containsPoint: (CGPoint) point;
 
 @end
@@ -59,6 +60,11 @@ inline float CGPointDistSquared(CGPoint p1, CGPoint p2);
 
 @interface DirectedPath : NSObject {
 	NSMutableArray * segments;
+	CGPoint start;
+	CGPoint end;
 }
+
+- (DirectedPath *) initWithStart: (CGPoint) point;
+
 
 @end

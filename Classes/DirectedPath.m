@@ -64,6 +64,11 @@ float EPISLON = 0.00001;
 	return abs(dir.y / dir.x - nslope) < EPISLON;
 }
 
+- (CGPoint) pointFromStartWithOffset: (float) dist
+{
+	return [self nextPointAfter:startPoint withOffset:dist];
+}
+
 - (CGPoint) nextPointAfter: (CGPoint) point withOffset: (float) dist
 {
 		// make sure point is on the segment
@@ -123,6 +128,14 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		initialAngle = initialAngle < 0 ? 2 * M_PI - initialAngle : initialAngle;
 	}
 	return self;
+}
+
+- (CGPoint) pointFromStartWithOffset: (float) dist
+{
+	float t = initialAngle + dist * angle / length
+	float x = center.x + radius * cos(t);
+	float y = center.y + radius * sin(t);
+	return CGPointMake(x, y);
 }
 
 @end
