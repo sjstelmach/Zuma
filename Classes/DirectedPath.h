@@ -24,7 +24,7 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 
 - (CGPoint) pointFromStartWithOffset: (float) dist;
 - (Boolean) containsPoint: (CGPoint) point;
-- (void) draw;
+- (void) drawInContext: (CGContextRef) g;
 
 @end
 
@@ -77,7 +77,7 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 						 withRadius: (float) rad 
 					 andIsClockwise: (Boolean) dir;
 - (CGPoint) pointAtOffset: (float) dist;
-- (void) draw;
+- (void) drawInContext: (CGContextRef) g;
 
 	// this should only be used internally (within DirectedPath)
 - (int) addSegment: (Segment *) seg;

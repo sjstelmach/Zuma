@@ -9,20 +9,57 @@
 #import <Foundation/Foundation.h>
 #import "Entity.h"
 #import "Path.h"
+#import "DirectedPath.h"
+
+#define BALLRADIUS 32.0f;
 
 @interface Ball : Entity {
-	@private
-	UIColor *_color;
-	Path * path;
+	UIColor * _color;
+	DirectedPath * path;
+	float pathPos;
+	float speed; // speed of the ball
+	CGPoint velocity; // velocity vector 
+	CGPoint loc;
 }
 
--(Ball *)initWithColor: (UIColor *) color;
--(Ball *)initWithColor: (UIColor *) color atPos: (CGPoint) pos;
--(Ball *)initWithColor: (UIColor *) color onPath: (Path *) pth;
-	// it's unlikely that you'd init a ball with an absolute position and a path
-	// this method only exists for DRYness
--(Ball *)initWithColor: (UIColor *) color atPos: (CGPoint) pos onPath: (Path *) pth;
+@property float speed;
+@property CGPoint velocity;
+@property(readonly) CGPoint loc;
 
-@property (retain) UIColor *_color;
-@property (retain) Path * path;
+/*
+ * creates a ball with a color.  this is only used internally for DRYness.
+ *  you should use the other two init functions b/c other methods assume
+ *  that init'd Balls have either a path or nonzero velocity.
+ */
+- (Ball *) initWithColor: (UIColor *) color;
+/*
+ * creates a ball with a position and a velocity
+ */
+- (Ball *) initWithColor: (UIColor *) color 
+					atPos: (CGPoint) pos 
+			withVelocity: (CGPoint) vel;
+/*
+ * creates a ball, sticks it at the beginning of the path
+ */
+- (Ball *) initWithColor: (UIColor *) color onPath: (DirectedPath *) pth;
+
+/*
+ * attaches the ball to a path at the beginning of the path
+ */
+- (void) attachToPath: (DirectedPath *) pth;
+/*
+ * attaches the ball to a path offset into the path
+ */
+- (void) attachToPath: (DirectedPath *) pth withOffset: (float) offset;
+/*
+ * advances the ball by one frame (based on speed)
+ *  returns the new position of the ball
+ */
+- (CGPoint) move;
+/*
+ * advances the ball by numFrames frames (based on speed)
+ *  returns the new position of the ball
+ */
+- (CGPoint) moveByFrames: (int) numFrames;
+
 @end

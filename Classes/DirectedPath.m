@@ -39,7 +39,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	[self doesNotRecognizeSelector:_cmd];
 	return false;
 }
-- (void) draw
+- (void) drawInContext: (CGContextRef) g
 {
 	[self doesNotRecognizeSelector:_cmd];
 }
@@ -81,13 +81,13 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	return CGPointMake(startPoint.x + dir.x * dist, startPoint.y + dir.y * dist);
 }
 
-- (void) draw{
-	CGContextRef context = UIGraphicsGetCurrentContext();
-	CGContextSetStrokeColorWithColor(context, [UIColor blueColor].CGColor);
-	CGContextSetLineWidth(context, 5.0);
-	CGContextMoveToPoint(context, startPoint.x, startPoint.y);
-	CGContextAddLineToPoint(context, endPoint.x, endPoint.y);
-	CGContextStrokePath(context);	
+- (void) drawInContext: (CGContextRef) g
+{
+	CGContextSetStrokeColorWithColor(g, [UIColor greenColor].CGColor);
+	CGContextSetLineWidth(g, 1.0);
+	CGContextMoveToPoint(g, startPoint.x, startPoint.y);
+	CGContextAddLineToPoint(g, endPoint.x, endPoint.y);
+	CGContextStrokePath(g);	
 }
 
 @end
@@ -151,17 +151,16 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	return (t >= -EPSILON && t <= 1.0f + EPSILON);
 }
 
-- (void) draw{
-	CGContextRef context = UIGraphicsGetCurrentContext();
-	
-	CGContextBeginPath(context);
-	CGContextSetStrokeColorWithColor(context, [UIColor greenColor].CGColor);
-	CGContextSetLineWidth(context, 1.0);
+- (void) drawInContext: (CGContextRef) g 
+{
+	CGContextBeginPath(g);
+	CGContextSetStrokeColorWithColor(g, [UIColor greenColor].CGColor);
+	CGContextSetLineWidth(g, 1.0);
 	float startAngle = M_PI + atan2(center.y - startPoint.y, center.x - startPoint.x);
 	float endAngle = M_PI + atan2(center.y - endPoint.y, center.x - endPoint.x);
-	CGContextAddArc(context , center.x, center.y, radius, startAngle, endAngle, 1-(clockwise+1)/2); // 1 = cc, 0 = clockwise
-	CGContextStrokePath(context);	
-	CGContextClosePath(context);
+	CGContextAddArc(g , center.x, center.y, radius, startAngle, endAngle, 1-(clockwise+1)/2); // 1 = cc, 0 = clockwise
+	CGContextStrokePath(g);	
+		//CGContextClosePath(g);
 }
 
 @end
@@ -213,10 +212,9 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	}
 	NSEnumerator * e = [segments objectEnumerator];
 	Segment * s;
-	while (s = [e nextObject] && s.length > dist) {
+	while (s = (Segment *)[e nextObject] && s.length > dist) {
 		dist -= s.length;
 	}
-	[e dealloc];
 	return [s pointFromStartWithOffset: dist];
 }
 
@@ -228,12 +226,12 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	return [segments count];
 }
 
-- (void) draw
+- (void) drawInContext: (CGContextRef) g
 {
 	Segment * s;
 	NSEnumerator * e = [segments objectEnumerator];
-	while (s = [e nextObject]) {
-		[s draw];
+	while (s = (Segment *)[e nextObject]) {
+		[s drawInContext: g];
 	}
 }
 

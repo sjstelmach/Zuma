@@ -6,43 +6,96 @@
 //  Copyright 2010 Harvard University. All rights reserved.
 //
 
+#import <math.h>
 #import "Ball.h"
 
 
 @implementation Ball
 
-@synthesize _color;
-@synthesize path;
+@synthesize loc, velocity;
+
+- (float) speed
+{
+	return speed;
+}
+
+/*
+ * sets the speed of the ball
+ *  if the ball has a path, sets the speed directly
+ *  otherwise, assumes the ball has a velocity, and scales the velocity
+ *  to have magnitude sp
+ */
+- (void) setSpeed: (float) sp
+{
+	if (!path) {
+		velocity.x = velocity.x / speed * sp;
+		velocity.y = velocity.y / speed * sp;
+	}
+	speed = sp;
+}
 
 -(Ball *)initWithColor: (UIColor *) color {
-	return [self initWithColor: color
-						 atPos: CGPointMake(0.0f, 0.0f)
-						onPath: nil];
-}
-
--(Ball *)initWithColor: (UIColor *) color atPos: (CGPoint) pos {
-	return [self initWithColor: color
-						 atPos: pos
-						onPath: nil];
-}
-
--(Ball *)initWithColor: (UIColor *) color onPath: (Path *) pth {
-	return [self initWithColor: color
-						 atPos: CGPointMake(0.0f, 0.0f)
-						onPath: pth];
-}
-
--(Ball *)initWithColor: (UIColor *) color atPos: (CGPoint) pos onPath: (Path *) pth {
 	if (self = [super init]) {
 		_color = color;
 		UIImage *ballImage = [UIImage imageNamed:@"coloredwheel.png"];
 		self.contents = (id)[ballImage CGImage];
 		self.bounds = CGRectMake(0.0f, 0.0f, ballImage.size.width, ballImage.size.height);
-		self.position = pos;
-		path = pth;
+		loc = CGPointMake(0.0f, 0.0f);
+		path = nil;
+		pathPos = 0.0f;
+		speed = 0.0f;
+		velocity = CGPointMake(0.0f, 0.0f);
 	}
 	return self;
 }
 
+- (Ball *) initWithColor: (UIColor *) color 
+				   atPos: (CGPoint) pos 
+			withVelocity: (CGPoint) vel 
+{
+	if (self = [self initWithColor: color]) {
+		loc = pos;
+		velocity = vel;
+		speed = sqrt(vel.x * vel.x + vel.y * vel.y);
+	}
+	return self;
+}
+
+-(Ball *)initWithColor: (UIColor *) color onPath: (DirectedPath *) pth {
+	if (self = [self initWithColor: color]) {
+		[self attachToPath: pth];
+	}
+	return self;
+}
+
+- (void) attachToPath: (DirectedPath *) pth
+{
+	[self attachToPath:pth withOffset:0.0f];
+}
+
+- (void) attachToPath: (DirectedPath *) pth withOffset: (float) offset
+{
+	path = pth;
+	pathPos = offset;
+	loc = [path pointAtOffset: offset];
+}
+
+- (CGPoint) move
+{
+	return [self moveByFrames:1];
+}
+
+- (CGPoint) moveByFrames: (int) numFrames
+{
+	if (path) {
+		pathPos += speed * numFrames;
+		loc = [path pointAtOffset: pathPos];
+	} else {
+		loc.x += numFrames * velocity.x;
+		loc.y += numFrames * velocity.y;
+	}
+	self.position = loc;
+	return loc;
+}
 
 @end
