@@ -160,7 +160,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	float endAngle = M_PI + atan2(center.y - endPoint.y, center.x - endPoint.x);
 	CGContextAddArc(g , center.x, center.y, radius, startAngle, endAngle, 1-(clockwise+1)/2); // 1 = cc, 0 = clockwise
 	CGContextStrokePath(g);	
-		//CGContextClosePath(g);
+	//CGContextClosePath(g);
 }
 
 @end

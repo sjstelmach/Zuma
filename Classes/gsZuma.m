@@ -17,7 +17,8 @@
 	if (self = [super initWithFrame:frame andManager:pManager])
 	{
 		
-		p = [[[DirectedPath alloc] initWithStart: CGPointMake(50.0f, 50.0f)] retain];
+		p = [[[DirectedPath alloc] initWithStart: CGPointMake(50.0f, 50.0f)] 
+			 retain];
 		[p addLineSegmentWithNextPoint: CGPointMake(50.0f, 100.0f)];
 		[p addLineSegmentWithNextPoint: CGPointMake(100.0f, 100.0f)];
 		[p addArcSegmentWithNextPoint: CGPointMake(150.0f, 150.0f) 
@@ -33,7 +34,8 @@
 		
 		Ball *tBall = [[[Ball alloc] initWithColor:[UIColor blueColor] 
 											atPos: c
-									 withVelocity: CGPointMake(0.1, 0.2)] retain];
+									 withVelocity: CGPointMake(0.1, 0.2)] 
+					   retain];
 		ball = tBall;
 	}
 	return self;
@@ -52,24 +54,22 @@
 	
 	[ball draw];
 	
+	const GLfloat line[] = {
+		50.0f, 50.0f, //point A
+		200.0f, 150.0f, //point B
+	};
+	
+	glVertexPointer(2, GL_FLOAT, 0, line);
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glDrawArrays(GL_LINES, 0, 2);
+	
 		//you get a nice boring white screen if you forget to swap buffers.
 	[self swapBuffers];
 }
 
-//-(void) drawRect:(CGRect) rect 
-//{
-//	CGContextRef g = UIGraphicsGetCurrentContext();
-//	//fill background with black
-//	CGContextSetFillColorWithColor(g, [UIColor blackColor].CGColor);
-//	CGContextFillRect(g, CGRectMake(0, 0, self.frame.size.width, self.frame.size.height));
-//	
-//	[p drawInContext:g];
-//	[ball drawInContext:g];
-//}
-
-
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-	[ball setVelocity:CGPointMake((float)(random()-RAND_MAX/2)/RAND_MAX*10, (float)(random()-RAND_MAX/2)/RAND_MAX*10)];
+	[ball setVelocity:CGPointMake((float)(random()-RAND_MAX/2)/RAND_MAX*10, 
+								  (float)(random()-RAND_MAX/2)/RAND_MAX*10)];
 }
 
 

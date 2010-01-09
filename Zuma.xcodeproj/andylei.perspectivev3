@@ -202,7 +202,7 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1B031B5610F8174000C0F295</string>
+				<string>1B031B7610F8223000C0F295</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>gsZuma.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
@@ -210,16 +210,16 @@
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>1B031B5710F8174000C0F295</string>
+						<string>1B031B7710F8223000C0F295</string>
 						<key>PBXProjectModuleLabel</key>
 						<string>gsZuma.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1B031B6210F817A700C0F295</string>
+						<string>1B031B8510F823B200C0F295</string>
 						<key>history</key>
 						<array>
-							<string>1B031B5210F8173100C0F295</string>
+							<string>1B031B7410F8219A00C0F295</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -231,11 +231,11 @@
 			<key>Geometry</key>
 			<dict>
 				<key>Frame</key>
-				<string>{{0, 20}, {645, 723}}</string>
+				<string>{{0, 20}, {669, 729}}</string>
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>15 14 645 764 0 0 1280 778 </string>
+				<string>15 8 669 770 0 0 1280 778 </string>
 			</dict>
 		</dict>
 	</array>
@@ -316,7 +316,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
+									<integer>4</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -339,7 +339,7 @@
 							<real>212</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>14 55 820 723 0 0 1280 778 </string>
+						<string>460 55 820 723 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -355,7 +355,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1BA7783810F2AEB90061774B</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GameState.h</string>
+								<string>Path.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -363,11 +363,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1BA7783910F2AEB90061774B</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GameState.h</string>
+										<string>Path.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1B031B6110F817A700C0F295</string>
+										<string>1B031B8410F823B200C0F295</string>
 										<key>history</key>
 										<array>
 											<string>1BA7789410F584D90061774B</string>
@@ -375,7 +375,6 @@
 											<string>1BA7799510F5DF5D0061774B</string>
 											<string>1B3D694610F5E0CF0090D218</string>
 											<string>1B3D695810F5E43C0090D218</string>
-											<string>1B0315C610F6C9A900C0F295</string>
 											<string>1B03169210F72A4700C0F295</string>
 											<string>1B0316FD10F72E6D00C0F295</string>
 											<string>1B03181A10F7B70D00C0F295</string>
@@ -389,7 +388,8 @@
 											<string>1B031B3F10F8169A00C0F295</string>
 											<string>1B031B4010F8169A00C0F295</string>
 											<string>1B031B5310F8174000C0F295</string>
-											<string>1B031B5410F8174000C0F295</string>
+											<string>1B031B6610F8199000C0F295</string>
+											<string>1B031B6710F8199000C0F295</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -405,7 +405,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {586, 203}}</string>
 								<key>RubberWindowFrame</key>
-								<string>14 55 820 723 0 0 1280 778 </string>
+								<string>460 55 820 723 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -432,7 +432,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {586, 447}}</string>
 										<key>RubberWindowFrame</key>
-										<string>14 55 820 723 0 0 1280 778 </string>
+										<string>460 55 820 723 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -713,10 +713,10 @@
 		<string>1B0316FB10F72E6400C0F295</string>
 		<string>1B0316FC10F72E6400C0F295</string>
 		<string>/Users/andylei/src/iphone/Zuma/Zuma.xcodeproj</string>
-		<string>1B031B5610F8174000C0F295</string>
+		<string>1B031B7610F8223000C0F295</string>
 	</array>
 	<key>WindowString</key>
-	<string>14 55 820 723 0 0 1280 778 </string>
+	<string>460 55 820 723 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
