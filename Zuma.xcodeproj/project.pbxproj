@@ -13,6 +13,12 @@
 		1B031A1610F80B0000C0F295 /* GLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B031A1410F80B0000C0F295 /* GLTexture.m */; };
 		1B031A3410F80C7600C0F295 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B031A3310F80C7600C0F295 /* OpenGLES.framework */; };
 		1B031BE510F8785300C0F295 /* BallChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B031BE410F8785300C0F295 /* BallChain.m */; };
+		1B031C7B10F891FD00C0F295 /* yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B031C7510F891FD00C0F295 /* yellow.png */; };
+		1B031C7C10F891FD00C0F295 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B031C7610F891FD00C0F295 /* blue.png */; };
+		1B031C7D10F891FD00C0F295 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B031C7710F891FD00C0F295 /* green.png */; };
+		1B031C7E10F891FD00C0F295 /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B031C7810F891FD00C0F295 /* red.png */; };
+		1B031C7F10F891FD00C0F295 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B031C7910F891FD00C0F295 /* white.png */; };
+		1B031C8010F891FD00C0F295 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B031C7A10F891FD00C0F295 /* black.png */; };
 		1BA7797510F5DE330061774B /* coloredwheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BA7797410F5DE330061774B /* coloredwheel.png */; };
 		1D3623260D0F684500981E51 /* ZumaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ZumaAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -54,6 +60,12 @@
 		1B031A3310F80C7600C0F295 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		1B031BE310F8785300C0F295 /* BallChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallChain.h; sourceTree = "<group>"; };
 		1B031BE410F8785300C0F295 /* BallChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallChain.m; sourceTree = "<group>"; };
+		1B031C7510F891FD00C0F295 /* yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow.png; sourceTree = "<group>"; };
+		1B031C7610F891FD00C0F295 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
+		1B031C7710F891FD00C0F295 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		1B031C7810F891FD00C0F295 /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		1B031C7910F891FD00C0F295 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		1B031C7A10F891FD00C0F295 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
 		1BA7797410F5DE330061774B /* coloredwheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coloredwheel.png; path = Resources/coloredwheel.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* ZumaAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZumaAppDelegate.h; sourceTree = "<group>"; };
@@ -232,6 +244,12 @@
 		7F94D1020FA96EE900A02C11 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				1B031C7510F891FD00C0F295 /* yellow.png */,
+				1B031C7610F891FD00C0F295 /* blue.png */,
+				1B031C7710F891FD00C0F295 /* green.png */,
+				1B031C7810F891FD00C0F295 /* red.png */,
+				1B031C7910F891FD00C0F295 /* white.png */,
+				1B031C7A10F891FD00C0F295 /* black.png */,
 				1BA7797410F5DE330061774B /* coloredwheel.png */,
 				7F94D0760FA96BDA00A02C11 /* scissors.png */,
 				7F94D07A0FA96BDA00A02C11 /* drawregion.png */,
@@ -305,6 +323,12 @@
 				9B8D8C0C10E0810E005FB7EC /* gsmainmenu.xib in Resources */,
 				1BA7797510F5DE330061774B /* coloredwheel.png in Resources */,
 				A1E0CA3D10F83B7E00462283 /* tex.gif in Resources */,
+				1B031C7B10F891FD00C0F295 /* yellow.png in Resources */,
+				1B031C7C10F891FD00C0F295 /* blue.png in Resources */,
+				1B031C7D10F891FD00C0F295 /* green.png in Resources */,
+				1B031C7E10F891FD00C0F295 /* red.png in Resources */,
+				1B031C7F10F891FD00C0F295 /* white.png in Resources */,
+				1B031C8010F891FD00C0F295 /* black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

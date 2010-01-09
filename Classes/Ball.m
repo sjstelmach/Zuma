@@ -37,7 +37,7 @@
 -(Ball *)initWithColor: (UIColor *) color {
 	if (self = [super init]) {
 		_color = color;
-		gltexture = [g_ResManager getTexture:@"coloredwheel.png"];
+		gltexture = [g_ResManager getTexture:@"red.png"];
 		loc = CGPointMake(0.0f, 0.0f);
 		path = nil;
 		pathPos = 0.0f;

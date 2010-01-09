@@ -19,13 +19,13 @@
 		
 		p = [[[DirectedPath alloc] initWithStart: CGPointMake(50.0f, 50.0f)] 
 			 retain];
-		[p addLineSegmentWithNextPoint: CGPointMake(50.0f, 100.0f)];
-		[p addLineSegmentWithNextPoint: CGPointMake(100.0f, 100.0f)];
-		[p addArcSegmentWithNextPoint: CGPointMake(150.0f, 150.0f) 
-						   withRadius: 50.0f
-					   andIsClockwise: false];
-		[p addArcSegmentWithNextPoint: CGPointMake(300.0f, 300.0f) 
-						   withRadius: 150.0f
+		[p addLineSegmentWithNextPoint: CGPointMake(50.0f, 200.0f)];
+		[p addArcSegmentWithNextPoint: CGPointMake(250.0f, 200.0f) 
+						   withRadius: 100.0f
+					   andIsClockwise: true];
+		[p addLineSegmentWithNextPoint: CGPointMake(250.0f, 100.0f)];
+		[p addArcSegmentWithNextPoint: CGPointMake(50.0f, 50.0f) 
+						   withRadius: 300.0f
 					   andIsClockwise: true];
 		
 		ArcSegment * a = (ArcSegment *)[p.segments objectAtIndex:2];
@@ -35,11 +35,11 @@
 		//Ball *tBall = [[Ball alloc] initWithColor:[UIColor blueColor] 
 		//									atPos: c
 		//withVelocity: CGPointMake(0.1, 0.2)];
-		Ball *tBall = [[Ball alloc] initWithColor:[UIColor blueColor] 
+		ball = [[Ball alloc] initWithColor:[UIColor blueColor] 
 										   onPath: p];
-
 		
-		ball = tBall;
+		ballchain = [[BallChain	alloc] initOnPath:p withNumberBalls:3 withSpeed:1.0 withNumColors:1];
+		[ballchain retain];
 	}
 	return self;
 }
@@ -47,6 +47,7 @@
 - (void) Update
 {
 	[ball move];
+	[ballchain move];
 }
 
 -(void) Render
@@ -56,7 +57,8 @@
 	glClear(GL_COLOR_BUFFER_BIT);
 	
 	[p draw];
-	[ball draw];
+		//[ball draw];
+	[ballchain draw];
 	
 	//you get a nice boring white screen if you forget to swap buffers.
 	[self swapBuffers];

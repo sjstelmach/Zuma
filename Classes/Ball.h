@@ -12,7 +12,7 @@
 #import "Path.h"
 #import "DirectedPath.h"
 
-#define BALLRADIUS 16.0f
+#define BALLRADIUS 15.0f
 
 @interface Ball : NSObject {
 	UIColor * _color;

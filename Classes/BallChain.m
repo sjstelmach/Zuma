@@ -34,7 +34,7 @@
 	if (self = [super init]) {
 		posOnPath = 0.0f;
 		path = pth;
-		balls = [NSMutableArray arrayWithCapacity:num];
+		balls = [[NSMutableArray arrayWithCapacity:num] retain];
 		speed = spe;
 		for (int i = 0; i < num; i++) 
 		{
@@ -74,6 +74,12 @@
 	while (b = [e nextObject]) {
 		[b draw];
 	}
+}
+
+- (void) dealloc
+{
+	[balls release];
+	[super dealloc];
 }
 
 @end
