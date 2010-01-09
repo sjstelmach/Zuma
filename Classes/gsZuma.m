@@ -17,28 +17,20 @@
 	if (self = [super initWithFrame:frame andManager:pManager])
 	{
 		
-		p = [[[DirectedPath alloc] initWithStart: CGPointMake(50.0f, 50.0f)] 
+		p = [[[DirectedPath alloc] initWithStart: CGPointMake(50.0f, 120.0f)] 
 			 retain];
-		[p addLineSegmentWithNextPoint: CGPointMake(50.0f, 200.0f)];
-		[p addArcSegmentWithNextPoint: CGPointMake(250.0f, 200.0f) 
+		[p addLineSegmentWithNextPoint: CGPointMake(50.0f, 320.0f)];
+		[p addArcSegmentWithNextPoint: CGPointMake(250.0f, 320.0f) 
 						   withRadius: 100.0f
 					   andIsClockwise: true];
-		[p addLineSegmentWithNextPoint: CGPointMake(250.0f, 100.0f)];
-		[p addArcSegmentWithNextPoint: CGPointMake(50.0f, 50.0f) 
-						   withRadius: 300.0f
+		[p addLineSegmentWithNextPoint: CGPointMake(250.0f, 120.0f)];
+		[p addArcSegmentWithNextPoint: CGPointMake(50.0f, 120.0f) 
+						   withRadius: 100.0f
 					   andIsClockwise: true];
 		
 		ArcSegment * a = (ArcSegment *)[p.segments objectAtIndex:2];
-		CGPoint c = [a pointFromStartWithOffset:a.length / 2];
 		
-		
-		//Ball *tBall = [[Ball alloc] initWithColor:[UIColor blueColor] 
-		//									atPos: c
-		//withVelocity: CGPointMake(0.1, 0.2)];
-		ball = [[Ball alloc] initWithColor:[UIColor blueColor] 
-										   onPath: p];
-		
-		ballchain = [[BallChain	alloc] initOnPath:p withNumberBalls:3 withSpeed:1.0 withNumColors:1];
+		ballchain = [[BallChain	alloc] initOnPath:p withNumberBalls:30 withSpeed:3.0 withNumColors:3];
 		[ballchain retain];
 	}
 	return self;

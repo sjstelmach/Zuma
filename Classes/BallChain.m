@@ -38,8 +38,8 @@
 		speed = spe;
 		for (int i = 0; i < num; i++) 
 		{
-			UIColor * c = nil;	// TODO: pick a random color
-			b = [[Ball alloc] initWithColor:c onPath:pth];
+			BallColor bc = random() % colors;
+			b = [[Ball alloc] initWithColor:bc onPath:pth];
 			[b setSpeed:spe];
 			[b movebyDist: ((float) -i) * BALLRADIUS * 2.0f];
 			[balls addObject: b];

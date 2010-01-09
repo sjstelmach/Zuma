@@ -159,8 +159,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 - (float) tangentFromStartWithOffset: (float) dist
 {
 	CGPoint pt = [self pointFromStartWithOffset: dist];
-	if(fabs(center.x - pt.x) < 3) return 0; // stop flickering for horizontal
-	return atan((center.y-pt.y)/(center.x-pt.x)) + M_PI/2;
+	return atan2(center.y-pt.y, center.x-pt.x) + M_PI/2;
 }
 - (Boolean) containsPoint: (CGPoint) point
 {

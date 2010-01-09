@@ -95,7 +95,6 @@
 		}
 		glBindTexture(GL_TEXTURE_2D, saveName); //restore the previous texture binding.
 		
-		//NSLog(@"name %d, savename %d", _name, saveName);
 		
 		_size = size;
 		_width = width;

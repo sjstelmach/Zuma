@@ -34,10 +34,19 @@
 	speed = sp;
 }
 
--(Ball *)initWithColor: (UIColor *) color {
+-(Ball *)initWithColor: (BallColor) color {
 	if (self = [super init]) {
 		_color = color;
-		gltexture = [g_ResManager getTexture:@"red.png"];
+		NSString *filename;
+		switch(_color){
+			case(BALL_BLUE): filename = @"blue.png"; break;
+			case(BALL_RED): filename = @"red.png"; break;
+			case(BALL_GREEN): filename = @"green.png"; break;
+			case(BALL_YELLOW): filename = @"yellow.png"; break;
+			case(BALL_WHITE): filename = @"white.png"; break;
+			case(BALL_BLACK): filename = @"black.png"; break;
+		}
+		gltexture = [g_ResManager getTexture:filename];
 		loc = CGPointMake(0.0f, 0.0f);
 		path = nil;
 		pathPos = 0.0f;
@@ -47,7 +56,7 @@
 	return self;
 }
 
-- (Ball *) initWithColor: (UIColor *) color 
+- (Ball *) initWithColor: (BallColor) color 
 				   atPos: (CGPoint) pos 
 			withVelocity: (CGPoint) vel 
 {
@@ -59,7 +68,7 @@
 	return self;
 }
 
--(Ball *)initWithColor: (UIColor *) color onPath: (DirectedPath *) pth {
+-(Ball *)initWithColor: (BallColor) color onPath: (DirectedPath *) pth {
 	if (self = [self initWithColor: color]) {
 		// todo: some sort of speed variable
 		speed = 1;

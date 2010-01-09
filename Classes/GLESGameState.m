@@ -82,7 +82,6 @@ CGSize					_size;
 	newSize.width = roundf(newSize.width);
 	newSize.height = roundf(newSize.height);
 	
-	NSLog(@"dimension %f x %f", newSize.width, newSize.height);
 	
 	_size = newSize;
 	glViewport(0, 0, newSize.width, newSize.height);
@@ -99,8 +98,6 @@ CGSize					_size;
 //Only the most recent caller will get opengl rendering.
 - (BOOL) bindLayer {
 	CAEAGLLayer*			eaglLayer = (CAEAGLLayer*)[self layer];
-	
-	NSLog(@"layer %@", eaglLayer);
 	
 	//set up a few drawing properties.  App will run and display without this line, but the properties
 	//here should make it go faster.  todo: benchmark this.
@@ -148,7 +145,7 @@ CGSize					_size;
 	glFinish();
 	
 	if(![gles_context presentRenderbuffer:GL_RENDERBUFFER_OES])
-		printf("Failed to swap renderbuffer in %s\n", __FUNCTION__);
+		NSLog(@"Failed to swap renderbuffer in %s\n", __FUNCTION__);
 	
 }
 

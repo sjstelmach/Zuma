@@ -12,10 +12,21 @@
 #import "Path.h"
 #import "DirectedPath.h"
 
+//CONSTANTS:
+
+typedef enum {
+	BALL_RED,
+	BALL_GREEN,
+	BALL_BLUE,
+	BALL_YELLOW,
+	BALL_WHITE,
+	BALL_BLACK,
+} BallColor;
+
 #define BALLRADIUS 15.0f
 
 @interface Ball : NSObject {
-	UIColor * _color;
+	BallColor _color;
 	GLTexture * gltexture;
 	DirectedPath * path;
 	float pathPos;
@@ -34,17 +45,17 @@
  *  you should use the other two init functions b/c other methods assume
  *  that init'd Balls have either a path or nonzero velocity.
  */
-- (Ball *) initWithColor: (UIColor *) color;
+- (Ball *) initWithColor: (BallColor) color;
 /*
  * creates a ball with a position and a velocity
  */
-- (Ball *) initWithColor: (UIColor *) color 
+- (Ball *) initWithColor: (BallColor) color 
 					atPos: (CGPoint) pos 
 			withVelocity: (CGPoint) vel;
 /*
  * creates a ball, sticks it at the beginning of the path
  */
-- (Ball *) initWithColor: (UIColor *) color onPath: (DirectedPath *) pth;
+- (Ball *) initWithColor: (BallColor) color onPath: (DirectedPath *) pth;
 
 /*
  * attaches the ball to a path at the beginning of the path

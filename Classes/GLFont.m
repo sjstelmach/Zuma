@@ -115,8 +115,6 @@
 		height = i;
 	}
 	
-	NSLog(@"allocating font texture, dimensions %dx%d", width, height);
-	
 	colorSpace = CGColorSpaceCreateDeviceRGB();
 	data = malloc(height * width * 4);
 	context = CGBitmapContextCreate(data, width, height, 8, 4 * width, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
