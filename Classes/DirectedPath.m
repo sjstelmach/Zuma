@@ -108,8 +108,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		radius = rad;
 		startPoint = st;
 		endPoint = ed;
-		clockwise = dir; // since coordinates have a flipped y axis
-								  // our notion of clockwise flips as well
+		clockwise = dir;
 		
 		// from http://www.sonoma.edu/users/w/wilsonst/Papers/Geometry/circles/default.html
 		CGFloat d = CGPointDistBetween(startPoint, endPoint);
@@ -124,16 +123,16 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		CGPoint v2 = CGPointMake(endPoint.x - center.x, endPoint.y - center.y);
 		angle = angleBetween(v1, v2);
 		// switch to the other center in the case of counterclockwise with negative angle with first center
-		if(angle * (1-dir) < 0){
+		if(angle * (dir ? -1 : 1) < 0){
 			center = CGPointMake((startPoint.x + endPoint.x)/2 - plusMinus,
 								 (startPoint.y + endPoint.y)/2 + minusPlus);
 			// recalc vectors if length changes
 			v1 = CGPointMake(startPoint.x - center.x, startPoint.y - center.y);
 			v2 = CGPointMake(endPoint.x - center.x, endPoint.y - center.y);
+			angle *= -1.0f;
 		}
-		angle = fabs(angle);
 		
-		length = angle * radius;
+		length = fabs(angle) * radius;
 		initialAngle = angleBetween(CGPointMake(1.0f, 0.0f), v1);
 		initialAngle = initialAngle < 0 ? 2 * M_PI + initialAngle : initialAngle;
 	}
@@ -144,7 +143,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 {
 	float t = initialAngle + dist * angle / length;
 	float x = center.x + radius * cos(t);
-	float y = center.y + radius * sin(t); // minus b/c y axis is flipped
+	float y = center.y + radius * sin(t);
 	return CGPointMake(x, y);
 }
 
@@ -152,7 +151,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 {
 		// inverse of parametric equations
 	float ft = acos((point.x - center.x) / radius);
-	if (abs(ft + asin((point.y - center.y) / radius)) > EPSILON)
+	if (abs(ft - asin((point.y - center.y) / radius)) > EPSILON)
 		return false;
 	float t = (ft - initialAngle) / angle;
 	return (t >= -EPSILON && t <= 1.0f + EPSILON);
