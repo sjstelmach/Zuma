@@ -175,11 +175,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 - (void) draw
 {	
 	GLint numVertices = ceil(100*fabs(angle)/(2 * M_PI));
-<<<<<<< HEAD
-	GLfloat *vertices = malloc(2*numVertices*sizeof(float)); // x1, y1, x2, ...
-=======
 	GLfloat * vertices = malloc(2*numVertices*sizeof(GLfloat));
->>>>>>> 56ca5d8237ab29d8c94884d1b825c9dff57fd9b1
 	for(int i=0; i<numVertices; i++){
 		float dist = (float)i/(numVertices-1)*length;
 		CGPoint loc = [self pointFromStartWithOffset: dist];
@@ -191,13 +187,8 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	glVertexPointer(2, GL_FLOAT, 0, vertices);
 	glDrawArrays(GL_LINE_STRIP, 0, numVertices);
 	glEnable(GL_TEXTURE_2D);
-<<<<<<< HEAD
-	
+
 	free(vertices);
-	
-=======
-	free(vertices);
->>>>>>> 56ca5d8237ab29d8c94884d1b825c9dff57fd9b1
 }
 
 @end
