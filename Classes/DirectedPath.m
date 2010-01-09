@@ -136,6 +136,8 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		initialAngle = angleBetween(CGPointMake(1.0f, 0.0f), v1);
 		initialAngle = initialAngle < 0 ? 2 * M_PI + initialAngle : initialAngle;
 	}
+	NSLog(@"center: (%f, %f)", center.x, center.y);
+	NSLog(@"start angle: %f, for: %f", initialAngle, angle);
 	return self;
 }
 
@@ -159,14 +161,19 @@ float angleBetween(CGPoint v1, CGPoint v2)
 
 - (void) draw
 {	
-	GLfloat line[] = {
-		startPoint.x, startPoint.y,
-		endPoint.x, endPoint.y,
-	};
+	GLint numVertices = ceil(100*fabs(angle)/(2 * M_PI));
+	GLfloat *vertices = malloc(2*numVertices*sizeof(float));
+	for(int i=0; i<numVertices; i++){
+		float dist = (float)i/(numVertices-1)*length;
+		CGPoint loc = [self pointFromStartWithOffset: dist];
+		vertices[2*i] = loc.x; //x
+		vertices[2*i+1] = loc.y; //y
+	}
+
 	glDisable(GL_TEXTURE_2D);
 	glColor4f(1.0, 0.0, 0.0, 1.0);
-	glVertexPointer(2, GL_FLOAT, 0, line);
-	glDrawArrays(GL_LINES, 0, 2);
+	glVertexPointer(2, GL_FLOAT, 0, vertices);
+	glDrawArrays(GL_LINE_STRIP, 0, numVertices);
 	glEnable(GL_TEXTURE_2D);
 	
 }
