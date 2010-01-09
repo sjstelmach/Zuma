@@ -37,9 +37,7 @@
 -(Ball *)initWithColor: (UIColor *) color {
 	if (self = [super init]) {
 		_color = color;
-		UIImage *ballImage = [UIImage imageNamed:@"coloredwheel.png"];
-		self.contents = (id)[ballImage CGImage];
-		self.bounds = CGRectMake(0.0f, 0.0f, ballImage.size.width, ballImage.size.height);
+		gltexture = [g_ResManager getTexture:@"coloredwheel.png"];
 		loc = CGPointMake(0.0f, 0.0f);
 		path = nil;
 		pathPos = 0.0f;
@@ -94,8 +92,12 @@
 		loc.x += numFrames * velocity.x;
 		loc.y += numFrames * velocity.y;
 	}
-	self.position = loc;
 	return loc;
+}
+
+- (void) draw
+{
+	[gltexture drawAtPoint:loc];
 }
 
 @end

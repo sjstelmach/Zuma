@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Entity.h"
+#import "GLTexture.h"
+#import "ResourceManager.h"
 #import "Path.h"
 #import "DirectedPath.h"
 
 #define BALLRADIUS 32.0f;
 
-@interface Ball : Entity {
+@interface Ball : NSObject {
 	UIColor * _color;
+	GLTexture * gltexture;
 	DirectedPath * path;
 	float pathPos;
 	float speed; // speed of the ball
@@ -61,5 +63,7 @@
  *  returns the new position of the ball
  */
 - (CGPoint) moveByFrames: (int) numFrames;
+
+- (void) draw;
 
 @end

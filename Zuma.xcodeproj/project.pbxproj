@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1B03159410F69B2800C0F295 /* DirectedPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B03159310F69B2800C0F295 /* DirectedPath.m */; };
+		1B031A0F10F80AE900C0F295 /* GLESGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B031A0E10F80AE900C0F295 /* GLESGameState.m */; };
+		1B031A1510F80B0000C0F295 /* GLFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B031A1210F80B0000C0F295 /* GLFont.m */; };
+		1B031A1610F80B0000C0F295 /* GLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B031A1410F80B0000C0F295 /* GLTexture.m */; };
+		1B031A3410F80C7600C0F295 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B031A3310F80C7600C0F295 /* OpenGLES.framework */; };
 		1BA7797510F5DE330061774B /* coloredwheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 1BA7797410F5DE330061774B /* coloredwheel.png */; };
 		1D3623260D0F684500981E51 /* ZumaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ZumaAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -39,6 +43,13 @@
 /* Begin PBXFileReference section */
 		1B03159210F69B2800C0F295 /* DirectedPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectedPath.h; sourceTree = "<group>"; };
 		1B03159310F69B2800C0F295 /* DirectedPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectedPath.m; sourceTree = "<group>"; };
+		1B031A0D10F80AE900C0F295 /* GLESGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESGameState.h; sourceTree = "<group>"; };
+		1B031A0E10F80AE900C0F295 /* GLESGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESGameState.m; sourceTree = "<group>"; };
+		1B031A1110F80B0000C0F295 /* GLFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFont.h; sourceTree = "<group>"; };
+		1B031A1210F80B0000C0F295 /* GLFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLFont.m; sourceTree = "<group>"; };
+		1B031A1310F80B0000C0F295 /* GLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTexture.h; sourceTree = "<group>"; };
+		1B031A1410F80B0000C0F295 /* GLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLTexture.m; sourceTree = "<group>"; };
+		1B031A3310F80C7600C0F295 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		1BA7797410F5DE330061774B /* coloredwheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coloredwheel.png; path = Resources/coloredwheel.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* ZumaAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZumaAppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +103,7 @@
 				7F94D1000FA96E9100A02C11 /* AudioToolbox.framework in Frameworks */,
 				7F94D1290FA970DA00A02C11 /* QuartzCore.framework in Frameworks */,
 				9BEABBC60FFAA9BA00219B8E /* OpenAL.framework in Frameworks */,
+				1B031A3410F80C7600C0F295 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +175,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				1B031A3310F80C7600C0F295 /* OpenGLES.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,6 +183,12 @@
 		7F94D0BF0FA96CDE00A02C11 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				1B031A1110F80B0000C0F295 /* GLFont.h */,
+				1B031A1210F80B0000C0F295 /* GLFont.m */,
+				1B031A1310F80B0000C0F295 /* GLTexture.h */,
+				1B031A1410F80B0000C0F295 /* GLTexture.m */,
+				1B031A0D10F80AE900C0F295 /* GLESGameState.h */,
+				1B031A0E10F80AE900C0F295 /* GLESGameState.m */,
 				A171279210F5530200A04029 /* Entity.h */,
 				A171279310F5530200A04029 /* Entity.m */,
 				7F94D0BC0FA96CD500A02C11 /* SoundEngine.h */,
@@ -300,6 +319,9 @@
 				A171279410F5530200A04029 /* Entity.m in Sources */,
 				A171279A10F5540100A04029 /* Ball.m in Sources */,
 				1B03159410F69B2800C0F295 /* DirectedPath.m in Sources */,
+				1B031A0F10F80AE900C0F295 /* GLESGameState.m in Sources */,
+				1B031A1510F80B0000C0F295 /* GLFont.m in Sources */,
+				1B031A1610F80B0000C0F295 /* GLTexture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

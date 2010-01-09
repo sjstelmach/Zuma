@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKIt/UIKit.h>
-#import "GameState.h"
+#import "GLESGameState.h"
 #import "Path.h"
 #import "Ball.h"
 #import "DirectedPath.h"
 
-@interface gsZuma : GameState{
+@interface gsZuma : GLESGameState{
 	Path * path;
 	Ball * ball;
 	DirectedPath * p;
