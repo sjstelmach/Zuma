@@ -22,10 +22,10 @@
 		[p addLineSegmentWithNextPoint: CGPointMake(50.0f, 100.0f)];
 		[p addLineSegmentWithNextPoint: CGPointMake(100.0f, 100.0f)];
 		[p addArcSegmentWithNextPoint: CGPointMake(150.0f, 150.0f) 
-						   withRadius: 71.0f
+						   withRadius: 37.0f
 					   andIsClockwise: false];
 		[p addArcSegmentWithNextPoint: CGPointMake(300.0f, 300.0f) 
-						   withRadius: 200.0f
+						   withRadius: 150.0f
 					   andIsClockwise: true];
 		
 		ArcSegment * a = (ArcSegment *)[p.segments objectAtIndex:2];
