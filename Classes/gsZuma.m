@@ -22,7 +22,7 @@
 		[p addLineSegmentWithNextPoint: CGPointMake(50.0f, 100.0f)];
 		[p addLineSegmentWithNextPoint: CGPointMake(100.0f, 100.0f)];
 		[p addArcSegmentWithNextPoint: CGPointMake(150.0f, 150.0f) 
-						   withRadius: 37.0f
+						   withRadius: 50.0f
 					   andIsClockwise: false];
 		[p addArcSegmentWithNextPoint: CGPointMake(300.0f, 300.0f) 
 						   withRadius: 150.0f
@@ -55,8 +55,8 @@
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
 	
-	[ball draw];
 	[p draw];
+	[ball draw];
 	
 	//you get a nice boring white screen if you forget to swap buffers.
 	[self swapBuffers];
