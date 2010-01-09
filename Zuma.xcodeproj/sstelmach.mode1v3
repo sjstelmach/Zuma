@@ -277,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
+									<integer>7</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -303,7 +303,7 @@
 							<real>227</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>495 59 867 819 0 0 1440 878 </string>
+						<string>-7 59 818 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -321,7 +321,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DirectedPath.m</string>
+								<string>DirectedPath.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +329,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>DirectedPath.m</string>
+										<string>DirectedPath.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A1E0CCB710F87CA100462283</string>
+										<string>A1E0CD4010F888BC00462283</string>
 										<key>history</key>
 										<array>
 											<string>A180A69110F47E4900F47F9E</string>
@@ -349,12 +349,14 @@
 											<string>A1E0CA9110F84D2500462283</string>
 											<string>A1E0CAAB10F84E0D00462283</string>
 											<string>A1E0CABE10F84EAB00462283</string>
-											<string>A1E0CAF310F8501200462283</string>
-											<string>A1E0CB0B10F850BA00462283</string>
-											<string>A1E0CC5110F874D800462283</string>
-											<string>A1E0CC7210F876F200462283</string>
-											<string>A1E0CCB610F87CA100462283</string>
-											<string>A1E0CCB010F87C7700462283</string>
+											<string>A1E0CCC710F8810300462283</string>
+											<string>A1E0CCC810F8810300462283</string>
+											<string>A1E0CD1010F8856100462283</string>
+											<string>A1E0CD1510F885F500462283</string>
+											<string>A1E0CD1610F885F500462283</string>
+											<string>A1E0CD3110F887A200462283</string>
+											<string>A1E0CD3E10F888BC00462283</string>
+											<string>A1E0CD3F10F888BC00462283</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -366,9 +368,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {618, 535}}</string>
+								<string>{{0, 0}, {569, 535}}</string>
 								<key>RubberWindowFrame</key>
-								<string>495 59 867 819 0 0 1440 878 </string>
+								<string>-7 59 818 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -386,9 +388,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 540}, {618, 238}}</string>
+								<string>{{0, 540}, {569, 238}}</string>
 								<key>RubberWindowFrame</key>
-								<string>495 59 867 819 0 0 1440 878 </string>
+								<string>-7 59 818 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -397,7 +399,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>618pt</string>
+					<string>569pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -558,7 +560,7 @@
 		<string>/Users/sstelmach/Sites/Zuma/Zuma.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>495 59 867 819 0 0 1440 878 </string>
+	<string>-7 59 818 819 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -579,7 +581,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>DirectedPath.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -596,6 +598,8 @@
 							<string>436pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

@@ -24,6 +24,7 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 @property(readonly) float length;
 
 - (CGPoint) pointFromStartWithOffset: (float) dist;
+- (float) tangentFromStartWithOffset: (float) dist;
 - (Boolean) containsPoint: (CGPoint) point;
 - (void) draw;
 
@@ -78,6 +79,8 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 						 withRadius: (float) rad 
 					 andIsClockwise: (Boolean) dir;
 - (CGPoint) pointAtOffset: (float) dist;
+// todo: maybe refactor this.. it could be slow with a lot of balls on screen
+- (float) tangentAtOffset: (float) dist;
 - (void) draw;
 
 	// this should only be used internally (within DirectedPath)

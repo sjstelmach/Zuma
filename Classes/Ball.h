@@ -20,6 +20,7 @@
 	DirectedPath * path;
 	float pathPos;
 	float speed; // speed of the ball
+	float angle; // angle of the ball in radians
 	CGPoint velocity; // velocity vector 
 	CGPoint loc;
 }

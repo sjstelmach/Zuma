@@ -90,16 +90,18 @@
 	if (path) {
 		pathPos += speed * numFrames;
 		loc = [path pointAtOffset: pathPos];
+		angle = [path tangentAtOffset: pathPos];
 	} else {
 		loc.x += numFrames * velocity.x;
 		loc.y += numFrames * velocity.y;
+		angle = atan(velocity.y/velocity.x);
 	}
 	return loc;
 }
 
 - (void) draw
 {
-	[gltexture drawAtPoint:loc];
+	[gltexture drawAtPoint:loc withRotation: angle*180/M_PI withScale: 1.0f];
 }
 
 @end

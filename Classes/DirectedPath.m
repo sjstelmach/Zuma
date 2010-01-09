@@ -34,6 +34,11 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	[self doesNotRecognizeSelector:_cmd];
 	return startPoint;
 }
+- (float) tangentFromStartWithOffset: (float) dist
+{
+	[self doesNotRecognizeSelector:_cmd];
+	return false;	
+}
 
 - (Boolean) containsPoint: (CGPoint) point
 {
@@ -80,6 +85,11 @@ float angleBetween(CGPoint v1, CGPoint v2)
 - (CGPoint) pointFromStartWithOffset: (float) dist
 {
 	return CGPointMake(startPoint.x + dir.x * dist, startPoint.y + dir.y * dist);
+}
+- (float) tangentFromStartWithOffset: (float) dist
+{
+	if(endPoint.x == startPoint.x) return M_PI/2 + M_PI*(endPoint.y < startPoint.y);
+	return atan((endPoint.y-startPoint.y)/(endPoint.x-startPoint.x));
 }
 
 - (void) draw
@@ -136,8 +146,6 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		initialAngle = angleBetween(CGPointMake(1.0f, 0.0f), v1);
 		initialAngle = initialAngle < 0 ? 2 * M_PI + initialAngle : initialAngle;
 	}
-	NSLog(@"center: (%f, %f)", center.x, center.y);
-	NSLog(@"start angle: %f, for: %f", initialAngle, angle);
 	return self;
 }
 
@@ -148,7 +156,12 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	float y = center.y + radius * sin(t);
 	return CGPointMake(x, y);
 }
-
+- (float) tangentFromStartWithOffset: (float) dist
+{
+	CGPoint pt = [self pointFromStartWithOffset: dist];
+	if(fabs(center.x - pt.x) < 3) return 0; // stop flickering for horizontal
+	return atan((center.y-pt.y)/(center.x-pt.x)) + M_PI/2;
+}
 - (Boolean) containsPoint: (CGPoint) point
 {
 		// inverse of parametric equations
@@ -162,7 +175,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 - (void) draw
 {	
 	GLint numVertices = ceil(100*fabs(angle)/(2 * M_PI));
-	GLfloat *vertices = malloc(2*numVertices*sizeof(float));
+	GLfloat *vertices = malloc(2*numVertices*sizeof(float)); // x1, y1, x2, ...
 	for(int i=0; i<numVertices; i++){
 		float dist = (float)i/(numVertices-1)*length;
 		CGPoint loc = [self pointFromStartWithOffset: dist];
@@ -175,6 +188,8 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	glVertexPointer(2, GL_FLOAT, 0, vertices);
 	glDrawArrays(GL_LINE_STRIP, 0, numVertices);
 	glEnable(GL_TEXTURE_2D);
+	
+	free(vertices);
 	
 }
 
@@ -233,10 +248,21 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		}
 		dist -= s.length;
 	}
-	/*while (s = (Segment *)[e nextObject] && s.length > dist) {
-		dist -= s.length;
-	}*/
 	return [s pointFromStartWithOffset:dist];
+}
+
+// returns tangent angle in radians at a given point on the path
+- (float) tangentAtOffset: (float) dist
+{
+	NSEnumerator * e = [segments objectEnumerator];
+	Segment * s;
+	while(s = [e nextObject]){
+		if(s.length > dist){
+			return [s tangentFromStartWithOffset: dist];
+		}
+		dist -= s.length;
+	}
+	return [s tangentFromStartWithOffset:dist];
 }
 
 - (int) addSegment: (Segment *) seg
