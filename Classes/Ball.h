@@ -12,7 +12,7 @@
 #import "Path.h"
 #import "DirectedPath.h"
 
-#define BALLRADIUS 32.0f;
+#define BALLRADIUS 16.0f
 
 @interface Ball : NSObject {
 	UIColor * _color;
@@ -64,6 +64,10 @@
  *  returns the new position of the ball
  */
 - (CGPoint) moveByFrames: (int) numFrames;
+/*
+ * advances ball by dist
+ */
+- (CGPoint) movebyDist: (float) dist;
 
 - (void) draw;
 

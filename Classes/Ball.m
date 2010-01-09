@@ -99,6 +99,18 @@
 	return loc;
 }
 
+- (CGPoint) movebyDist: (float) dist
+{
+	if (path) {
+		pathPos += dist;
+		loc = [path pointAtOffset: pathPos];
+	} else {
+		loc.x += dist * velocity.x / speed;
+		loc.y += dist * velocity.y / speed;
+	}
+	return loc;
+}
+
 - (void) draw
 {
 	[gltexture drawAtPoint:loc withRotation: angle*180/M_PI withScale: 1.0f];

@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -303,7 +305,7 @@
 							<real>227</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>-7 59 818 819 0 0 1440 878 </string>
+						<string>0 59 818 819 0 0 1440 878 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -314,8 +316,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -330,10 +330,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>DirectedPath.h</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>A1E0CD4010F888BC00462283</string>
 										<key>history</key>
 										<array>
 											<string>A180A69110F47E4900F47F9E</string>
@@ -368,14 +364,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {569, 535}}</string>
+								<string>{{0, 0}, {569, 529}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-7 59 818 819 0 0 1440 878 </string>
+								<string>0 59 818 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>535pt</string>
+							<string>529pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -388,14 +384,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 540}, {569, 238}}</string>
+								<string>{{0, 534}, {569, 244}}</string>
 								<key>RubberWindowFrame</key>
-								<string>-7 59 818 819 0 0 1440 878 </string>
+								<string>0 59 818 819 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>238pt</string>
+							<string>244pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -414,9 +410,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A1E0CC4410F8744A00462283</string>
+				<string>A1E0CD4810F888E700462283</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>A1E0CC4510F8744A00462283</string>
+				<string>A1E0CD4910F888E700462283</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -554,13 +550,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>A144D33810F2A44700B7961F</string>
 		<string>/Users/sstelmach/Sites/Zuma/Zuma.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>-7 59 818 819 0 0 1440 878 </string>
+	<string>0 59 818 819 0 0 1440 878 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -581,7 +575,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>DirectedPath.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -598,8 +592,6 @@
 							<string>436pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -639,7 +631,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>A144D33810F2A44700B7961F</string>
-				<string>A1E0CC4610F8744A00462283</string>
+				<string>A1E0CD4A10F888E700462283</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
