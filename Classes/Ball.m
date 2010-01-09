@@ -37,7 +37,7 @@
 -(Ball *)initWithColor: (UIColor *) color {
 	if (self = [super init]) {
 		_color = color;
-		gltexture = [g_ResManager getTexture:@"coloredwheel.png"];
+		gltexture = [g_ResManager getTexture:@"tex.gif"];
 		loc = CGPointMake(0.0f, 0.0f);
 		path = nil;
 		pathPos = 0.0f;
@@ -61,6 +61,8 @@
 
 -(Ball *)initWithColor: (UIColor *) color onPath: (DirectedPath *) pth {
 	if (self = [self initWithColor: color]) {
+		// todo: some sort of speed variable
+		speed = 1;
 		[self attachToPath: pth];
 	}
 	return self;

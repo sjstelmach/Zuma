@@ -8,6 +8,7 @@
 
 #import <math.h>
 #import "DirectedPath.h"
+#import "ResourceManager.h"
 
 float EPSILON = 0.00001;
 
@@ -39,7 +40,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	[self doesNotRecognizeSelector:_cmd];
 	return false;
 }
-- (void) drawInContext: (CGContextRef) g
+- (void) draw
 {
 	[self doesNotRecognizeSelector:_cmd];
 }
@@ -81,13 +82,17 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	return CGPointMake(startPoint.x + dir.x * dist, startPoint.y + dir.y * dist);
 }
 
-- (void) drawInContext: (CGContextRef) g
+- (void) draw
 {
-	CGContextSetStrokeColorWithColor(g, [UIColor greenColor].CGColor);
-	CGContextSetLineWidth(g, 1.0);
-	CGContextMoveToPoint(g, startPoint.x, startPoint.y);
-	CGContextAddLineToPoint(g, endPoint.x, endPoint.y);
-	CGContextStrokePath(g);	
+	GLfloat line[] = {
+		startPoint.x, startPoint.y,
+		endPoint.x, endPoint.y,
+	};
+	glDisable(GL_TEXTURE_2D);
+	glColor4f(1.0, 0.0, 0.0, 1.0);
+	glVertexPointer(2, GL_FLOAT, 0, line);
+	glDrawArrays(GL_LINES, 0, 2);
+	glEnable(GL_TEXTURE_2D);
 }
 
 @end
@@ -103,7 +108,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		radius = rad;
 		startPoint = st;
 		endPoint = ed;
-		clockwise = dir ? 1 : -1; // since coordinates have a flipped y axis
+		clockwise = dir; // since coordinates have a flipped y axis
 								  // our notion of clockwise flips as well
 		
 		// from http://www.sonoma.edu/users/w/wilsonst/Papers/Geometry/circles/default.html
@@ -118,17 +123,19 @@ float angleBetween(CGPoint v1, CGPoint v2)
 		CGPoint v1 = CGPointMake(startPoint.x - center.x, startPoint.y - center.y);
 		CGPoint v2 = CGPointMake(endPoint.x - center.x, endPoint.y - center.y);
 		angle = angleBetween(v1, v2);
-		if(angle * dir < 0){
+		// switch to the other center in the case of counterclockwise with negative angle with first center
+		if(angle * (1-dir) < 0){
 			center = CGPointMake((startPoint.x + endPoint.x)/2 - plusMinus,
 								 (startPoint.y + endPoint.y)/2 + minusPlus);
+			// recalc vectors if length changes
+			v1 = CGPointMake(startPoint.x - center.x, startPoint.y - center.y);
+			v2 = CGPointMake(endPoint.x - center.x, endPoint.y - center.y);
 		}
-		angle = angle < 0 ? angle * -1 : angle;
+		angle = fabs(angle);
 		
 		length = angle * radius;
 		initialAngle = angleBetween(CGPointMake(1.0f, 0.0f), v1);
 		initialAngle = initialAngle < 0 ? 2 * M_PI + initialAngle : initialAngle;
-			// correct for flipped y-axis
-		initialAngle = M_PI - initialAngle;
 	}
 	return self;
 }
@@ -137,7 +144,7 @@ float angleBetween(CGPoint v1, CGPoint v2)
 {
 	float t = initialAngle + dist * angle / length;
 	float x = center.x + radius * cos(t);
-	float y = center.y - radius * sin(t); // minus b/c y axis is flipped
+	float y = center.y + radius * sin(t); // minus b/c y axis is flipped
 	return CGPointMake(x, y);
 }
 
@@ -151,16 +158,18 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	return (t >= -EPSILON && t <= 1.0f + EPSILON);
 }
 
-- (void) drawInContext: (CGContextRef) g 
-{
-	CGContextBeginPath(g);
-	CGContextSetStrokeColorWithColor(g, [UIColor greenColor].CGColor);
-	CGContextSetLineWidth(g, 1.0);
-	float startAngle = M_PI + atan2(center.y - startPoint.y, center.x - startPoint.x);
-	float endAngle = M_PI + atan2(center.y - endPoint.y, center.x - endPoint.x);
-	CGContextAddArc(g , center.x, center.y, radius, startAngle, endAngle, 1-(clockwise+1)/2); // 1 = cc, 0 = clockwise
-	CGContextStrokePath(g);	
-	//CGContextClosePath(g);
+- (void) draw
+{	
+	GLfloat line[] = {
+		startPoint.x, startPoint.y,
+		endPoint.x, endPoint.y,
+	};
+	glDisable(GL_TEXTURE_2D);
+	glColor4f(1.0, 0.0, 0.0, 1.0);
+	glVertexPointer(2, GL_FLOAT, 0, line);
+	glDrawArrays(GL_LINES, 0, 2);
+	glEnable(GL_TEXTURE_2D);
+	
 }
 
 @end
@@ -212,10 +221,16 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	}
 	NSEnumerator * e = [segments objectEnumerator];
 	Segment * s;
-	while (s = (Segment *)[e nextObject] && s.length > dist) {
+	while(s = [e nextObject]){
+		if(s.length > dist){
+			return [s pointFromStartWithOffset: dist];
+		}
 		dist -= s.length;
 	}
-	return [s pointFromStartWithOffset: dist];
+	/*while (s = (Segment *)[e nextObject] && s.length > dist) {
+		dist -= s.length;
+	}*/
+	return [s pointFromStartWithOffset:dist];
 }
 
 - (int) addSegment: (Segment *) seg
@@ -226,12 +241,12 @@ float angleBetween(CGPoint v1, CGPoint v2)
 	return [segments count];
 }
 
-- (void) drawInContext: (CGContextRef) g
+- (void) draw
 {
 	Segment * s;
 	NSEnumerator * e = [segments objectEnumerator];
 	while (s = (Segment *)[e nextObject]) {
-		[s drawInContext: g];
+		[s draw];
 	}
 }
 

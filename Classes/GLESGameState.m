@@ -2,13 +2,18 @@
 //  GLESGameState.m
 //  Test_Framework
 //
-//  Created by Joe Hogue and Paul Zirkle
+//  Created by Joe Hogue on 4/2/09.
+//  Copyright 2009 __MyCompanyName__. All rights reserved.
 //
 
 #import "GLESGameState.h"
 #import <OpenGLES/EAGLDrawable.h>
 #import <QuartzCore/QuartzCore.h>
 #import "ResourceManager.h"
+
+//for endgame/progression code.
+#import "gsMainMenu.h"
+#import "ResourceManager.h" //for getting savefile
 
 //primary context for all opengl calls.  Set in setup2D, should be cleared in teardown.
 EAGLContext* gles_context;
@@ -150,5 +155,12 @@ CGSize					_size;
 -(void) teardown {
 	[gles_context release];
 }
+
+- (CGPoint) touchPosition:(UITouch*)touch {
+	CGPoint point = [touch locationInView:self];
+	point.y = self.frame.size.height-point.y; //convert to opengl coordinates.
+	return point;
+}
+
 
 @end

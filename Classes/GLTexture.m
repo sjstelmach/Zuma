@@ -1,49 +1,49 @@
 /*
-
-File: GLTexture.m
-Abstract: Creates OpenGL 2D textures from images or text.
-
-Version: 1.7
-
-Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple Inc.
-("Apple") in consideration of your agreement to the following terms, and your
-use, installation, modification or redistribution of this Apple software
-constitutes acceptance of these terms.  If you do not agree with these terms,
-please do not use, install, modify or redistribute this Apple software.
-
-In consideration of your agreement to abide by the following terms, and subject
-to these terms, Apple grants you a personal, non-exclusive license, under
-Apple's copyrights in this original Apple software (the "Apple Software"), to
-use, reproduce, modify and redistribute the Apple Software, with or without
-modifications, in source and/or binary forms; provided that if you redistribute
-the Apple Software in its entirety and without modifications, you must retain
-this notice and the following text and disclaimers in all such redistributions
-of the Apple Software.
-Neither the name, trademarks, service marks or logos of Apple Inc. may be used
-to endorse or promote products derived from the Apple Software without specific
-prior written permission from Apple.  Except as expressly stated in this notice,
-no other rights or licenses, express or implied, are granted by Apple herein,
-including but not limited to any patent rights that may be infringed by your
-derivative works or by other works in which the Apple Software may be
-incorporated.
-
-The Apple Software is provided by Apple on an "AS IS" basis.  APPLE MAKES NO
-WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED
-WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND OPERATION ALONE OR IN
-COMBINATION WITH YOUR PRODUCTS.
-
-IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
-GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, MODIFICATION AND/OR
-DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER THEORY OF
-CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, EVEN IF
-APPLE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-Copyright (C) 2008 Apple Inc. All Rights Reserved.
-
-*/
+ 
+ File: GLTexture.m
+ Abstract: Creates OpenGL 2D textures from images or text.
+ 
+ Version: 1.7
+ 
+ Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple Inc.
+ ("Apple") in consideration of your agreement to the following terms, and your
+ use, installation, modification or redistribution of this Apple software
+ constitutes acceptance of these terms.  If you do not agree with these terms,
+ please do not use, install, modify or redistribute this Apple software.
+ 
+ In consideration of your agreement to abide by the following terms, and subject
+ to these terms, Apple grants you a personal, non-exclusive license, under
+ Apple's copyrights in this original Apple software (the "Apple Software"), to
+ use, reproduce, modify and redistribute the Apple Software, with or without
+ modifications, in source and/or binary forms; provided that if you redistribute
+ the Apple Software in its entirety and without modifications, you must retain
+ this notice and the following text and disclaimers in all such redistributions
+ of the Apple Software.
+ Neither the name, trademarks, service marks or logos of Apple Inc. may be used
+ to endorse or promote products derived from the Apple Software without specific
+ prior written permission from Apple.  Except as expressly stated in this notice,
+ no other rights or licenses, express or implied, are granted by Apple herein,
+ including but not limited to any patent rights that may be infringed by your
+ derivative works or by other works in which the Apple Software may be
+ incorporated.
+ 
+ The Apple Software is provided by Apple on an "AS IS" basis.  APPLE MAKES NO
+ WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED
+ WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND OPERATION ALONE OR IN
+ COMBINATION WITH YOUR PRODUCTS.
+ 
+ IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, MODIFICATION AND/OR
+ DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER THEORY OF
+ CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, EVEN IF
+ APPLE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+ Copyright (C) 2008 Apple Inc. All Rights Reserved.
+ 
+ */
 
 #import <OpenGLES/ES1/glext.h>
 
@@ -91,12 +91,12 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 				break;
 			default:
 				[NSException raise:NSInternalInconsistencyException format:@""];
-			
+				
 		}
 		glBindTexture(GL_TEXTURE_2D, saveName); //restore the previous texture binding.
 		
 		//NSLog(@"name %d, savename %d", _name, saveName);
-	
+		
 		_size = size;
 		_width = width;
 		_height = height;
@@ -111,7 +111,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 - (void) dealloc
 {
 	if(_name)
-	 glDeleteTextures(1, &_name);
+		glDeleteTextures(1, &_name);
 	
 	[super dealloc];
 }
@@ -124,12 +124,12 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 @end
 
 @implementation GLTexture (Image)
-	
+
 - (id) initWithImage:(UIImage *)uiImage
 {
 	NSUInteger				width,
-							height,
-							i;
+	height,
+	i;
 	CGContextRef			context = nil;
 	void*					data = nil;;
 	CGColorSpaceRef			colorSpace;
@@ -155,7 +155,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 		return nil;
 	}
 	
-
+	
 	info = CGImageGetAlphaInfo(image);
 	hasAlpha = ((info == kCGImageAlphaPremultipliedLast) || (info == kCGImageAlphaPremultipliedFirst) || (info == kCGImageAlphaLast) || (info == kCGImageAlphaFirst) ? YES : NO);
 	if(CGImageGetColorSpace(image)) {
@@ -169,7 +169,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 	
 	imageSize = CGSizeMake(CGImageGetWidth(image), CGImageGetHeight(image));
 	transform = CGAffineTransformIdentity;
-
+	
 	width = imageSize.width;
 	
 	if((width != 1) && (width & (width - 1))) {
@@ -214,8 +214,8 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 		default:
 			[NSException raise:NSInternalInconsistencyException format:@"Invalid pixel format"];
 	}
- 
-
+	
+	
 	CGContextClearRect(context, CGRectMake(0, 0, width, height));
 	CGContextTranslateCTM(context, 0, height - imageSize.height);
 	
@@ -251,15 +251,15 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 - (void) drawAtPoint:(CGPoint)point 
 {
 	GLfloat		coordinates[] = { 0,	_maxT,
-								_maxS,	_maxT,
-								0,		0,
-								_maxS,	0 };
+		_maxS,	_maxT,
+		0,		0,
+		_maxS,	0 };
 	GLfloat		width = (GLfloat)_width * _maxS,
-				height = (GLfloat)_height * _maxT;
+	height = (GLfloat)_height * _maxT;
 	GLfloat		vertices[] = {	-width / 2.0f + point.x,	-height / 2.0f + point.y,	0.0,
-								width / 2.0f + point.x,	-height / 2.0f + point.y,	0.0,
-								-width / 2.0f + point.x,	height / 2.0f + point.y,	0.0,
-								width / 2.0f + point.x,	height / 2.0f + point.y,	0.0 };
+		width / 2.0f + point.x,	-height / 2.0f + point.y,	0.0,
+		-width / 2.0f + point.x,	height / 2.0f + point.y,	0.0,
+		width / 2.0f + point.x,	height / 2.0f + point.y,	0.0 };
 	
 	glBindTexture(GL_TEXTURE_2D, _name);
 	glVertexPointer(3, GL_FLOAT, 0, vertices);
@@ -272,7 +272,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 	GLfloat		coordinates[] = { 0,	_maxT,
 		_maxS,	_maxT,
 		0,		0,
-	_maxS,	0 };
+		_maxS,	0 };
 	GLfloat		width = (GLfloat)_width * _maxS,
 	height = (GLfloat)_height * _maxT;
 	GLfloat		vertices[] = {	
@@ -286,7 +286,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 	glBindTexture(GL_TEXTURE_2D, _name);
 	glVertexPointer(3, GL_FLOAT, 0, vertices);
 	glTexCoordPointer(2, GL_FLOAT, 0, coordinates);
-
+	
 	glPushMatrix();
 	glTranslatef(point.x, point.y, 0);
 	glRotatef(rotation, 0, 0, 1); //in degrees, about screen origin.
@@ -300,8 +300,8 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 //draws align bottom-left, like opengl coordinates.
 - (void) drawInRect:(CGRect)dest withClip:(CGRect)src withRotation:(CGFloat)rotation {
 	GLfloat 
-		gx0 = src.origin.x/_width, gx1 = (src.origin.x+src.size.width)/_width,
-		gy0 = src.origin.y/_height, gy1 = (src.origin.y+src.size.height)/_height;
+	gx0 = src.origin.x/_width, gx1 = (src.origin.x+src.size.width)/_width,
+	gy0 = src.origin.y/_height, gy1 = (src.origin.y+src.size.height)/_height;
 	GLfloat		coordinates[] = { 
 		gx0,	gy1,
 		gx1,	gy1,
@@ -314,7 +314,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 		-dest.size.width/2,		dest.size.height/2,		0.0,
 		dest.size.width/2,		dest.size.height/2,		0.0 
 	};
-
+	
 	glBindTexture(GL_TEXTURE_2D, _name);
 	glVertexPointer(3, GL_FLOAT, 0, vertices);
 	glTexCoordPointer(2, GL_FLOAT, 0, coordinates);
@@ -329,13 +329,13 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 - (void) drawInRect:(CGRect)rect
 {
 	GLfloat	 coordinates[] = {  0,		_maxT,
-								_maxS,	_maxT,
-								0,		0,
-								_maxS,	0  };
+		_maxS,	_maxT,
+		0,		0,
+		_maxS,	0  };
 	GLfloat	vertices[] = {	rect.origin.x,							rect.origin.y,							0.0,
-							rect.origin.x + rect.size.width,		rect.origin.y,							0.0,
-							rect.origin.x,							rect.origin.y + rect.size.height,		0.0,
-							rect.origin.x + rect.size.width,		rect.origin.y + rect.size.height,		0.0 };
+		rect.origin.x + rect.size.width,		rect.origin.y,							0.0,
+		rect.origin.x,							rect.origin.y + rect.size.height,		0.0,
+		rect.origin.x + rect.size.width,		rect.origin.y + rect.size.height,		0.0 };
 	
 	glBindTexture(GL_TEXTURE_2D, _name);
 	glVertexPointer(3, GL_FLOAT, 0, vertices);
@@ -347,7 +347,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 	GLfloat	 coordinates[] = {  0,		_maxT,
 		_maxS,	_maxT,
 		0,		0,
-	_maxS,	0  };
+		_maxS,	0  };
 	
 	glBindTexture(GL_TEXTURE_2D, _name);
 	glVertexPointer(3, GL_FLOAT, 0, vertices);

@@ -38,6 +38,7 @@
 		A144D22010F2B89C00CA78A1 /* gsZuma.m in Sources */ = {isa = PBXBuildFile; fileRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */; };
 		A171279410F5530200A04029 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = A171279310F5530200A04029 /* Entity.m */; };
 		A171279A10F5540100A04029 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = A171279910F5540100A04029 /* Ball.m */; };
+		A1E0CA3D10F83B7E00462283 /* tex.gif in Resources */ = {isa = PBXBuildFile; fileRef = A1E0CA3C10F83B7E00462283 /* tex.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		A171279310F5530200A04029 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		A171279810F5540100A04029 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		A171279910F5540100A04029 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+		A1E0CA3C10F83B7E00462283 /* tex.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tex.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A1E0CA3C10F83B7E00462283 /* tex.gif */,
 				7F94D1020FA96EE900A02C11 /* Textures */,
 				7F94D1010FA96EE300A02C11 /* Sounds */,
 				2899E5210DE3E06400AC0155 /* Zuma.xib */,
@@ -296,6 +299,7 @@
 				9B8D8BBC10E074BB005FB7EC /* social.mp3 in Resources */,
 				9B8D8C0C10E0810E005FB7EC /* gsmainmenu.xib in Resources */,
 				1BA7797510F5DE330061774B /* coloredwheel.png in Resources */,
+				A1E0CA3D10F83B7E00462283 /* tex.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

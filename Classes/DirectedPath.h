@@ -15,6 +15,7 @@ float CGPointDistBetween(CGPoint p1, CGPoint p2);
 {
 	CGPoint startPoint;
 	CGPoint endPoint;
+	@public
 	float length;
 }
 
