@@ -158,17 +158,12 @@ float angleBetween(CGPoint v1, CGPoint v2)
 }
 
 - (void) draw
-{	
-	GLfloat line[] = {
-		startPoint.x, startPoint.y,
-		endPoint.x, endPoint.y,
-	};
+{
 	glDisable(GL_TEXTURE_2D);
 	glColor4f(1.0, 0.0, 0.0, 1.0);
 	glVertexPointer(2, GL_FLOAT, 0, line);
 	glDrawArrays(GL_LINES, 0, 2);
 	glEnable(GL_TEXTURE_2D);
-	
 }
 
 @end
