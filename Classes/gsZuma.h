@@ -10,14 +10,17 @@
 #import "GLESGameState.h"
 #import "Path.h"
 #import "Ball.h"
+#import "BallShooter.h"
 #import "BallChain.h"
 #import "DirectedPath.h"
 
 @interface gsZuma : GLESGameState{
 	Path * path;
 	Ball * ball;
+	BallShooter * ballshooter;
 	DirectedPath * p;
 	BallChain * ballchain;
+	GLTexture * background;
 }
 
 @end

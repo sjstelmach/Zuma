@@ -46,6 +46,9 @@
 		A171279410F5530200A04029 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = A171279310F5530200A04029 /* Entity.m */; };
 		A171279A10F5540100A04029 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = A171279910F5540100A04029 /* Ball.m */; };
 		A1E0CA3D10F83B7E00462283 /* tex.gif in Resources */ = {isa = PBXBuildFile; fileRef = A1E0CA3C10F83B7E00462283 /* tex.gif */; };
+		A1F9407910F99B4600627AA7 /* spacebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F9407810F99B4600627AA7 /* spacebackground.png */; };
+		A1F9408010F99BE000627AA7 /* BallShooter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F9407F10F99BE000627AA7 /* BallShooter.m */; };
+		A1F9408210F99D7100627AA7 /* shooter.png in Resources */ = {isa = PBXBuildFile; fileRef = A1F9408110F99D7100627AA7 /* shooter.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +110,10 @@
 		A171279810F5540100A04029 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		A171279910F5540100A04029 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
 		A1E0CA3C10F83B7E00462283 /* tex.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tex.gif; sourceTree = "<group>"; };
+		A1F9407810F99B4600627AA7 /* spacebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spacebackground.png; sourceTree = "<group>"; };
+		A1F9407E10F99BE000627AA7 /* BallShooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallShooter.h; sourceTree = "<group>"; };
+		A1F9407F10F99BE000627AA7 /* BallShooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallShooter.m; sourceTree = "<group>"; };
+		A1F9408110F99D7100627AA7 /* shooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shooter.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +251,8 @@
 		7F94D1020FA96EE900A02C11 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
+				A1F9408110F99D7100627AA7 /* shooter.png */,
+				A1F9407810F99B4600627AA7 /* spacebackground.png */,
 				1B031C7510F891FD00C0F295 /* yellow.png */,
 				1B031C7610F891FD00C0F295 /* blue.png */,
 				1B031C7710F891FD00C0F295 /* green.png */,
@@ -268,6 +277,8 @@
 				1B03159310F69B2800C0F295 /* DirectedPath.m */,
 				1B031BE310F8785300C0F295 /* BallChain.h */,
 				1B031BE410F8785300C0F295 /* BallChain.m */,
+				A1F9407E10F99BE000627AA7 /* BallShooter.h */,
+				A1F9407F10F99BE000627AA7 /* BallShooter.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -329,6 +340,8 @@
 				1B031C7E10F891FD00C0F295 /* red.png in Resources */,
 				1B031C7F10F891FD00C0F295 /* white.png in Resources */,
 				1B031C8010F891FD00C0F295 /* black.png in Resources */,
+				A1F9407910F99B4600627AA7 /* spacebackground.png in Resources */,
+				A1F9408210F99D7100627AA7 /* shooter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +369,7 @@
 				1B031A1510F80B0000C0F295 /* GLFont.m in Sources */,
 				1B031A1610F80B0000C0F295 /* GLTexture.m in Sources */,
 				1B031BE510F8785300C0F295 /* BallChain.m in Sources */,
+				A1F9408010F99BE000627AA7 /* BallShooter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

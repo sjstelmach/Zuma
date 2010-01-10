@@ -32,6 +32,11 @@
 		
 		ballchain = [[BallChain	alloc] initOnPath:p withNumberBalls:30 withSpeed:3.0 withNumColors:3];
 		[ballchain retain];
+		
+		ballshooter = [[BallShooter alloc] initWithLoc:CGPointMake(160, 240)];
+		
+		background = [g_ResManager getTexture:@"spacebackground.png"];
+
 	}
 	return self;
 }
@@ -48,17 +53,26 @@
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
 	
+	[background drawAtPoint:CGPointMake(160, 240)];
+
 	[p draw];
 		//[ball draw];
 	[ballchain draw];
+	[ballshooter draw];
+	
 	
 	//you get a nice boring white screen if you forget to swap buffers.
 	[self swapBuffers];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-	[ball setVelocity:CGPointMake((float)(random()-RAND_MAX/2)/RAND_MAX*10, 
-								  (float)(random()-RAND_MAX/2)/RAND_MAX*10)];
+	// aim at
+	NSSet *allTouches = [event allTouches];
+	UITouch *touch = [[allTouches allObjects] objectAtIndex:0];
+	[ballshooter aimAt:[touch locationInView:self]];
+
+	//[ball setVelocity:CGPointMake((float)(random()-RAND_MAX/2)/RAND_MAX*10, 
+	//							  (float)(random()-RAND_MAX/2)/RAND_MAX*10)];
 }
 
 
