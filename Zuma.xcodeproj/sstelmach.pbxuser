@@ -27,7 +27,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {845, 2041}}";
 			sepNavSelRange = "{2872, 0}";
-			sepNavVisRange = "{2488, 540}";
+			sepNavVisRange = "{2488, 621}";
 		};
 	};
 	1B031A1210F80B0000C0F295 /* GLFont.m */ = {
@@ -780,9 +780,9 @@
 	};
 	A144D21F10F2B89C00CA78A1 /* gsZuma.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1130, 871}}";
-			sepNavSelRange = "{775, 0}";
-			sepNavVisRange = "{209, 969}";
+			sepNavIntBoundsRect = "{{0, 0}, {1153, 871}}";
+			sepNavSelRange = "{879, 0}";
+			sepNavVisRange = "{596, 702}";
 			sepNavWindowFrame = "{{15, 49}, {608, 824}}";
 		};
 	};
