@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,10 +279,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
-									<integer>16</integer>
-									<integer>1</integer>
-									<integer>0</integer>
+									<integer>60</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -314,14 +313,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>GLFont.m</string>
+								<string>gsZuma.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -329,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>GLFont.m</string>
+										<string>gsZuma.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A1E0CDF010F930A100462283</string>
+										<string>A1E0CDFD10F93FD200462283</string>
 										<key>history</key>
 										<array>
 											<string>A180A69110F47E4900F47F9E</string>
@@ -354,12 +351,13 @@
 											<string>A1E0CDB510F9213E00462283</string>
 											<string>A1E0CDC510F9227800462283</string>
 											<string>A1E0CDC610F9227800462283</string>
-											<string>A1E0CDDD10F9249B00462283</string>
 											<string>A1E0CDEB10F930A100462283</string>
 											<string>A1E0CDEC10F930A100462283</string>
 											<string>A1E0CDED10F930A100462283</string>
 											<string>A1E0CDEE10F930A100462283</string>
-											<string>A1E0CDEF10F930A100462283</string>
+											<string>A1E0CDF510F93F1D00462283</string>
+											<string>A1E0CDF610F93F1D00462283</string>
+											<string>A1E0CDDD10F9249B00462283</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -561,6 +559,7 @@
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>A144D33810F2A44700B7961F</string>
+		<string>/Users/sstelmach/Sites/Zuma/Zuma.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>376 59 1440 819 0 0 1440 878 </string>
