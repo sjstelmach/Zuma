@@ -16,6 +16,8 @@
 	GLTexture * gltexture;
 	float angle; // in radians
 	CGPoint _loc;
+	Ball * toBeFired;
+	float shootingSpeed;
 }
 
 - (BallShooter *) initWithLoc: (CGPoint) loc;

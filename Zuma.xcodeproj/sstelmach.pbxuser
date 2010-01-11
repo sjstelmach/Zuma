@@ -159,7 +159,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					952,
+					634,
 					20,
 					48,
 					43,
@@ -660,6 +660,39 @@
 			A1E0CDF710F93F1D00462283 = A1E0CDF710F93F1D00462283 /* PBXTextBookmark */;
 			A1E0CDFA10F93F2D00462283 = A1E0CDFA10F93F2D00462283 /* PBXTextBookmark */;
 			A1E0CDFD10F93FD200462283 = A1E0CDFD10F93FD200462283 /* PBXTextBookmark */;
+			A1F940BA10FA9A4D00627AA7 /* XCBuildMessageTextBookmark */ = A1F940BA10FA9A4D00627AA7 /* XCBuildMessageTextBookmark */;
+			A1F940BB10FA9A4D00627AA7 /* PBXTextBookmark */ = A1F940BB10FA9A4D00627AA7 /* PBXTextBookmark */;
+			A1F940C810FA9AE100627AA7 /* PBXTextBookmark */ = A1F940C810FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940C910FA9AE100627AA7 /* PBXTextBookmark */ = A1F940C910FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940CA10FA9AE100627AA7 /* PBXTextBookmark */ = A1F940CA10FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940CB10FA9AE100627AA7 /* PBXTextBookmark */ = A1F940CB10FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940CC10FA9AE100627AA7 /* PBXBookmark */ = A1F940CC10FA9AE100627AA7 /* PBXBookmark */;
+			A1F940CD10FA9AE100627AA7 /* PBXTextBookmark */ = A1F940CD10FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940CE10FA9AE100627AA7 /* PBXTextBookmark */ = A1F940CE10FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940CF10FA9AE100627AA7 /* PBXTextBookmark */ = A1F940CF10FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940D010FA9AE100627AA7 /* PBXTextBookmark */ = A1F940D010FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940D110FA9AE100627AA7 /* PBXTextBookmark */ = A1F940D110FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940D210FA9AE100627AA7 /* PBXTextBookmark */ = A1F940D210FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940D310FA9AE100627AA7 /* PBXTextBookmark */ = A1F940D310FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940D410FA9AE100627AA7 /* PBXTextBookmark */ = A1F940D410FA9AE100627AA7 /* PBXTextBookmark */;
+			A1F940DB10FA9AEC00627AA7 /* PBXTextBookmark */ = A1F940DB10FA9AEC00627AA7 /* PBXTextBookmark */;
+			A1F940E010FA9B7700627AA7 /* PBXTextBookmark */ = A1F940E010FA9B7700627AA7 /* PBXTextBookmark */;
+			A1F940E110FA9B7700627AA7 /* PBXTextBookmark */ = A1F940E110FA9B7700627AA7 /* PBXTextBookmark */;
+			A1F940E210FA9B7700627AA7 /* PBXTextBookmark */ = A1F940E210FA9B7700627AA7 /* PBXTextBookmark */;
+			A1F940E310FA9B7700627AA7 /* PBXTextBookmark */ = A1F940E310FA9B7700627AA7 /* PBXTextBookmark */;
+			A1F940E610FA9B8400627AA7 /* PBXTextBookmark */ = A1F940E610FA9B8400627AA7 /* PBXTextBookmark */;
+			A1F940E910FA9BBA00627AA7 /* PBXTextBookmark */ = A1F940E910FA9BBA00627AA7 /* PBXTextBookmark */;
+			A1F940EC10FA9BD200627AA7 /* PBXTextBookmark */ = A1F940EC10FA9BD200627AA7 /* PBXTextBookmark */;
+			A1F940EF10FA9C4C00627AA7 /* PBXTextBookmark */ = A1F940EF10FA9C4C00627AA7 /* PBXTextBookmark */;
+			A1F940F010FA9C4C00627AA7 /* PBXTextBookmark */ = A1F940F010FA9C4C00627AA7 /* PBXTextBookmark */;
+			A1F940F110FA9C4C00627AA7 /* PBXTextBookmark */ = A1F940F110FA9C4C00627AA7 /* PBXTextBookmark */;
+			A1F940F210FA9C4C00627AA7 /* PBXTextBookmark */ = A1F940F210FA9C4C00627AA7 /* PBXTextBookmark */;
+			A1F940F310FA9C7600627AA7 /* PBXTextBookmark */ = A1F940F310FA9C7600627AA7 /* PBXTextBookmark */;
+			A1F940F410FA9CA600627AA7 /* PBXTextBookmark */ = A1F940F410FA9CA600627AA7 /* PBXTextBookmark */;
+			A1F940F710FA9CD500627AA7 /* PBXTextBookmark */ = A1F940F710FA9CD500627AA7 /* PBXTextBookmark */;
+			A1F940FC10FA9CED00627AA7 /* PBXTextBookmark */ = A1F940FC10FA9CED00627AA7 /* PBXTextBookmark */;
+			A1F940FF10FA9CFD00627AA7 /* PBXTextBookmark */ = A1F940FF10FA9CFD00627AA7 /* PBXTextBookmark */;
+			A1F9410010FA9D4F00627AA7 /* PBXTextBookmark */ = A1F9410010FA9D4F00627AA7 /* PBXTextBookmark */;
 		};
 		sourceControlManager = A144D34110F2A44700B7961F /* Source Control */;
 		userBuildSettings = {
@@ -688,7 +721,7 @@
 	};
 	7F94D09C0FA96C9200A02C11 /* GameState.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {691, 741}}";
+			sepNavIntBoundsRect = "{{0, 0}, {812, 741}}";
 			sepNavSelRange = "{305, 16}";
 			sepNavVisRange = "{0, 343}";
 		};
@@ -773,16 +806,16 @@
 	};
 	A144D21E10F2B89C00CA78A1 /* gsZuma.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {812, 483}}";
-			sepNavSelRange = "{406, 0}";
-			sepNavVisRange = "{0, 415}";
+			sepNavIntBoundsRect = "{{0, 0}, {812, 718}}";
+			sepNavSelRange = "{480, 0}";
+			sepNavVisRange = "{0, 490}";
 		};
 	};
 	A144D21F10F2B89C00CA78A1 /* gsZuma.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {812, 949}}";
-			sepNavSelRange = "{1294, 0}";
-			sepNavVisRange = "{1001, 646}";
+			sepNavIntBoundsRect = "{{0, 0}, {812, 1274}}";
+			sepNavSelRange = "{889, 0}";
+			sepNavVisRange = "{71, 1438}";
 			sepNavWindowFrame = "{{15, 49}, {608, 824}}";
 		};
 	};
@@ -890,16 +923,16 @@
 	};
 	A171279810F5540100A04029 /* Ball.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {812, 1131}}";
-			sepNavSelRange = "{188, 28}";
-			sepNavVisRange = "{364, 997}";
+			sepNavIntBoundsRect = "{{0, 0}, {812, 1092}}";
+			sepNavSelRange = "{735, 0}";
+			sepNavVisRange = "{324, 1440}";
 		};
 	};
 	A171279910F5540100A04029 /* Ball.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {812, 1625}}";
-			sepNavSelRange = "{1033, 50}";
-			sepNavVisRange = "{0, 657}";
+			sepNavIntBoundsRect = "{{0, 0}, {812, 1677}}";
+			sepNavSelRange = "{2516, 75}";
+			sepNavVisRange = "{1626, 973}";
 		};
 	};
 	A17127BE10F5557F00A04029 /* PBXTextBookmark */ = {
@@ -1007,7 +1040,7 @@
 		fRef = A144D21E10F2B89C00CA78A1 /* gsZuma.h */;
 		name = "gsZuma.h: 19";
 		rLen = 0;
-		rLoc = 308;
+		rLoc = 332;
 		rType = 0;
 		vrLen = 344;
 		vrLoc = 0;
@@ -1076,8 +1109,8 @@
 		isa = PBXTextBookmark;
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 43";
-		rLen = 55;
-		rLoc = 824;
+		rLen = 1;
+		rLoc = 812;
 		rType = 0;
 		vrLen = 1236;
 		vrLoc = 288;
@@ -1137,7 +1170,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1177,7 +1210,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1187,7 +1220,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 938;
+		rLoc = 872;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1197,7 +1230,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 47";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1207,7 +1240,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 933;
+		rLoc = 867;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1217,7 +1250,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 933;
+		rLoc = 867;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1227,7 +1260,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 47";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1237,7 +1270,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 938;
+		rLoc = 872;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1247,7 +1280,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 938;
+		rLoc = 872;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1257,7 +1290,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 938;
+		rLoc = 872;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1267,7 +1300,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 938;
+		rLoc = 872;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1277,7 +1310,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 48";
 		rLen = 0;
-		rLoc = 938;
+		rLoc = 872;
 		rType = 0;
 		vrLen = 1344;
 		vrLoc = 180;
@@ -1331,7 +1364,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 44";
 		rLen = 0;
-		rLoc = 938;
+		rLoc = 872;
 		rType = 0;
 		vrLen = 1095;
 		vrLoc = 429;
@@ -1341,7 +1374,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 66";
 		rLen = 0;
-		rLoc = 1165;
+		rLoc = 1233;
 		rType = 0;
 		vrLen = 1095;
 		vrLoc = 429;
@@ -1351,7 +1384,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 56";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 1167;
 		vrLoc = 357;
@@ -1381,7 +1414,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 56";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 1167;
 		vrLoc = 357;
@@ -1391,7 +1424,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 57";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 505;
@@ -1401,7 +1434,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1067;
+		rLoc = 1077;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 442;
@@ -1451,7 +1484,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 65";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 505;
@@ -1461,7 +1494,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 63";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 893;
 		vrLoc = 631;
@@ -1471,7 +1504,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 65";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 893;
 		vrLoc = 631;
@@ -1481,7 +1514,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 1076;
 		rType = 0;
 		vrLen = 835;
 		vrLoc = 689;
@@ -1491,7 +1524,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 1076;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1511,7 +1544,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 1076;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1521,7 +1554,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 1076;
 		rType = 0;
 		vrLen = 835;
 		vrLoc = 689;
@@ -1551,7 +1584,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 1076;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1561,7 +1594,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1066;
+		rLoc = 1076;
 		rType = 0;
 		vrLen = 835;
 		vrLoc = 689;
@@ -1571,7 +1604,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 53";
 		rLen = 0;
-		rLoc = 1067;
+		rLoc = 1077;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 751;
@@ -1581,7 +1614,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 54";
 		rLen = 0;
-		rLoc = 1106;
+		rLoc = 1170;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 751;
@@ -1591,7 +1624,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 53";
 		rLen = 0;
-		rLoc = 1067;
+		rLoc = 1077;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 751;
@@ -1601,7 +1634,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 53";
 		rLen = 0;
-		rLoc = 1067;
+		rLoc = 1077;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1661,7 +1694,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1106;
+		rLoc = 1170;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1671,7 +1704,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1106;
+		rLoc = 1170;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 569;
@@ -1781,7 +1814,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 52";
 		rLen = 0;
-		rLoc = 1106;
+		rLoc = 1170;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 569;
@@ -1791,7 +1824,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 66";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1801,7 +1834,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 66";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1811,7 +1844,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 57";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1821,7 +1854,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 66";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1831,7 +1864,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 71";
 		rLen = 0;
-		rLoc = 1307;
+		rLoc = 1375;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 569;
@@ -1901,7 +1934,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 59";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 569;
@@ -1949,7 +1982,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 59";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 893;
 		vrLoc = 631;
@@ -1959,7 +1992,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 66";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -1969,7 +2002,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 68";
 		rLen = 0;
-		rLoc = 1166;
+		rLoc = 1234;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 569;
@@ -1979,7 +2012,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 68";
 		rLen = 0;
-		rLoc = 1166;
+		rLoc = 1234;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 569;
@@ -2069,7 +2102,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 67";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 866;
 		vrLoc = 658;
@@ -2079,7 +2112,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 69";
 		rLen = 0;
-		rLoc = 1163;
+		rLoc = 1231;
 		rType = 0;
 		vrLen = 835;
 		vrLoc = 689;
@@ -2089,7 +2122,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 70";
 		rLen = 0;
-		rLoc = 1163;
+		rLoc = 1231;
 		rType = 0;
 		vrLen = 745;
 		vrLoc = 779;
@@ -2099,7 +2132,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 67";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 751;
@@ -2109,7 +2142,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 67";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 751;
@@ -2169,7 +2202,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 67";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 751;
@@ -2179,7 +2212,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 55";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 811;
@@ -2189,7 +2222,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 68";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 811;
@@ -2199,7 +2232,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 55";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 811;
@@ -2209,7 +2242,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 72";
 		rLen = 0;
-		rLoc = 1163;
+		rLoc = 1231;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 877;
@@ -2239,7 +2272,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 72";
 		rLen = 0;
-		rLoc = 1163;
+		rLoc = 1231;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 811;
@@ -2249,7 +2282,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 70";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 710;
 		vrLoc = 814;
@@ -2269,7 +2302,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 70";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 713;
 		vrLoc = 811;
@@ -2279,7 +2312,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 72";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 710;
 		vrLoc = 814;
@@ -2289,7 +2322,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 72";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 710;
 		vrLoc = 814;
@@ -2329,7 +2362,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 72";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 710;
 		vrLoc = 814;
@@ -2339,7 +2372,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 72";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 590;
 		vrLoc = 934;
@@ -2349,7 +2382,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 72";
 		rLen = 0;
-		rLoc = 1150;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 587;
 		vrLoc = 937;
@@ -2359,7 +2392,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 67";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 587;
 		vrLoc = 937;
@@ -2369,7 +2402,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 58";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 877;
@@ -2449,7 +2482,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 58";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 647;
 		vrLoc = 877;
@@ -2459,7 +2492,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 69";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 590;
 		vrLoc = 934;
@@ -2469,7 +2502,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 69";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 590;
 		vrLoc = 934;
@@ -2499,7 +2532,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 69";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 590;
 		vrLoc = 934;
@@ -2509,7 +2542,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 68";
 		rLen = 0;
-		rLoc = 1163;
+		rLoc = 1231;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 569;
@@ -2519,7 +2552,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 68";
 		rLen = 0;
-		rLoc = 1163;
+		rLoc = 1231;
 		rType = 0;
 		vrLen = 1170;
 		vrLoc = 354;
@@ -2529,7 +2562,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 55";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 1340;
 		vrLoc = 184;
@@ -3107,7 +3140,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 36";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1321;
 		vrLoc = 71;
@@ -3117,7 +3150,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 36";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1299;
 		vrLoc = 91;
@@ -3127,7 +3160,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 35";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 142;
@@ -3137,7 +3170,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 35";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1382;
 		vrLoc = 142;
@@ -3277,7 +3310,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 39";
 		rLen = 0;
-		rLoc = 884;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1365;
 		vrLoc = 159;
@@ -3297,7 +3330,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 39";
 		rLen = 0;
-		rLoc = 884;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1272;
 		vrLoc = 0;
@@ -3357,7 +3390,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 39";
 		rLen = 0;
-		rLoc = 884;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1342;
 		vrLoc = 0;
@@ -3765,7 +3798,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 39";
 		rLen = 0;
-		rLoc = 884;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 985;
 		vrLoc = 357;
@@ -3775,7 +3808,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 39";
 		rLen = 0;
-		rLoc = 884;
+		rLoc = 818;
 		rType = 0;
 		vrLen = 1042;
 		vrLoc = 209;
@@ -3865,7 +3898,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 39";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1028;
 		vrLoc = 209;
@@ -3875,7 +3908,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 39";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1028;
 		vrLoc = 209;
@@ -3925,7 +3958,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 59";
 		rLen = 0;
-		rLoc = 1149;
+		rLoc = 1217;
 		rType = 0;
 		vrLen = 453;
 		vrLoc = 1071;
@@ -3935,7 +3968,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 57";
 		rLen = 0;
-		rLoc = 1137;
+		rLoc = 1205;
 		rType = 0;
 		vrLen = 453;
 		vrLoc = 1071;
@@ -4115,7 +4148,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 57";
 		rLen = 0;
-		rLoc = 1137;
+		rLoc = 1205;
 		rType = 0;
 		vrLen = 495;
 		vrLoc = 1029;
@@ -4863,7 +4896,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 41";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 877;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 290;
@@ -4873,7 +4906,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 41";
 		rLen = 0;
-		rLoc = 973;
+		rLoc = 907;
 		rType = 0;
 		vrLen = 1073;
 		vrLoc = 290;
@@ -4883,7 +4916,7 @@
 		comments = "Incompatible type for argument 1 of 'initWithColor:onPath:'";
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		rLen = 0;
-		rLoc = 32;
+		rLoc = 30;
 		rType = 1;
 	};
 	A1E0CD8A10F91D9700462283 /* PBXTextBookmark */ = {
@@ -4891,7 +4924,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 39";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 828;
 		vrLoc = 595;
@@ -4961,7 +4994,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 39";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1033;
 		vrLoc = 351;
@@ -4971,7 +5004,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 38";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 351;
@@ -4991,7 +5024,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 38";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 1023;
 		vrLoc = 351;
@@ -5081,7 +5114,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 41";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 877;
 		rType = 0;
 		vrLen = 1003;
 		vrLoc = 351;
@@ -5121,7 +5154,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 41";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 877;
 		rType = 0;
 		vrLen = 1022;
 		vrLoc = 351;
@@ -5131,7 +5164,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 41";
 		rLen = 0;
-		rLoc = 955;
+		rLoc = 889;
 		rType = 0;
 		vrLen = 1003;
 		vrLoc = 351;
@@ -5141,7 +5174,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 41";
 		rLen = 0;
-		rLoc = 955;
+		rLoc = 889;
 		rType = 0;
 		vrLen = 1003;
 		vrLoc = 351;
@@ -5201,7 +5234,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 33";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 877;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 91;
@@ -5211,7 +5244,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 33";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 877;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 91;
@@ -5251,7 +5284,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 33";
 		rLen = 0;
-		rLoc = 943;
+		rLoc = 877;
 		rType = 0;
 		vrLen = 995;
 		vrLoc = 91;
@@ -5331,7 +5364,7 @@
 		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
 		name = "gsZuma.m: 33";
 		rLen = 0;
-		rLoc = 879;
+		rLoc = 813;
 		rType = 0;
 		vrLen = 632;
 		vrLoc = 596;
@@ -5485,16 +5518,339 @@
 	};
 	A1F9407E10F99BE000627AA7 /* BallShooter.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {812, 483}}";
-			sepNavSelRange = "{326, 79}";
-			sepNavVisRange = "{0, 411}";
+			sepNavIntBoundsRect = "{{0, 0}, {812, 718}}";
+			sepNavSelRange = "{387, 0}";
+			sepNavVisRange = "{0, 543}";
 		};
 	};
 	A1F9407F10F99BE000627AA7 /* BallShooter.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {812, 483}}";
-			sepNavSelRange = "{318, 0}";
-			sepNavVisRange = "{0, 379}";
+			sepNavIntBoundsRect = "{{0, 0}, {812, 718}}";
+			sepNavSelRange = "{419, 0}";
+			sepNavVisRange = "{0, 1081}";
 		};
+	};
+	A1F940BA10FA9A4D00627AA7 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Unused variable 'a'";
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 29;
+		rType = 1;
+	};
+	A1F940BB10FA9A4D00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 31";
+		rLen = 0;
+		rLoc = 812;
+		rType = 0;
+		vrLen = 907;
+		vrLoc = 288;
+	};
+	A1F940C810FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1B031BE310F8785300C0F295 /* BallChain.h */;
+		name = "BallChain.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 863;
+		vrLoc = 0;
+	};
+	A1F940C910FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7F94D0B30FA96CC100A02C11 /* ResourceManager.m */;
+		name = "ResourceManager.m: 154";
+		rLen = 0;
+		rLoc = 4961;
+		rType = 0;
+		vrLen = 1297;
+		vrLoc = 4594;
+	};
+	A1F940CA10FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7F94D0990FA96C9200A02C11 /* GameStateManager.m */;
+		name = "GameStateManager.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 208;
+		vrLoc = 0;
+	};
+	A1F940CB10FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7F94D0B40FA96CC100A02C11 /* ResourceManager.h */;
+		name = "ResourceManager.h: 59";
+		rLen = 0;
+		rLoc = 2056;
+		rType = 0;
+		vrLen = 1540;
+		vrLoc = 1029;
+	};
+	A1F940CC10FA9AE100627AA7 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = A1F9408110F99D7100627AA7 /* shooter.png */;
+	};
+	A1F940CD10FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7F94D09C0FA96C9200A02C11 /* GameState.h */;
+		name = "GameState.h: 17";
+		rLen = 16;
+		rLoc = 305;
+		rType = 0;
+		vrLen = 343;
+		vrLoc = 0;
+	};
+	A1F940CE10FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A1F9407E10F99BE000627AA7 /* BallShooter.h */;
+		name = "BallShooter.h: 19";
+		rLen = 0;
+		rLoc = 387;
+		rType = 0;
+		vrLen = 521;
+		vrLoc = 0;
+	};
+	A1F940CF10FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A171279810F5540100A04029 /* Ball.h */;
+		name = "Ball.h: 42";
+		rLen = 0;
+		rLoc = 735;
+		rType = 0;
+		vrLen = 1440;
+		vrLoc = 324;
+	};
+	A1F940D010FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A171279910F5540100A04029 /* Ball.m */;
+		name = "Ball.m: 125";
+		rLen = 75;
+		rLoc = 2516;
+		rType = 0;
+		vrLen = 973;
+		vrLoc = 1626;
+	};
+	A1F940D110FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A1F9407F10F99BE000627AA7 /* BallShooter.m */;
+		name = "BallShooter.m: 34";
+		rLen = 0;
+		rLoc = 844;
+		rType = 0;
+		vrLen = 863;
+		vrLoc = 0;
+	};
+	A1F940D210FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21E10F2B89C00CA78A1 /* gsZuma.h */;
+		name = "gsZuma.h: 19";
+		rLen = 0;
+		rLoc = 362;
+		rType = 0;
+		vrLen = 471;
+		vrLoc = 0;
+	};
+	A1F940D310FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 31";
+		rLen = 0;
+		rLoc = 812;
+		rType = 0;
+		vrLen = 1372;
+		vrLoc = 3;
+	};
+	A1F940D410FA9AE100627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 59";
+		rLen = 0;
+		rLoc = 1379;
+		rType = 0;
+		vrLen = 1345;
+		vrLoc = 751;
+	};
+	A1F940DB10FA9AEC00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 46";
+		rLen = 0;
+		rLoc = 1176;
+		rType = 0;
+		vrLen = 1349;
+		vrLoc = 751;
+	};
+	A1F940E010FA9B7700627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 45";
+		rLen = 0;
+		rLoc = 1168;
+		rType = 0;
+		vrLen = 1349;
+		vrLoc = 751;
+	};
+	A1F940E110FA9B7700627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A1F9407E10F99BE000627AA7 /* BallShooter.h */;
+		name = "BallShooter.h: 20";
+		rLen = 0;
+		rLoc = 387;
+		rType = 0;
+		vrLen = 543;
+		vrLoc = 0;
+	};
+	A1F940E210FA9B7700627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A1F9407F10F99BE000627AA7 /* BallShooter.m */;
+		name = "BallShooter.m: 23";
+		rLen = 0;
+		rLoc = 526;
+		rType = 0;
+		vrLen = 897;
+		vrLoc = 0;
+	};
+	A1F940E310FA9B7700627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A1F9407F10F99BE000627AA7 /* BallShooter.m */;
+		name = "BallShooter.m: 36";
+		rLen = 0;
+		rLoc = 838;
+		rType = 0;
+		vrLen = 964;
+		vrLoc = 0;
+	};
+	A1F940E610FA9B8400627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A1F9407F10F99BE000627AA7 /* BallShooter.m */;
+		name = "BallShooter.m: 15";
+		rLen = 0;
+		rLoc = 263;
+		rType = 0;
+		vrLen = 964;
+		vrLoc = 0;
+	};
+	A1F940E910FA9BBA00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A1F9407F10F99BE000627AA7 /* BallShooter.m */;
+		name = "BallShooter.m: 39";
+		rLen = 0;
+		rLoc = 957;
+		rType = 0;
+		vrLen = 1080;
+		vrLoc = 0;
+	};
+	A1F940EC10FA9BD200627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A1F9407F10F99BE000627AA7 /* BallShooter.m */;
+		name = "BallShooter.m: 15";
+		rLen = 0;
+		rLoc = 263;
+		rType = 0;
+		vrLen = 1081;
+		vrLoc = 0;
+	};
+	A1F940EF10FA9C4C00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A1F9407F10F99BE000627AA7 /* BallShooter.m */;
+		name = "BallShooter.m: 21";
+		rLen = 0;
+		rLoc = 419;
+		rType = 0;
+		vrLen = 1081;
+		vrLoc = 0;
+	};
+	A1F940F010FA9C4C00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21E10F2B89C00CA78A1 /* gsZuma.h */;
+		name = "gsZuma.h: 24";
+		rLen = 0;
+		rLoc = 480;
+		rType = 0;
+		vrLen = 490;
+		vrLoc = 0;
+	};
+	A1F940F110FA9C4C00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 72";
+		rLen = 0;
+		rLoc = 1858;
+		rType = 0;
+		vrLen = 1349;
+		vrLoc = 751;
+	};
+	A1F940F210FA9C4C00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 82";
+		rLen = 0;
+		rLoc = 2307;
+		rType = 0;
+		vrLen = 1278;
+		vrLoc = 810;
+	};
+	A1F940F310FA9C7600627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 69";
+		rLen = 0;
+		rLoc = 1618;
+		rType = 0;
+		vrLen = 1357;
+		vrLoc = 810;
+	};
+	A1F940F410FA9CA600627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 74";
+		rLen = 0;
+		rLoc = 1837;
+		rType = 0;
+		vrLen = 1454;
+		vrLoc = 810;
+	};
+	A1F940F710FA9CD500627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 46";
+		rLen = 0;
+		rLoc = 1168;
+		rType = 0;
+		vrLen = 1490;
+		vrLoc = 810;
+	};
+	A1F940FC10FA9CED00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 30";
+		rLen = 0;
+		rLoc = 812;
+		rType = 0;
+		vrLen = 1367;
+		vrLoc = 71;
+	};
+	A1F940FF10FA9CFD00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 31";
+		rLen = 0;
+		rLoc = 889;
+		rType = 0;
+		vrLen = 1367;
+		vrLoc = 71;
+	};
+	A1F9410010FA9D4F00627AA7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = A144D21F10F2B89C00CA78A1 /* gsZuma.m */;
+		name = "gsZuma.m: 31";
+		rLen = 0;
+		rLoc = 889;
+		rType = 0;
+		vrLen = 1438;
+		vrLoc = 71;
 	};
 }

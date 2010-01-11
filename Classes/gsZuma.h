@@ -16,11 +16,12 @@
 
 @interface gsZuma : GLESGameState{
 	Path * path;
-	Ball * ball;
+	Ball * shotBall;
 	BallShooter * ballshooter;
 	DirectedPath * p;
 	BallChain * ballchain;
 	GLTexture * background;
+	bool readyToFire;
 }
 
 @end

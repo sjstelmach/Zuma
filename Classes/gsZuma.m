@@ -28,9 +28,7 @@
 						   withRadius: 125.0f
 					   andIsClockwise: true];
 		
-		ArcSegment * a = (ArcSegment *)[p.segments objectAtIndex:2];
-		
-		ballchain = [[BallChain	alloc] initOnPath:p withNumberBalls:30 withSpeed:3.0 withNumColors:3];
+		ballchain = [[BallChain	alloc] initOnPath:p withNumberBalls:30 withSpeed:1.0 withNumColors:3];
 		[ballchain retain];
 		
 		ballshooter = [[BallShooter alloc] initWithLoc:CGPointMake(160, 240)];
@@ -43,7 +41,8 @@
 
 - (void) Update
 {
-	[ball move];
+	// todo: release shot ball if it's off of the screen
+	[shotBall move];
 	[ballchain move];
 }
 
@@ -56,7 +55,7 @@
 	[background drawAtPoint:CGPointMake(160, 240)];
 
 	[p draw];
-		//[ball draw];
+	[shotBall draw];
 	[ballchain draw];
 	[ballshooter draw];
 	
@@ -65,15 +64,27 @@
 	[self swapBuffers];
 }
 
+
+// TODO: get canceling working propertly, and potentially some sort of tracking line
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-	// aim at
 	NSSet *allTouches = [event allTouches];
 	UITouch *touch = [[allTouches allObjects] objectAtIndex:0];
-	[ballshooter aimAt:[touch locationInView:self]];
-
-	//[ball setVelocity:CGPointMake((float)(random()-RAND_MAX/2)/RAND_MAX*10, 
-	//							  (float)(random()-RAND_MAX/2)/RAND_MAX*10)];
+	[ballshooter aimAt:[touch locationInView:self]];	
+	readyToFire = YES;
 }
-
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+	NSSet *allTouches = [event allTouches];
+	UITouch *touch = [[allTouches allObjects] objectAtIndex:0];
+	[ballshooter aimAt:[touch locationInView:self]];	
+}
+-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
+	readyToFire = NO;
+}
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+	if(readyToFire){
+		shotBall = [ballshooter fire];
+		readyToFire = NO;
+	}
+}
 
 @end
