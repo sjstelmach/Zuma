@@ -12,7 +12,7 @@
 
 @implementation Ball
 
-@synthesize loc, velocity;
+@synthesize velocity;
 
 - (float) speed
 {

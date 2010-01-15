@@ -1,16 +1,20 @@
 //
 //  Entity.h
-//  Chapter3 Framework
 //
-//  Created by Joe Hogue on 5/19/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Objects that have a texture and need to be displayed on the screen.
 //
 
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
+#import "GLTexture.h"
 
-@interface Entity : CALayer {
-
+@interface Entity : NSObject {
+	GLTexture * gltexture;
+	CGPoint loc;
 }
+
+@property(readonly) CGPoint loc;
+
+- (void) draw;
 
 @end

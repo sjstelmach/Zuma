@@ -11,6 +11,7 @@
 #import "ResourceManager.h"
 #import "Path.h"
 #import "DirectedPath.h"
+#import "Entity.h"
 
 //CONSTANTS:
 
@@ -25,20 +26,17 @@ typedef enum {
 
 #define BALLRADIUS 15.0f
 
-@interface Ball : NSObject {
+@interface Ball : Entity {
 	BallColor _color;
-	GLTexture * gltexture;
 	DirectedPath * path;
 	float pathPos;
 	float speed; // speed of the ball
 	float angle; // angle of the ball in radians
-	CGPoint velocity; // velocity vector 
-	CGPoint loc;
+	CGPoint velocity; // velocity vector
 }
 
 @property float speed;
 @property CGPoint velocity;
-@property(readonly) CGPoint loc;
 
 /*
  * creates a ball with a color.  this is only used internally for DRYness.
@@ -79,7 +77,5 @@ typedef enum {
  * advances ball by dist
  */
 - (CGPoint) movebyDist: (float) dist;
-
-- (void) draw;
 
 @end

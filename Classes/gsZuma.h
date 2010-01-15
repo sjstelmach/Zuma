@@ -14,12 +14,14 @@
 #import "BallChain.h"
 #import "DirectedPath.h"
 
+// unlikely that we'd make a level w/ > 5 paths
+#define NUM_PATHS 5
+
 @interface gsZuma : GLESGameState{
-	Path * path;
-	Ball * shotBall;
+	NSMutableArray * freeballs; // (Ball) balls not attached to paths
 	BallShooter * ballshooter;
-	DirectedPath * p;
-	BallChain * ballchain;
+	DirectedPath * paths[NUM_PATHS];
+	NSMutableArray * ballchains;// (BallChain) ballchains
 	GLTexture * background;
 	bool readyToFire;
 }

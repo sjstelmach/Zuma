@@ -9,21 +9,25 @@
 #import <Foundation/Foundation.h>
 #import "Ball.h"
 #import "GLTexture.h"
+#import "Entity.h"
 
 #define BALL_SHOOTER_SPEED 3
 
-@interface BallShooter : NSObject {
-	GLTexture * gltexture;
+@interface BallShooter : Entity {
 	float angle; // in radians
-	CGPoint _loc;
 	Ball * toBeFired;
 	float shootingSpeed;
 }
 
-- (BallShooter *) initWithLoc: (CGPoint) loc;
-- (void) moveToLoc: (CGPoint) loc;
-- (void) aimAt: (CGPoint) aimTo;
+/*
+ * inits a new BallShooter with loc pos
+ */
+- (BallShooter *) initWithLoc: (CGPoint) pos;
+/*
+ * move the instance to pos
+ */
+- (void) moveToLoc: (CGPoint) pos;
+- (void) aimAt: (CGPoint) pos;
 - (Ball *) fire;
-- (void) draw;
 
 @end

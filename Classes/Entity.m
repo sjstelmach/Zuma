@@ -11,4 +11,6 @@
 
 @implementation Entity
 
+@synthesize loc;
+
 @end
